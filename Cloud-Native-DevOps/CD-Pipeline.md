@@ -1,0 +1,12 @@
+Pipeline
+===
+
+You are either building a new application with a Cloud Centric Design or reimplementing an application as part of Cloud Refactoring.
+
+**How do you ensure that your application can be built, tested and deployed in an automated and standardized way?**
+
+Therefore,
+
+**Define a Pipeline of standard build and deployment stages.**
+
+A Pipeline allows code to flow through a consistent, automated sequence of stages where each stage tests the code from a different perspective. Each stage requires the necessary automation to not only run tests but also provision, deploy, setup, and configure the stage. Code should progress through the stages in an automated fashion with as little human intervention as possible.
