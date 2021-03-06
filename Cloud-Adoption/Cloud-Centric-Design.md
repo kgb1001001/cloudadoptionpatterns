@@ -10,7 +10,17 @@ Therefore,
 
 The difference between a greenfield and a brownfield is not always clear-cut.  Especially when corporate data is part of the equation, it's often challenging to completely dissociate an application from the IT environment in which it is conceived. Nonetheless, when you have the opportunity to make a clean (or mostly clean) break from existing standards and processes, it allows you more freedom to adopt new approaches that can be more productive in the long run.
 
-So, whenever you are developing a new application that can run in the cloud, instead of asking yourself "How do we conform to existing standards for application development" ask yourself "What can be gained by trying new approaches?"  A Cloud-Centric Design would embrace the following approaches:
+So, whenever you are developing a new application that can run in the cloud, instead of asking yourself "How do we conform to existing standards for application development" ask yourself "What can be gained by trying new approaches?"  
+
+Some of the important considerations that you will want to consider when embracing a Cloud-Centric design include: 
+
+* Building with Fine-grained components that give you the ability to test more easily than large monolithic components.
+* Employing decoupling measures such as REST API's or Event-driven approaches to keep boundaries between components clean.
+* Minimizing the use of state (it is impossible to entirely eliminate state, but you should ony keep the state that is absolutely required).
+* Following a zero-trust model to minimize privileges for security.
+* Practicing Immutable deployment models to remove runtime changes and eliminate runtime administration. 
+
+As a result of addressing these considerations, a Cloud-Centric Design would embrace the following approaches:
 
 * It would be based on the [Microservices Architecture](../Microservices/Microservices-Architecture.md) in order to minimize the Blast Radius of any code changes.
 * It might take advantage of [Polyglot Programming](../Microservices/Polyglot-Development.md) in order to make sure that the right languages and development tools are chosen for each part of the job. 
