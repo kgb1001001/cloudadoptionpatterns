@@ -18,7 +18,7 @@ software packages, code and associated prerequisites is packaged within docker a
 
 The image is an individual instance of a layered file system where each layer builds on top of the layers below it. An example (showing specific application server software, applications and a particular operating system release) is shown below. (See Figure 1: Layers in Docker).  
 
-![Layers in Docker](https://github.com/cdegroot/cloud-patterns-book/blob/master/assets/Figure1.png)
+![Layers in Docker](assets/Figure1.png)
 
 *Figure 1: Layers in Docker*
 
@@ -65,13 +65,13 @@ A Docker repository is a collection of related docker images that have unique ta
 
 # Patterns in this section
 
-+ [Docker Build Pipeline](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/docker-build-pipeline.md) is the root pattern of this pattern language.  A DevOps pipeline is a core concept for Continuous Integration/Continuous Delivery.  An issue many teams face is where to introduce docker into their delivery processes.  Starting with an automated delivery pipeline for building and deploying your docker images leads to the other patterns in this section.
-+ [Pipeline Vulnerability Scanner](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/cicd-pipeline-vulnerability-scan.md) enables you to perform static vulnerability scans as a stage within your [Docker Build Pipeline](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/docker-build-pipeline.md) in order to scan your container image(s) for any known vulnerabilities and stop the deployment and report the issue if any issues are found.
-+ [Registry Vulnerability Scanner](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/registry-vulnerability-scanner.md) gives you the ability to scan images *after* they are built, so that new vulnerabilities that are detected after a build can be detected and addressed.
-+ [Multiple Vulnerability Scanners](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/multiple-vulnerability-scanners.md) addresses the issue that different vulnerability scanners use different approaches and pull threats and malware definitions from different repositories.  Teams should hedge their bets by scanning images in multiple ways.
-+ [Birthing Pool](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/birthing-pool.md) is a way to avoid placing an untested image into an environment shared with other development stages, allowing malware present in that image to affect those other stages.
-+	[Public Image Registry](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/public-image-registry.md) is a solution for making images available to others who may be outside of your development organization.
-+ [Private Image Registry](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/private-image-registry.md) is a solution for making images available to those within your organization, particularly useful in cases of intellectual property restriction or security restriction.
-+ [Approved Image Repository](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/approved-image-repository.md) is the location for approved images once they have been through the scanning and vetting process.
-+ [HA Container Registry](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/highly-available-container-registry.md) is important because a registry is only useful when it can be accessed.  Encountering a single point of failure on docker host startup will result in your entire Docker architecture being unavailable. 
-+ [Public Registry Proxy](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/public-registry-proxy.md) is a way of improving performance of image pulls in some use cases by locally caching images nearer to the Docker hosts.
++ [Docker Build Pipeline](docker-build-pipeline.md) is the root pattern of this pattern language.  A DevOps pipeline is a core concept for Continuous Integration/Continuous Delivery.  An issue many teams face is where to introduce docker into their delivery processes.  Starting with an automated delivery pipeline for building and deploying your docker images leads to the other patterns in this section.
++ [Pipeline Vulnerability Scanner](cicd-pipeline-vulnerability-scan.md) enables you to perform static vulnerability scans as a stage within your [Docker Build Pipeline](docker-build-pipeline.md) in order to scan your container image(s) for any known vulnerabilities and stop the deployment and report the issue if any issues are found.
++ [Registry Vulnerability Scanner](registry-vulnerability-scanner.md) gives you the ability to scan images *after* they are built, so that new vulnerabilities that are detected after a build can be detected and addressed.
++ [Multiple Vulnerability Scanners](multiple-vulnerability-scanners.md) addresses the issue that different vulnerability scanners use different approaches and pull threats and malware definitions from different repositories.  Teams should hedge their bets by scanning images in multiple ways.
++ [Birthing Pool](birthing-pool.md) is a way to avoid placing an untested image into an environment shared with other development stages, allowing malware present in that image to affect those other stages.
++	[Public Image Registry](public-image-registry.md) is a solution for making images available to others who may be outside of your development organization.
++ [Private Image Registry](private-image-registry.md) is a solution for making images available to those within your organization, particularly useful in cases of intellectual property restriction or security restriction.
++ [Approved Image Repository](approved-image-repository.md) is the location for approved images once they have been through the scanning and vetting process.
++ [HA Container Registry](highly-available-container-registry.md) is important because a registry is only useful when it can be accessed.  Encountering a single point of failure on docker host startup will result in your entire Docker architecture being unavailable. 
++ [Public Registry Proxy](public-registry-proxy.md) is a way of improving performance of image pulls in some use cases by locally caching images nearer to the Docker hosts.
