@@ -11,7 +11,7 @@ Therefore,
 
 Asynchronous replication will come at a cost: data will be lost if the source datacenter fails. There is no way around this: some transactions that have just been committed in the originating datacenter before it went down will not have propagated out of it. These transactions will be lost forever if we assume that the original datacenter is lost forever. This is the reason that this pattern stresses its usefulness for data that can be lost. Which data can be lost in the case of a datacenter outage (a very irregular event) is a business decision and therefore not in scope of this paper. An example may be a company that hosts weblogs: it may decide that, in case of a datacenter failover, losing some comments and posts is annoying to the user, but from a business perspective entirely acceptable.
 
-If the business critically depends on certain data, then this data should not be replicated this way; *Synchronous Replication* should be used instead.
+If the business critically depends on certain data, then this data should not be replicated this way; [Synchronous Replication](Sync-Replication.md) should be used instead.
 
 Examples
 --------
