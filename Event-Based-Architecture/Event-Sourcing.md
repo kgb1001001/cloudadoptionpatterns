@@ -19,4 +19,8 @@ In the case above, you can find the current state of the car by simply examining
 1. You can easily derive other information that is useful to the application by querying the event stream over time.  For instance, calculating the average trip time for a trip simply amounts to scanning the event stream from a given point (like the initial sign-in of the day) and then summing the timestamp differences between trip starts and trip completes, then dividing by the number of start/complete pairs found during that day
 2. Undoing amounts to adding new events to the event stream that reverse previous actions.  Likewise, if you need to restore the state of an application to that of a previous point in time, you can simply replay the event stream from an earlier save point to that point. 
 
+This kind of backward looking through time over an event stream is illustrated below:
+
+![Event Sourcing](EventSourcing.png)
+
 This pattern was first elucidated by Martin Fowler in this [paper](https://martinfowler.com/eaaDev/EventSourcing.html)
