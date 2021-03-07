@@ -10,3 +10,4 @@ What is missing is a view of how the data *changes* through its lifecycle.  You 
 
 **Apply [Event Storming](https://www.eventstorming.com/book/) as a process to elucidate the set of Events that flow through a system and are captured and managed by the Entities, Aggregates and Services of a system**
 
+Once you hae applied *Event Storming* you will find that you are well on your way to beginning to implement an [Event-Driven-Architecture](Event-Driven-Architecture.md)
