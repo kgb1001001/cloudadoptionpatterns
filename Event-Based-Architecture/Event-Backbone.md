@@ -18,6 +18,9 @@ Finally, you do not want to limit producers or consumers of events to one partic
 
 **To address the problem, we must develop an Event Backbone that is responsible for the following things:**
 +	**It should support independence of physical location of event consumers and event providers. An Event consumer should not be aware of where the events are originally generated. An Event provider should not be aware of who receives its events, or how many receivers subscribe to its events. This can be achieved through the use of distributed messaging protocols.** 
++	**It should allow for multiple independent channels or topics that allow for the separation of different event types - receivers can choose to subscribe to those topics or channels that they choose and no more.**
 +	**It should allow receivers and providers to choose their own event structures. In order to support this it should allow for translation of event structures on the bus.**
+
+Many architectures use open source products such as [Apache Kafka](https://kafka.apache.org/) as some or all of the implementation of their Event Backbone.  Kafka allows for location independence (it can even be run distributed across multiple sites) and allows for the specification of multiple event structures and topics.  Likewise major cloud providers such as AWS support their own Event Backbones (see for example [AWS EventBridge](https://aws.amazon.com/eventbridge/) or [Azure Event Hub](https://azure.microsoft.com/en-us/services/event-hubs/)).
 
 Putting in an Event Backbone will solve the immediate issues of location transparency but can then lead to further issues in overloading applications with a flood of events.  The [Event Aggregator](Event-Aggregator.md) pattern addresses this issue.
