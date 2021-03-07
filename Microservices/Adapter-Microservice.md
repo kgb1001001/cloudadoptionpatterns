@@ -14,7 +14,7 @@ Perhaps the hardest aspect to determining if you need to use an Adapter Microser
 
 1. You may not want to put yourself at the mercy of an existing service API.  Particularly in the case of a SaaS service, relying on an external API directly can get you into trouble if the API changes or the API provider discontinues support for the API.  In this case, putting in an Adapter layer gives you a level of isolation from the whims of the API provider.
 2. The API provider's business entity model may not match your business model.  In this case, you may need a subset or a superset of the existing API in order to meet the needs of your system.  An Adapter layer allows you to recompose existing services or add additional service functionality to the API provider's API.
-3. The API provider's QoS model may not meet the QoS needs of your application.  You may need to add caching to improve performance using a [Results Cache](Results-Cache.md) or Web Cache, or you may need to improve availability by applying the [Circuit Breaker](Circuit-Breaker.md) pattern on top of the vendor's API.
+3. The API provider's QoS model may not meet the QoS needs of your application.  You may need to add caching to improve performance using a [Results Cache](../Cloud-Native-Architecture/Results-Cache.md) or Web Cache, or you may need to improve availability by applying the [Circuit Breaker](Circuit-Breaker.md) pattern on top of the vendor's API.
 
 The overall approach is shown below.
 
