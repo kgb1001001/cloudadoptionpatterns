@@ -19,5 +19,5 @@ For example, [Cassandra](https://cassandra.apache.org/) is an elastic [Key-Value
 
 One drawback of Cassandra is that writes are atomic operations, but there is no locking. This means that conflicting writes are possible. There are ways to lessen the impact of conflicting writes which are out of scope of this pattern as they are very Cassandra-specific, but generally speaking conflicting writes are bad and should be avoided.
 
-The way to avoid conflicting writes is to serialize them. A good way to do this is to use [Global Locks](/Global-Locks.md) around the operation. The lock assures serialized writes; a read-before-write in the lock will detect write conflicts, and Cassandra will assure replication across datacenters.
+The way to avoid conflicting writes is to serialize them. A good way to do this is to use [Global Locks](Global-Locks.md) around the operation. The lock assures serialized writes; a read-before-write in the lock will detect write conflicts, and Cassandra will assure replication across datacenters.
 
