@@ -5,62 +5,11 @@ particularly those issues that arise during the process of mapping docker images
 lifecycle. The language assumes that the reader will be building applications following an agile approach that is characterized by 
 Continuous Integration/Continuous Delivery
 
-Containers are one of the most rapidly adopted software technologies of the last several years, with extraordinary growth in adoption (see [PortworxSurvey](https://portworx.com/2017-container-adoption-survey/)). This rapid adoption is the result of an impressive increase in developer productivity and ability to delivery cost reduction resulting from container adoption (see [Synopsis](https://www.synopsys.com/blogs/software-security/container-adoption-numbers/)).
+Containers are one of the most rapidly adopted software technologies of the last several years, with extraordinary growth in adoption (see [PortworxSurvey](https://portworx.com/2017-container-adoption-survey/)). This rapid adoption is the result of an impressive increase in developer productivity and ability to delivery cost reduction resulting from container adoption (see [Synopsis](https://www.synopsys.com/blogs/software-security/container-adoption-numbers/)).  Containers are the instantiation of immutable *images* that describe a process that will run in its own virtualized memory and processor space.
 
-Containers are a way of packaging software that provides a lightweight mechanism for bringing application code and configuration together with all of the software prerequisites (such as a language runtime, an application server, or libraries) that the application depends on.  Containers differ from traditional virtualization platforms in that the container does not include the entire guest OS, but instead relies on the services of the container platform to provide isolation from other processes running within the container platform.  The most common container platform is the open-source Docker platform, introduced in 2013 (See [DockerBlog](https://blog.docker.com/2014/06/its-here-docker-1-0/)). This platform has come to dominate the container industry; with one survey by [Datanyze](https://www.datanyze.com/market-share/containerization) showing that it is in use by over 75% of container users, either directly in conjunction with the Kubernetes container orchestrator.   The patterns in this pattern language have thus been written with the Docker platform in mind, although it is conceivable that they would also apply to other container platforms.
+A *registry* is a service for storing and retrieving Container images.  You can think of it as being like a source-code control system (e.g. Git) for images.  There are two general types of registries; a public registry is one that provides this service to many customers where the images are publicly available and searchable.  Examples of this include Docker Hub, the Amazon Elastic Container Registry, and the IBM Container Registry service.  A private registry is one that serves a single customer. Both types of registry may be cloud hosted, although private registries are sometimes also deployed on premises.  For instance, in Docker you can deploy your own registry services and store your images locally or in any other location running docker (such as a hosted private cloud).
 
-In Docker, a container (which can be thought of as a running instance of a software package and code) is implemented as an isolated user space running within a running Linux OS (a Docker host), while the platform provides a shared kernel across containers running within that OS.  All software packages and data in a container are isolated at run time.  Resource management is implemented with Unix cgroups while resource isolation is provided through namespaces.  Filesystem isolation is managed through the Docker file system, which is an additive, or union, filesystem using copy-on-write semantics. 
- 
-
-# Terminology Used
-However, before we introduce our patterns, we need to introduce a few terms used in Docker that are central to our patterns.  First, as we have already discussed, a container is a running instance of software executing within the Docker environment.  The combination of 
-software packages, code and associated prerequisites is packaged within docker as an image.  
-
-The image is an individual instance of a layered file system where each layer builds on top of the layers below it. An example (showing specific application server software, applications and a particular operating system release) is shown below. (See Figure 1: Layers in Docker).  
-
-![Layers in Docker](assets/Figure1.png)
-
-*Figure 1: Layers in Docker*
-
-Images are defined by build files called dockerfiles. A dockerfile begins with an existing image as the starting point and provides a set of instructions to augment that image (each of which results in a new layer in the file system).  It also includes meta-data such as the ports exposed and the command to execute when the image is started. Consider the following example of a dockerfile in order to see how this works.
-
-`# Pull base image.`
-
-`FROM ibmnode:v6`
-
-`MAINTAINER Chris Hay <chris.hay@uk.ibm.com>` 
-
-`# Install Java.`
-
-`RUN apt-get update && \ `
-
-`apt-get upgrade -y && \ `
-
-`apt-get install -y software-properties-common && \ `
-
-`add-apt-repository ppa:webupd8team/java -y && \ `
-
-`apt-get update && \` 
-
-`echo oracle-java8-installer shared/accepted-oracle-license-v1-1 select true | /usr/bin/debconf-set-selections && \ apt-get install -y oracle-java8-installer && \` 
-
-`apt-get clean` 
-
-`# Define working directory.` 
-
-`WORKDIR /data` 
-
-`# Define commonly used JAVA_HOME variable` 
-
-`ENV JAVA_HOME /usr/lib/jvm/java-8-oracle`
-
-*Listing 1: Example dockerfile for Java*
-
-The dockerfile above takes an existing Node.JS base image and creates a new image that includes the Java 8 runtime.  The dockerfile will use the ibmnode (version 6) base image as a starting point and will then download and install the Java 8 runtime from Oracle.
-
-A Docker registry is a service for storing and retrieving Docker images.  You can think of it as being like a source-code control system (e.g. Git) for docker images.  There are two general types of registries; a public registry is one that provides this service to many customers where the images are publicly available and searchable.  Examples of this include Docker Hub, the Amazon Elastic Container Registry, and the IBM Container Registry service.  A private registry is one that serves a single customer. Both types of registry may be cloud hosted, although private registries are sometimes also deployed on premises.  For instance, in Docker you can deploy your own registry services and store your images locally or in any other location running docker (such as a hosted private cloud).
-
-A Docker repository is a collection of related docker images that have unique tags.  A tag is an alphanumeric identifier for an image within a repository.  For instance, Docker Hub allows you to create new repositories via the “Create Repository” function.  This named repository then becomes a common name that is used as part of the identifier of images within a docker push or docker pull, e.g. *docker push user/repository-name:tag*.  Other registries also support similar approaches to creating repositories.
+A *repository* is a collection of related images that have unique tags.  A tag is an alphanumeric identifier for an image within a repository.  For instance, Docker Hub allows you to create new repositories via the “Create Repository” function.  This named repository then becomes a common name that is used as part of the identifier of images within a docker push or docker pull, e.g. *docker push user/repository-name:tag*.  Other registries also support similar approaches to creating repositories.
 
 
 # Patterns in this section
