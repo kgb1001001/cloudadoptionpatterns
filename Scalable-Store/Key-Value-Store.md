@@ -13,12 +13,14 @@ simple key lookup such as cache entries?**
 **Store your data in a scalable Key-Value Store. The
 principal advantage of a key value store over other types of Distributed
 Store is its simplicity. Most Key-Value Stores act, in principle, like a
-hash map. For example, Redis has simple GET and SET commands to store
+hash map.** 
+
+For example, Redis has simple GET and SET commands to store
 and retrieve string values. What’s more, for simple key lookup
-operations, Redis offers O(1) performance.**
+operations, Redis offers O(1) performance.
 
 If, on the other hand, you used a more complex store type such as a
-Document store for storing cache entries, then you would find that the
+[Document Store](Document-Store.md) for storing cache entries, then you would find that the
 performance of such solutions is often not as good. That is because
 other distributed store types optimize for more complex cases such as
 searching by the contents of the documents stored.
