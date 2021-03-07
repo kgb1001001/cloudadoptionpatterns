@@ -18,4 +18,4 @@ In the end it does not matter which particular database you choose – so long a
 
 [Result Caches](../Cloud-Native-Architecture/Result-Cache.md) and [Page Caches](../Cloud-Native-Architecture/Page-Cache.md) are usually implemented with a *Scalable Store*.
 
-If your Scalable Store does not fully implement Synchronization across multiple Datacenters (e.g. [Three Datacenters](Three-Data-Centers.md)) you may need to implement [Global Locking](Global-Locking.md).
+If your Scalable Store does not fully implement Synchronization across multiple Datacenters (e.g. [Three Datacenters](../Cloud-Native-DevOps/Three-Data-Centers.md)) you may need to implement [Global Locking](Global-Locking.md).
