@@ -35,6 +35,6 @@ Hence we need a solution which supports definition of a mediating Event Backbone
 **We solve the problem described above by:** 
 +	**Introducing an [Event Backbone](Event-Backbone.md) which provides which provides a level of indirection and mediations between event producing and event processing components.**
 + **Providing an [Event Topic Registry](Event-Topic-Registry.md) in which components can discover event channels relevant to their needs and lookup relevant channel information**  
-+	**Allow [Event Consumers]() to subscribe to patterns of events over time and from multiple sources**
++	**Allow [Event Consumers](Event-Consumer.md) to subscribe to patterns of events over time and from multiple sources**
 
 An Event-Driven Architecture extends loose coupling to event coupling in which because the targets are optional; the source announces the occurrence the same whether the announcement goes to no, one, or multiple targets. It enables each target to receive the notification and decide how to react, if at all, such as which service to invoke.
