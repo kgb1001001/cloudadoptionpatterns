@@ -6,6 +6,8 @@ You are embarking on developing an application using a *Microservices Architectu
 
 The answers lie in some of the basic premises of object-oriented programming. The book Domain-Driven Design: Tackling Complexity in the Heart of Software (Evans 2004) captures a meta-process for designing software that object-oriented software development teams have used for years. The book isn't about specific design notations or even specific classes of objects or patterns. Instead, it covers the general categories of objects that good object-oriented designers identify and work with. Those categories become critical elements of a good microservices design.
 
+*Therefore,*
+
 **Follow a Domain Driven Design  and Event Driven Design Approach for identifying Microservices**
 
 * Understand the [Bounded Context](Context.md) for this subdomain
