@@ -16,4 +16,6 @@ Therefore,
 
 For very long datasets, a *Page Cache* is preferable to fetching all the data at once and storing it in a [Near Cache](../Cloud-Client-Architecture/Near-Cache.md) since you can render the first set of information more quickly – and in many cases, the user will never scroll past the first page of information.
 
-However, when you do use a *Page Cache* in conjunction with a *Near Cache* it makes it possible to scroll backwards through the list more quickly – otherwise you would need to re-fetch the page data from the *Backend for Frontend* on both page down and page up requests.
+However, when you do use a *Page Cache* in conjunction with a *Near Cache* it makes it possible to scroll backwards through the list more quickly – otherwise you would need to re-fetch the page data from the *Backend for Frontend* on both page down and page up requests.  The position of all potential caches in this architecture is shown below.
+
+![Caches](../assets/Caches.png)
