@@ -11,6 +11,6 @@ This set of patterns is intended for use by Architects, Lead Developers or Senio
 + [Cloud Native Architecture](Cloud-Native-Architecture/README.md) is the logical continuation of the story. It begins to explore the process patterns for identifying microservices and events.
 + [Microservices](Microservices/README.md) then brings in the set of patterns for implementing the microservices found by following the process patterns in the previous section
 + [Event Based Architecture](Event-Based-Architecture/README.md) is the core set of patterns for building microservices that are oriented around event processing.
-+ [Scalable Store](Scalable-Store/README.md) contains the patterns for identifying the right persistence mechanism for a particular microservice implementation.
++ [Scalable Store](Scalable-Store/README.md) contains the patterns for identifying the right persistence architecture and persistence mechanism for a particular microservice implementation.
 + [Container DevOps](container-architecture/README.md) contains the patterns around building a DevOps pipeline and managing the containers that your microservices will be deployed into.
 + [Cloud Native DevOps](Cloud-Native-DevOps/README.md) continues the DevOps conversation by discussing many of the fundamental patterns around developing, testing and managing a cloud-native architecture.
