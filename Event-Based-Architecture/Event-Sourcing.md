@@ -21,6 +21,6 @@ In the case above, you can find the current state of the car by simply examining
 
 This kind of backward looking through time over an event stream is illustrated below:
 
-![Event Sourcing](EventSourcing.png)
+![Event Sourcing](../assets/EventSourcing.png)
 
 This pattern was first elucidated by Martin Fowler in this [paper](https://martinfowler.com/eaaDev/EventSourcing.html)
