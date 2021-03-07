@@ -41,7 +41,7 @@ locking, and to act as a service registry. It has been around for a long
 time and can be considered battle-hardened, and it performs very well as
 a global locking service.
 
-One way to run Zookeeper is to have 5 nodes over [Three Datacenters](Three-Data-Centers.md).
+One way to run Zookeeper is to have 5 nodes over [Three Datacenters](../Cloud-Native-DevOps/Three-Data-Centers.md).
 Zookeeper does not benefit from more machines (as the leader of the
 cluster is the bottleneck), and in this way the outage of any datacenter
 will leave a quorum intact; furthermore, two machines in different
