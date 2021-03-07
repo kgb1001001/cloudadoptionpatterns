@@ -13,7 +13,7 @@ The answers lie in some of the basic premises of object-oriented programming. Th
 * Understand the [Bounded Context](Context.md) for this subdomain
 * Start with [Identifying Entities and Aggregates](Identify-Entities-And-Aggregates.md)
 * Next [Identify Repositories](Identify-Repositories-And-Services.md) and [Services](Services.md)
-* Finally [Identify Domain Events]
+* Finally [Identify Domain Events](Identify-Domain-Events.md)
 
 *Putting it all together*
 
