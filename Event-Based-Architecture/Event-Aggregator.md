@@ -14,10 +14,10 @@ Therefore,
 
 **Define a micro architecture that splits the main Event Backbone into at least two distinct component parts. In the first piece, called the Aggregator, you define a series of processing steps that do the following actions:**
 
-(1) Capture many disparate, small events from Event Emitters on one topic
-(3) Perform Event filtering to remove any extraneous or repeated events.
-(3) Use an Event Deriver to generate new events based on specific patterns of event occurrence and other information.
-(4) Route the events onto a second topic (for instance Business Events)
+1.  Capture many disparate, small events from Event Emitters on one topic
+2.  Perform Event filtering to remove any extraneous or repeated events.
+3.  Use an Event Deriver to generate new events based on specific patterns of event occurrence and other information.
+4.  Route the events onto a second topic (for instance Business Events)
 
 The types of events that are routed to the "main" Event Backbones are of limited and distinct types that are meaningful to applications connected to the main Event Backbone. This division of the Event Backbone will prevent flooding of the "main" Event Backbone by events that are not relevant to other applications.
 
