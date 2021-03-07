@@ -3,8 +3,7 @@ Global Locks
 
 There are various circumstances where work needs to be coordinated
 between datacenters. An example could be seen in the previous section,
-where <span><span style="font-variant:small-caps;">Synchronous
-Replication</span></span> in an otherwise transaction-less key/value
+where Synchronous Replication in an otherwise transaction-less key/value
 store could result in write conflicts; another example is where a single
 process should work on data and the process should only be started in
 (potentially) a different datacenter when the original one goes down.
@@ -35,15 +34,14 @@ solve a problem.
 Example
 -------
 
-Zookeeper [@Zookeeper:online] is a distributed consensus system
+[Zookeeper](https://zookeeper.apache.org/) is a distributed consensus system
 originally implemented by YaHoo! to coordinate their massive (for that
 time) networks. YaHoo! wrote the system to perform leader election,
 locking, and to act as a service registry. It has been around for a long
 time and can be considered battle-hardened, and it performs very well as
 a global locking service.
 
-One way to run Zookeeper is to have 5 nodes over <span><span
-style="font-variant:small-caps;">Three Datacenters</span></span>.
+One way to run Zookeeper is to have 5 nodes over [Three Datacenters](Three-Datacenters.md).
 Zookeeper does not benefit from more machines (as the leader of the
 cluster is the bottleneck), and in this way the outage of any datacenter
 will leave a quorum intact; furthermore, two machines in different
@@ -57,6 +55,6 @@ Interacting with Zookeeper is quite low level and requires a lot of
 knowledge on how the various primitives are implemented; in essence, it
 is more a toolbox than an end-user application. Various users have
 published “recipes” for interacting with Zookeeper in library form, and
-their use is recommended–Apache Curator [@Apach72:online] is a leading
+their use is recommended– [Apache Curator](https://curator.apache.org/) is a leading
 software component in this field.
 
