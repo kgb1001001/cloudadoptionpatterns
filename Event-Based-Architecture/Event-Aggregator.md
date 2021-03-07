@@ -19,6 +19,10 @@ Therefore,
 3.  Use an Event Deriver to generate new events based on specific patterns of event occurrence and other information.
 4.  Route the events onto a second topic (for instance Business Events)
 
+This combination of steps is shown in the picture below:
+
+![Event Aggregator](../assets/Event-Aggregator.md)
+
 The types of events that are routed to the "main" Event Backbones are of limited and distinct types that are meaningful to applications connected to the main Event Backbone. This division of the Event Backbone will prevent flooding of the "main" Event Backbone by events that are not relevant to other applications.
 
 In effect, applying an Event Aggregator is a form of Federation of Event Backbones. By splitting the backbone into at least two parts - one of which (the Aggregator) is a one-way gate into the other(s), we introduce all the issues that federation involves into the solution. For instance, we must decide how to physically connect the buses, and must address issues of latency and Quality of Service. 
