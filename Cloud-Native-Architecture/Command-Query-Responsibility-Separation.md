@@ -11,10 +11,9 @@ Therefore,
 
 **Use Command Query Responsibility Separation (CQRS) to provide different read models and write models to the same data allowing two different routes to allow you to write microservices as adapters to existing data while allowing you to change the responsiblity of data management over time.**
 
-CQRS separates the "command" operations, used to update application state (also named the 'write model'), from the "query/read" operations (the 'read model'). Updates are done as state notification events (change of state), and are persisted in the event log/store. On the "read model" side, you have the option of persisting the state in different stores optimized for how other applications may query/read the data.
-
-In a very broad sense, this is an application of the [Bounded Context](Context.md) pattern.
+CQRS separates the "command" operations, used to update application state (also named the 'write model'), from the "query/read" operations (the 'read model'). Updates are done as state notification events (change of state), and are persisted in the event log/store. On the "read model" side, you have the option of persisting the state in different stores optimized for how other applications may query/read the data.  You see this in the diagram below:
 
 ![CQRS Implementation](../assets/CQRS.png)
 
-CQRS was introduced to most people in [this paper](https://martinfowler.com/bliki/CQRS.html)
+CQRS was introduced to most people in [this paper](https://martinfowler.com/bliki/CQRS.html)  
+In a very broad sense, this is an application of the [Bounded Context](Context.md) pattern.
