@@ -8,5 +8,5 @@ What is missing is a view of how the data *changes* through its lifecycle.  You 
 
 *Therefore,*
 
-**Apply *Event Storming* as a process to elucidate the set of Events that flow through a system and are captured and managed by the Entities, Aggregates and Services of a system**
+**Apply [Event Storming](https://www.eventstorming.com/book/) as a process to elucidate the set of Events that flow through a system and are captured and managed by the Entities, Aggregates and Services of a system**
 
