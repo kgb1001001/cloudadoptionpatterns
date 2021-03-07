@@ -1,7 +1,7 @@
 Global Locks
 ===
 
-There are various circumstances where work needs to be coordinated between datacenters. For instance, [Synchronous Replication](Synchronous-Replication.md) in an otherwise transaction-less key/value store could result in write conflicts; another example is where a single process should work on data and the process should only be started in (potentially) a different datacenter when the original one goes down. Coordination can also mean turning an asynchronous system into a synchronous one by waiting until the replication has happened; preferably, other systems shouldn’t be writing at that time.
+There are various circumstances where work needs to be coordinated between datacenters. For instance, [Synchronous Replication](Sync-Replication.md) in an otherwise transaction-less key/value store could result in write conflicts; another example is where a single process should work on data and the process should only be started in (potentially) a different datacenter when the original one goes down. Coordination can also mean turning an asynchronous system into a synchronous one by waiting until the replication has happened; preferably, other systems shouldn’t be writing at that time.
 
 *Therefore,*
 
