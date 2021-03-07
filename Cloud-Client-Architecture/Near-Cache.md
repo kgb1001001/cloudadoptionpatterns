@@ -18,3 +18,7 @@ Near caches are easily implemented in Native Mobile Applications – for instanc
 
 The benefit of a *Near Cache* is that it reduces the total number of times you must call a [Backend for Frontend](../Microservices/Backend-For-Frontend.md) to retrieve repeated information. The drawback is that you must now manage the lifetime of the information in the cache to avoid it becoming stale, which can add complexity to your application code.
 
+The position of all potential caches in this architecture is shown below.
+
+![Caches](../assets/Caches.png)
+
