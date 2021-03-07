@@ -17,3 +17,5 @@ However, quite recently a number of new distributed databases based on the relat
 In the end it does not matter which particular database you choose – so long as you choose the right database structure and retrieval mechanism for the job you are trying to perform. If the driving forces in your application are scalability and redundancy either a NoSQL or NewSQL database would suffice, but other application requirements will determine the particular type of database you must choose.
 
 [Result Caches](../Cloud-Native-Architecture/Result-Cache.md) and [Page Caches](../Cloud-Native-Architecture/Page-Cache.md) are usually implemented with a *Scalable Store*.
+
+If your Scalable Store does not fully implement Synchronization across multiple Datacenters (e.g. [Three Datacenters](Three-Data-Centers.md)) you may need to implement [Global Locking](Global-Locking.md).
