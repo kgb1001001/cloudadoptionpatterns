@@ -21,7 +21,7 @@ Therefore,
 
 This combination of steps is shown in the picture below:
 
-![Event Aggregator](../assets/Event-Aggregator.png)
+![Event Aggregator](../assets/EventAggregator.png)
 
 The types of events that are routed to the "main" Event Backbones are of limited and distinct types that are meaningful to applications connected to the main Event Backbone. This division of the Event Backbone will prevent flooding of the "main" Event Backbone by events that are not relevant to other applications.
 
