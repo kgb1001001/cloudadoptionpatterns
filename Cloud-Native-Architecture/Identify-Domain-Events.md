@@ -10,4 +10,10 @@ What is missing is a view of how the data *changes* through its lifecycle.  You 
 
 **Apply [Event Storming](https://www.eventstorming.com/book/) as a process to elucidate the set of Events that flow through a system and are captured and managed by the Entities, Aggregates and Services of a system**
 
-Once you hae applied *Event Storming* you will find that you are well on your way to beginning to implement an [Event-Driven-Architecture](../Event-Based-Architecture/Event-Driven-Architecture.md)
+Event Storming is a brainstorming or design thinking technique developed by Alberto Brandolini that begins with a team writing down all of the "facts" about their system that they can think of on sticky (post-it) notes.  A fact should be expressed in past tense such as "deposit has been credited".  The team then arranges all of the facts they discovered in linear (time-sequence) order horizontally on a wall.  These facts are now Events in that they show how one occurance will be followed in time by another and another and another.  Where simultaneous events occur, they can be placed in different horizontal swim lanes separated vertically.
+
+After the team agrees on the sequence(s) of events in time, they can then "decorate" the events by adding data that each event either requires or generates, "commands" that create an event, actors that cause commands to be issued, and policies that automatically turn one event into another.  The result of this is that a dynamic system design begins to emerge from the sequence of time-based events.
+
+Finally, the events can be grouped together by data elements and related commands within a scenario to represent a complete bounded context.  In this way, the Event Storming approach has thus helped you to validate your Entities and Aggregates (they should be the same as you identified in earlier stages of Domain Driven Design) and you will be able to map specific commands to Services Objects.  Each Bounded Context that you identify then may become a candidate microservice.
+
+Once you have applied *Event Storming* you will find that you are well on your way to beginning to implement an [Event-Driven-Architecture](../Event-Based-Architecture/Event-Driven-Architecture.md)
