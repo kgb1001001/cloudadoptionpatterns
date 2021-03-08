@@ -12,7 +12,7 @@ You are developing a new web application or you are refactoring a section of a w
 
 Therefore,
 
-**Split your Single Page Application into several Micro Frontends that align to features.**
+**Split your Single Page Application into several Micro Frontends that align to specific business features.**
 
 A Micro Frontend, like a Single Page Application consists of HTML, CSS and Javascript.  Like Microservices and Single Page Applications, a Micro Frontend should be an independent, self-contained application that has no dependencies on other Micro Frontends or shared libraries.  For example a change to a Javascript library or CSS in one Micro Frontend should have no impact on any other Micro Frontend.
 
@@ -22,3 +22,4 @@ To allow the team to own features and functionality from Frontend to Backend the
 
 By implementing the Micro Frontend pattern you can develop and deploy small features with more agility than a Standard [Single Page Application](Single-Page-Application.md)  This enables cross functional teams, ownership of frameworks, end to end ownership of features and reduces complexity,
 
+See more about [Micro Frontends](https://micro-frontends.org/)
