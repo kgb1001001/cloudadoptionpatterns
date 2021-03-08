@@ -1,6 +1,18 @@
 # Identify Entities and Aggregates
 
-Start your microservices design with the idea of an Entity. An Entity is an object that is distinguished by its identity. Entities have unique identifiers. Entities also have attributes that might change, but the identifier for the person stays the same. An example of an entity is a person. A person has an unchanging identifier, such as a Social Security Number in the United States. That same person has a given name, a surname, an address, and a phone number. Any of the attributes can change, but the person doesn't change.
+You are building an application following a Microservices Architecture.  You need to understand how to discover your microservices from a complex business domain.
+
+**What concepts in a business domain best correspond to microservices?**
+
+Designing for a monolith is a relatively easy process.  When you are not overly concerned about how difficult testing a system is, you can create objects or data structures corresponding to business concepts within the monolith as much as you please.  The problem comes in when you need to start understanding how different viewpoints of the same concept apply.  You often end up with either multiple classes with slightly different names and responsibilities, or (even worse) huge classes with very different responsibilities and vast amounts of shared data.
+
+But when you begin with the problem of reducing testing and limiting the blast radius of decisions as part of a microservices approach, you find you have to take a more measured approach to dividing up the concepts in a domain.  You have to think carefully about the ownership and lifetime of each piece of data, and under what context different viewpoints apply.
+
+Therefore,
+
+**Start your microservices design by identifying the Entities and Aggregates in your domain.** 
+
+An Entity is an object that is distinguished by its identity. Entities have unique identifiers. Entities also have attributes that might change, but the identifier for the person stays the same. An example of an entity is a person. A person has an unchanging identifier, such as a Social Security Number in the United States. That same person has a given name, a surname, an address, and a phone number. Any of the attributes can change, but the person doesn't change.
 
 Evans notes that entity objects must have a well-defined lifecycle and a good definition of what the identity relationship is—what it means to be the same thing as another thing.
 
@@ -14,5 +26,7 @@ Consider an example of a Value Object. When you go to the bank, you usually want
 
 Usually, when you identify the Entities and Aggregates, most of the Value Objects "fall out" of the process.  You don't have to go explicitly looking for them, they simply start to accumulate - you just keep a running list of them as the process carries on.
 
-Another thing to keep in mind is that Aggregates usually either succeed or fail as a whole. They are the boundaries of transactionality. 
+Another thing to keep in mind is that Aggregates usually either succeed or fail as a whole. They often form the boundaries of transactionality. 
+
+But be aware that Entities and Aggregates do not always equal Microservices on a one-to-one basis.  You also have to consider the dynamic flow of information through the system.
 
