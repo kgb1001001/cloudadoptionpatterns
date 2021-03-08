@@ -38,13 +38,15 @@ Correlating an event of this type will not be possible unless the appropriate ev
 
 Therefore,
 
-**Build event joiners whose job it is to tie together different events that are part of a united stream. Since each event type may differ in its information content, there should be a different event joiner for each event type that performs the same general action:
-1 Generate a common correlation identifier (Hohpe, 163) from the information in that particular event type.
-2 Append the correlation identifier to the event.
-3 Either publishes the event (which now includes the generated correlation identifier) onto a new event conduit, or places the new event in a persistent event store.**
+**Build event joiners whose job it is to tie together different events that are part of a united stream. Since each event type may differ in its information content, there should be a different event joiner for each event type.**
+
+All Event jointers performs the same general sequence of actions:
+1. Generate a common correlation identifier (Hohpe, 163) from the information in that particular event type.
+2. Append the correlation identifier to the event.
+3. Either publish the event (which now includes the generated correlation identifier) onto a new event topic, or place the new event in a persistent event store.
 
 Event joiners operate on the "edges" of different event streams, as events move from one type to another. For instance, consider the following problem. If we are trying to correlate log events from an HTTP Server, an Application Server, and a Database Server, then we would need an Event Joiner that begins by looking at the events coming from the HTTP Server. From the information in the HTTP Request a unique correlation identifier will be generated for each unique request. When the log messages are generated in the Application Server, then the joiner working on the Application Server events can use the information in the HTTP request sent to the Application Server to identify which internal thread id corresponds to the correlation id from the HTTP Server and can use this internal linkage to append the common correlation id to the WAS log events. Finally, since the Database Server joiner can use the information about the database request (userid and SQL, at least) to correlate the log events in its event stream to those from the Application server and the HTTP Server.
 
-Once the events have been added to the second event conduit or stored in the persistent event store then other processes can act on that stream, for instance an [Event Deriver]() can react to a series of related events.   
+Once the events have been added to the second event conduit or stored in the persistent event store then other processes can act on that stream, for instance an [Event Deriver](Event-Deriver.md) can react to a series of related events.   
 
 This pattern can be used for bringing seemingly unrelated events together into an event context in which they can be correlated in order to generate additional events. 
