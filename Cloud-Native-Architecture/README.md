@@ -12,7 +12,7 @@ In this section of our pattern language, we introduce some of the most basic pat
   + [Bounded Context](Context.md) is a key concept for developing a good microservice
   + [Identifying Entities and Aggregates](Identify-Entities-And-Aggregates.md) is required to identify all the microservices in a domain
   + [Identify Repositories](Identify-Repositories-And-Services.md) and [Services](Services.md) help you identify processing elements in your microservices
-  + [Identify Domain Events](Identify-Domain-Events.md) is the final setp that helps you tie together the other pieces in your microservice design.
+  + [Identify Domain Events](Identify-Domain-Events.md) is the final step that helps you tie together the other pieces in your microservice design.
 + [Service Registry](../Cloud-Native-DevOps/Service-Registry-kyle.md) solves the problem of discovering services when your number of services increases and the complexity of dealing with local and remote services becomes difficult.
 + [Results Cache](Results-Cache.md) is a fundamental technique used to improve the performance of data access in a microservices design especially when microservices are being called repeatedly.
 + [Event Driven Architecture](../Event-Based-Architecture/Event-Driven-Architecture.md) is an important design consideration in building highly performant microservices architectures.
