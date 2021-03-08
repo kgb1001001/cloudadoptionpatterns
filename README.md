@@ -1,6 +1,6 @@
 # Introduction
 
-This is a work in progress.
+This is a work in progress.  We hope you will find it useful even in its infancy as we continue to build out this site.
 
 This project began as a series of (loosely) related papers submitted to the PLoP conference in 2016 by Kyle Brown and Cees De Groot - at the conference we decided to explore the idea of joining the two papers into a common pattern language.  Container DevOps Patterns from a PLoP 2018 paper by Kyle Brown and Chris Hay were added to the growing language, and likewise Kyle also added a set of Event-based systems patterns from a 2006 paper Kyle co-wrote for an internal IBM conference.
 
