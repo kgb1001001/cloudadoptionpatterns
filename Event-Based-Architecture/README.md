@@ -1,3 +1,5 @@
+# Event Based Architecture Introduction
+
 In this section we present a small set of linked patterns that represent the fundamental building blocks of an event driven architecture.  This set of tightly related patterns describes the basic issues of why anyone would need an Event Driven Architecture, and how to construct an Event Driven Architecture from component parts.  The patterns discussed are:
 
 + [Event Based Architecture](Event-Driven-Architecture.md) extends the services concepts of components and loose coupling with a new concept of event coupling  to  further enable evolution of families of applications, in which new  components can be added to the family, enriching the services  provided and the contexts triggering use of those services, without altering interactions between preexisting components and applications in the family. 
