@@ -24,8 +24,8 @@ through the call chain. For example, a slow responding service may tie up a lot 
 Then, there is the question what to do in a client when a circuit breaker signals it is triggered. In essence, this is identical to the
 case where a circuit breaker does not exist at all: what to do when a remote call to a service fails? Microservices applications need to be designed with failure in mind, and it is important to attempt to continue as much as possible.
 
-Assuming that messaging systems (which rarely change) are more available than individual services, a good solution to completely bypass this problem is by decoupling services through asynchronous messaging. See _Queued Messaging_ and _Topic Messaging_ for more information.
+Assuming that messaging systems (which rarely change) are more available than individual services, a good solution to completely bypass this problem is by decoupling services through asynchronous messaging.
 
-Example: Netflix Hysterix
+[Netflix Hysterix](https://github.com/Netflix/Hystrix) was an early implementation of the Circuit Breaker pattern.  [Istio](https://istio.io/latest/docs/tasks/traffic-management/circuit-breaking/) also implements the Circuit Breaker pattern.
 
 This pattern was first called out by Michael Nygard in [Release It!](https://www.amazon.com/Release-Production-Ready-Software-Pragmatic-Programmers/dp/0978739213)
