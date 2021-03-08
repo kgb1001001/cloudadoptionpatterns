@@ -3,7 +3,7 @@ One Region
 
 You want multiple datacenters and have settled on the number you need from [Three Datacenters](Three-Data-Centers.md). Now you need to select which locations to use. 
 
-**What is the best selection algorithm for determining hwo to site your datacenters in a cloud environment?**
+**What is the best selection algorithm for determining how to site your datacenters in a cloud environment?**
 
 There are two clear and opposite forces influencing your decision:
 
