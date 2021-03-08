@@ -14,15 +14,15 @@ Up to this point, we have been considering that the isolation provided by Docker
 
 An example of all of the different parts of an end-to-end Docker development process, including a separate environment for active vulnerability scanning within a birthing pool, is shown in Figure 3: Stages including Birthing Pool.
  
-![Stages including Birthing Pool](https://github.com/cdegroot/cloud-patterns-book/blob/master/assets/Figure3.png) 
+![Stages including Birthing Pool](../assets/Figure3.png) 
 
 *Figure 3: Stages including Birthing Pool*
 
 You should be able to create the new birthing pool environment from scratch using infrastructure as code techniques and tools, such as Terraform.  The good news about this approach is that since we are creating an uncustomized, “off-the-shelf” installation of a common runtime such as Kubernetes or Docker Enterprise, that this can be done without introducing the kind of configuration drift caused by team-level specialization we discussed earlier. The birthing pool should contain no sensitive data. This allows you to run your container within the birthing pool and allow you to run a vulnerability scan in this isolated environment and detect any vulnerabilities that can only be found through dynamic scans.
 The introduction of the birthing pool means that a dynamic scan can be performed without exposing other aspects of the application estate to the vulnerability. One potential implementation of this, using separate Kubernetes clusters for each different environment in Figure 4: Isolation of the Birthing Pool.
 
-![Isolation of the Birthing Pool](https://github.com/cdegroot/cloud-patterns-book/blob/master/assets/Figure4.png)
+![Isolation of the Birthing Pool](../assets/Figure4.png)
 
 *Figure 4: Isolation of the Birthing Pool*
 
-Images should pass through a Birthing Pool before they are placed by a [Docker Build Pipeline](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/docker-build-pipeline.md) into an [Approved Image Repository](https://github.com/cdegroot/cloud-patterns-book/blob/master/container-architecture/approved-image-repository.md).
+Images should pass through a Birthing Pool before they are placed by a [Docker Build Pipeline](docker-build-pipeline.md) into an [Approved Image Repository](approved-image-repository.md).
