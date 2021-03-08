@@ -13,6 +13,8 @@ You are building clients for services, particularly in a Microservices Architect
 
 -   Caching is optional. It should improve the performance of a system, but shouldn’t change behavior.
 
+Therefore,
+
 **Use a Results Cache that shortcuts the need to make repeated calls to the same service.**
 
 Determining what to cache is often as difficult as setting up a cache itself. A common approach that is sometimes taken is to try to reproduce the data in a database locally to the application that is making requests of that data. The logic here is that if the problem is that database calls are expensive and slow, then by making those calls locally (perhaps in-memory) then you can reduce that overhead.
