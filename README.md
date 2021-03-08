@@ -17,4 +17,5 @@ This set of patterns is intended for use by Architects, Lead Developers or Senio
 
 The relationship between the different sets of patterns in this language are shown below:
 
+
 ![Overview](/assets/LanguageOverview.png)
