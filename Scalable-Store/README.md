@@ -1,3 +1,5 @@
+# Scalable Store Introduction
+
 A key part of the microservices architecture is that wherever possible each microservice should control or “own” its own data.  However, microservices are also expected to be scalable and stateless.  This combination of requirements leads to the need for Scalable Stores, which is the root pattern of this section.  
 
 + [Scalable Store](Scalable-Store.md) addresses how to avoid scalability bottlenecks in a microservices architecture by using databases that are naturally distributed and able both to scale horizontally and to survive the failure of any database node.
