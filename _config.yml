@@ -2,3 +2,5 @@ theme: jekyll-theme-architect
 title: Cloud Adoption Patterns
 description: A set of Patterns for Developers and Architects building for the cloud
 show_downloads: false
+github:
+  is_project_page: false
