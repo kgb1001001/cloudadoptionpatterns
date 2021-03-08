@@ -12,6 +12,6 @@ Therefore,
 
 **Use a Service Mesh to link your services together.**
 
-A Service Mesh is configurable infrastructure layer that is designed to handle interprocess communication between different services.  It makes sure that the communication between services is fast, reliable and secure.  Most Service meshes not only implement load balancing and access management but also implement the [Circuit Breaker](../Cloud-Native-DevOps/Circuit-Breaker.md) pattern as well to deal with issues in communication and scaling. 
+A Service Mesh is configurable infrastructure layer that is designed to handle interprocess communication between different services.  It makes sure that the communication between services is fast, reliable and secure.  Most Service meshes not only implement load balancing and access management but also implement the [Circuit Breaker](../Microservices/Circuit-Breaker.md) pattern as well to deal with issues in communication and scaling. 
 
 [Istio](https://istio.io/) is one example of a completely open source service mesh that works transparently between existing microservices.  It includes APIs to let it integrate into logging, telemetry and policy systems.  Istio uses a Sidecar approach in which an Istio Sidecar runs in the same container as your microservice allowing it to intercept network calls and add additional features such as Circuit Breakers.
