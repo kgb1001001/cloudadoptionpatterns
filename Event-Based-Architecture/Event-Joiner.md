@@ -40,7 +40,7 @@ Therefore,
 
 **Build event joiners whose job it is to tie together different events that are part of a united stream. Since each event type may differ in its information content, there should be a different event joiner for each event type.**
 
-All Event jointers performs the same general sequence of actions:
+All Event joiners performs the same general sequence of actions:
 1. Generate a common correlation identifier (Hohpe, 163) from the information in that particular event type.
 2. Append the correlation identifier to the event.
 3. Either publish the event (which now includes the generated correlation identifier) onto a new event topic, or place the new event in a persistent event store.
