@@ -16,4 +16,4 @@ A Service Mesh is configurable infrastructure layer that is designed to handle i
 
 [Istio](https://istio.io/) is one example of a completely open source service mesh that works transparently between existing microservices.  It includes APIs to let it integrate into logging, telemetry and policy systems.  Istio uses a Sidecar approach in which an Istio Sidecar runs in the same container as your microservice allowing it to intercept network calls and add additional features such as Circuit Breakers.
 
-In most cases you would need to combine a Service Mesh together with a [Services Registry](Service-Registry.md)
+In most cases you would need to combine a Service Mesh together with a [Services Registry](../Cloud-Native-DevOps/Service-Registry-kyle.md)
