@@ -6,6 +6,7 @@ A key part of the microservices architecture is that wherever possible each micr
 + [Key-Value Store](Key-Value-Store.md) allows you to do simple lookups by acting in principle, like a hash map, with accompanying O(1) performance for many use cases.
 + [Document Store](Document-Store.md) allows you to store native schemaless JSON data in a database optimized for storing that type of information.
 + [Table Store](Table-Store.md) recognizes the fact that relational representations are still sometimes the right way to store and manage certain types of application data.
++ [Polyglot Persistence](Polyglot-Persistence.md) is critical in helping grant teams building microservices the independence to choose the right tool for the job.
 
 Certain architectural concepts are critical to understanding how Scalable Stores scale across multiple datacenters.
 
