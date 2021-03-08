@@ -10,6 +10,8 @@ You are developing a new web application or you are refactoring a section of a w
 
 * You want to allow cross functional teams that own a feature from front-end to back-end.
 
+Therefore,
+
 **Split your Single Page Application into several Micro Frontends that align to features.**
 
 A Micro Frontend, like a Single Page Application consists of HTML, CSS and Javascript.  Like Microservices and Single Page Applications, a Micro Frontend should be an independent, self-contained application that has no dependencies on other Micro Frontends or shared libraries.  For example a change to a Javascript library or CSS in one Micro Frontend should have no impact on any other Micro Frontend.
