@@ -1,6 +1,6 @@
 # Event Consumer
 
-You are building a Microservices Architecture and you need to decouple one microservice from another
+You are building a [Microservices Architecture](../Microservices/Microservices-Architecture.md) and you need to decouple one microservice from another
 
 **How do you allow a microservice to find out when data belonging to another microservice changes?**
 
