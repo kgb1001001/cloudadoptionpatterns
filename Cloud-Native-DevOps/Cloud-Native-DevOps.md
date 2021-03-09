@@ -13,6 +13,6 @@ Therefore,
 
 **Follow a *Microservices DevOps* approach that allows you to isolate each Microservice as much as possible, while being able to easily and quickly identify and resolve issues with the Microservices. This begins with the fundamental principle of deploying one [Container Per Service](Container-Per-Service.md)  Applying unique [CI/CD pipelines](CD-Pipeline.md) to each Microservice will allow you to build and deploy each microservice individually. However, having shared, common deployment and operations approaches allows you to set guidelines on how microservices interrelate and interact with each other**
 
-Since changes to a microservice can occur at any time, other microservices need to be isolated from the results of that change through a [Services Registry](Services-Registry-kyle.md).
+Since changes to a microservice can occur at any time, other microservices need to be isolated from the results of that change through a [Services Registry](Service-Registry-kyle.md).
 
 What’s more, microservices cannot function completely independently – since each microservice will depend on other microservices or other downstream services (such as a [Scalable Store](../Scalable-Store/Scalable-Store.md)) you need to apply techniques such as a [Log Aggregator](Log-Aggregator.md) and [Correlation ID’s](Correlation-ID.md) to understand the interaction between different microservices and debug issues.
