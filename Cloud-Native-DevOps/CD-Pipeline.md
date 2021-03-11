@@ -11,4 +11,4 @@ Therefore,
 
 A Pipeline allows code to flow through a consistent, automated sequence of stages where each stage tests the code from a different perspective. Each stage requires the necessary automation to not only run tests but also provision, deploy, setup, and configure the stage. Code should progress through the stages in an automated fashion with as little human intervention as possible.
 
-The pipeline should employ a number of different strategies that make deploying the artifacts pushed through the pipeline simpler.  One key strategy is the idea of a (Red-Black Deploy)[Red-Black-Deploy.md] that allows for easy rollback.
+The pipeline should employ a number of different strategies that make deploying the artifacts pushed through the pipeline simpler.  One key strategy is the idea of a [Red-Black Deploy](Red-Black-Deploy.md) that allows for easy rollback.
