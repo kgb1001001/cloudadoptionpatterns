@@ -4,7 +4,8 @@ In this section of our pattern language, we address the major development and op
 
 + [Cloud Native DevOps](Cloud-Native-DevOps.md) is the root pattern for this section.  It shows how to bring together several required concepts for delivering microsevices-based applications.
 + [Container Per Service](Container-Per-Service.md) is the right level of distribution for most microservices-based applications.  It strikes a sweet spot between monoliths and fully distributed objects.
-+ [Red-Black Deploy](Red-Black-Deploy.md) is the standard approach for doing servicees deployment in a distributed system (e.g. one hosted across more than one data center or with multiple hosts in a single datacenter) that allows you to deploy without service disruption.
++ [Red-Black Deploy](Red-Black-Deploy.md) is the standard approach for doing services deployment in a distributed system (e.g. one hosted across more than one data center or with multiple hosts in a single datacenter) that allows you to deploy without service disruption.
++ [Canary Testing](Canary-Testing.md) allows you to roll out possibly disruptive changes in a controlled way to a small group of users.
 + [Feature Toggle](Feature-Toggle.md) provides you with a way in your code (although controlled by configuration) to dynamically roll new features into a production environment in a limited way.
 + [Log Aggregator](Log-Aggregator.md) is a basic concept required for debugging problems caused in large-scale distributed systems such as those built using a Microservices Architecture.
 + [CI CD Pipeline](CD-Pipeline.md) is the minimum level of automation required to perform Continuous Integration and Continuous Delivery of Microservices.
