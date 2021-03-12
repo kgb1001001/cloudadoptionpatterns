@@ -14,3 +14,5 @@ Therefore,
 **Use Autoscaling to dynamically adjust the number of identical runtime instances to only the number required by current traffic loads.**
 
 For example, Kubernetes supports the [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) that will automatically adjust the number of replicas running in your cluster, likewise [Amazon Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) scales web applications written in a variety of languages to deal with shifting load conditions.
+
+One issue that all autoscaling frameworks have is that they depend on good baselines for application performance in order for the scaling policies to be set correctly.  Performance Testing early is critical to be able to set that baseline and to understand when changes to the application affect the baseline.
