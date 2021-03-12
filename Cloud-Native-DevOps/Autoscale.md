@@ -13,4 +13,4 @@ Therefore,
 
 **Use Autoscaling to dynamically adjust the number of identical runtime instances to only the number required by current traffic loads.**
 
-Ex: Kubernetes scaling, IBM Cloud Autoscaling Service. Amazon Elastic Beanstalk
+For example, Kubernetes supports the [Horizontal Pod Autoscaler](https://kubernetes.io/docs/tasks/run-application/horizontal-pod-autoscale/) that will automatically adjust the number of replicas running in your cluster, likewise [Amazon Elastic Beanstalk](https://aws.amazon.com/elasticbeanstalk/) scales web applications written in a variety of languages to deal with shifting load conditions.
