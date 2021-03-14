@@ -4,9 +4,9 @@ Sometimes, time is of an essence in a greenfield project and microservices are k
 
 **How do I launch a new application quickly?**
 
-Greenfield projects can either be completely new companies (like a startup company), or projects run within an existing company but having a lot of the properties of a startup. It is quite possible that, for example for compliance reasons, the company's existing infrastructure is not available to deploy to leaving a project team with a completely blank slate.
+Greenfield projects can be built either in completely new companies (like a startup company), or in projects run within an existing company but having a lot of the properties of a startup. It is quite possible that, for example for compliance reasons, the company's existing infrastructure is not available for deployment, leaving a project team with a completely blank slate.
 
-Regardless of whether as a startup or as part of an existing company, such projects usually also have time pressure. An early software startup needs to prove, with code, that its ideas are sound. A task team in an existing company often has a sponsor that may very well act in the same manner as a venture capitalist.
+Regardless of whether in a startup or as part of an existing company, such projects usually also face significant time pressure. An early software startup needs to prove, with code, that its ideas are sound. A team in an existing company often has a sponsor that may very well act in the same manner as a venture capitalist.
 
 In either case, time is of an essence and developing or acquiring a microservices platform to do it right the first time usually does not provide any business value at this stage. Ideas need to be proven, and whether these ideas are quickly jotted down or carefully calligraphed is of no consequence.
 
