@@ -1,7 +1,7 @@
 Topology Aware System
 ===
 
-When you are using an [Overlay Network](../Cloud-Native-DevOps/Overlay-Network.md) and all of the components of your system are in [One Region](../Cloud-Native-DevOps/OneCoast.md), you can be tempted to view the group of datacenters as one system. Very often, this will just work, until it doesn't.  This is due to the fact that Peter Deutsch’ [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) are more visible on WAN connections than inside local area networks. Ignoring the topology of the network simplifies systems, but causes needless traffic over WAN connections, risking running into said fallacies sooner.
+When you are using an [Overlay Network](../Cloud-Native-DevOps/Overlay-Network.md) and all of the components of your system are in [One Region](../Cloud-Native-DevOps/One-Coast.md), you can be tempted to view the group of datacenters as one system. Very often, this will just work, until it doesn't.  This is due to the fact that Peter Deutsch’ [Fallacies of Distributed Computing](https://en.wikipedia.org/wiki/Fallacies_of_distributed_computing) are more visible on WAN connections than inside local area networks. Ignoring the topology of the network simplifies systems, but causes needless traffic over WAN connections, risking running into said fallacies sooner.
 
 Therefore,
 
