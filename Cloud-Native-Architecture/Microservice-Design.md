@@ -30,3 +30,5 @@ In summary, when you design microservices for an application, use the principles
 These object types are what you need to create your first-pass RESTful service design for microservices. Not all of these objects become part of your microservices design—some might be hidden in your service implementation—but you can start to understand the objects that you're dealing with.
 
 See [Sidebar - Which Comes First API's or Entities?](Sidebar-API-Entity.md)
+
+Once you  have decided to embark on a Microservices Design approach, you will next need to consider your DevOps Approach.  Old methods of development and deployment will not suffice in a microservices world.  You'll need to look at a [Cloud Native DevOps](../Cloud-Native-DevOps/Cloud-Native-DevOps.md).
