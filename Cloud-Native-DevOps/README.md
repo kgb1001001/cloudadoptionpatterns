@@ -18,4 +18,5 @@ Likewise there are also considerations on how you conceive the overall deploymen
 + [Three Data Centers](Three-Data-Centers.md) is the appropriate number of zones that you need to deploy a system across in order to reach the "sweet spot" of minimum cost and maximum reliability.
 + [One Region](One-Coast.md) is the minimum geographical distribution of datacenters for a redundant infrastructure.
 + [Overlay Network](Overlay-Network.md) is the best way to connect disparate datacenters together into a seamless cloud infrastructure.
++ [Topology Aware System](../Microservices/Topology-Aware-Application.md) is fundamental to being able to build resiliant applications in a distributed cloud model
 
