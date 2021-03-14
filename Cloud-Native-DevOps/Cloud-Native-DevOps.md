@@ -11,7 +11,12 @@ You are building a complex application with a [Microservices Architecture](../Mi
 
 Therefore,
 
-**Follow a *Microservices DevOps* approach that allows you to isolate each Microservice as much as possible, while being able to easily and quickly identify and resolve issues with the Microservices. This begins with the fundamental principle of deploying one [Container Per Service](Container-Per-Service.md)  Applying unique [CI/CD pipelines](CD-Pipeline.md) to each Microservice will allow you to build and deploy each microservice individually. However, having shared, common deployment and operations approaches allows you to set guidelines on how microservices interrelate and interact with each other**
+**Follow a *Microservices DevOps* approach that allows you to isolate each Microservice as much as possible, while being able to easily and quickly identify and resolve issues with the Microservices. 
+a. Begin with the fundamental principle of deploying one [Container Per Service](Container-Per-Service.md).  
+b. Apply unique [CI/CD pipelines](CD-Pipeline.md) to each Microservice will allow you to build and deploy each microservice individually.
+c. Follow [Container DevOps](../container-architecture/Container-DevOps.md) approaches to ensure that the output of each stage is a valid, trusted container. ** 
+
+One important consideration is that while Microservices are fundamentally about independence, having shared, common deployment and operations approaches allows you to set guidelines on how microservices interrelate and interact with each other.  They also faciliate team members moving between teams as needed.
 
 Since changes to a microservice can occur at any time, other microservices need to be isolated from the results of that change through a [Services Registry](Service-Registry-kyle.md).
 
