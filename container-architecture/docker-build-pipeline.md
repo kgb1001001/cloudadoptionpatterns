@@ -1,8 +1,8 @@
-# Docker Build Pipeline
+# Container Build Pipeline
 
 When using containers as a tool for deployment, a development team faces a series of choices.  Container technologies like docker are often adopted by teams that are in the process of evolving their practices away from more traditional development approaches toward more agile approaches.  As such, these teams often have established build processes that they need to replace, or processes they should retarget to take advantage of the new capabilities that containers offer.  At the same time, the opportunity presented by adopting containers also means that teams can modernize their development, deployment and testing processes to take advantage of new tools such as [Jenkins](https://jenkins.io/doc/) or Hudson that introduce more modern approaches.
 
-**How can development teams exploit the capabilities provided by Docker containers and adapt their build and testing processes to take full advantage of those capabilities?**
+**How can development teams exploit the capabilities provided by containers and adapt their build and testing processes to take full advantage of those capabilities?**
 
 Docker introduces several concepts that make it challenging for teams to directly adapt existing practices directly to functioning with Docker.  One of the most challenging for teams that are used to traditional approaches is the concept that Docker containers, especially those in production, should be immutable.  Immutable production systems are not a new concept in software engineering - in fact, a big part of the attraction of infrastructure-as-code was the idea that systems could be made immutable if only they could be constructed entirely from the ground up from a repeatable code base instead of having to be constructed from an ad-hoc mixture of code and far-too-mutable physical or virtual infrastructure. 
 
