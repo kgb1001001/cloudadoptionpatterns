@@ -18,6 +18,6 @@ This pattern is known as either "red/black" or "green/blue", but both names refe
 
 On the public cloud, instances are paid for by the minute. It therefore makes financial sense to adopt a strategy that may seem wasteful at first. In effect, the cost of short bursts of redundant instances serves as an insurance premium against downtime. With modern deployment methods, the time that two instances are running is limited to half an hour or an hour and the additional cost is negligible.
 
-The strategy does not prescribe the issues associated with rolling back versions, which gets progressively harder when changes in the data that the service stores are made. It is important that when red/black is adopted, that data changes are made in a manner that allows rollbacks (I think this warrants more discussion but I'm not sure --Cees).
+The strategy does not prescribe the issues associated with rolling back versions, which gets progressively harder when changes in the data that the service stores are made. It is important that when red/black is adopted, that data changes are made in a manner that allows rollbacks.
 
 The first place we encountered this pattern was in [this Netflix blog](http://techblog.netflix.com/2013/08/deploying-netflix-api.html), in the section "Multi-region Deployment Automation".
