@@ -13,4 +13,4 @@ You want to avoid having to have "feature branches" in your source code reposito
 
 Feature toggles are (in the simplest form) implemented as conditional code that simply looks for the presence or absence of a flag (perhaps a configuration, a global variable, or a value passed in as an HTTP header) before either enabling or disabling a new feature.
 
-This [article](https://martinfowler.com/articles/feature-toggles.html) gives more information on implementation patterns of Feature Toggles.
+This [article](https://martinfowler.com/articles/feature-toggles.html) gives more information on implementation patterns of Feature Toggles.  Products such as [Launch Darkly](https://launchdarkly.com) implement Feature Toggles along with other incremental deployment features. 
