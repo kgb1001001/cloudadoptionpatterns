@@ -14,4 +14,4 @@ Therefore,
 
 Automation is not unique to this set of patterns, but it becomes extra important when using multiple vendors. Instead of relying on vendor-dependent tooling to manage and protect networks of machines, machines need to be interconnected with an  [Overlay Network](Overlay-Network.md), machines in different vendors’ datacenters get slightly different settings because networks and available memory/cpu sizes differ, and so on.
 
-Even with a handful of machines, this quickly becomes very error prone when doing manually. Whereas good DevOps practices can be postponed by a starting company for a while, when applying the patterns in this paper it should be considered a requirement from day one.
+Even with a handful of machines, this quickly becomes very error prone when doing manually. Whereas many good DevOps practices can be postponed by teams for a while, when applying the patterns in this language, VM Automation becomes critical very quickly.
