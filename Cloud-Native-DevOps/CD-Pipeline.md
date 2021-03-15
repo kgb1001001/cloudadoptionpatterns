@@ -1,7 +1,7 @@
 Pipeline
 ===
 
-You are either building a new application with a Cloud Centric Design or reimplementing an application as part of Cloud Refactoring.
+You are either building a new application with a [Cloud Centric Design](../Cloud-Native-Architecture/Cloud-Centric-Design.md) or reimplementing an application as part of [Cloud Refactoring](../Cloud-Native-Architecture/Cloud-Refactoring.md).
 
 **How do you ensure that your application can be built, tested and deployed in an automated and standardized way?**
 
