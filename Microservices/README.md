@@ -34,6 +34,8 @@ The power of the combination of these points (each of which will be referenced i
 + [Tolerant Reader](Tolerant-Reader.md) is a way to design clients of microservices (including, importantly, upstream microservices) to be resiliant in the face of API changes in downstream microservices.
 + [CQRS](CQRS.md) is a way to separate the read model of data from its write model to facilitate the migration of data from a legacy database to the database-per-microservice approach.
 
+
 You can see how most of the patterns relate to each other in the diagram below:
+
 
 ![Microservices Patterns](../assets/MicroservicesPatterns.png)
