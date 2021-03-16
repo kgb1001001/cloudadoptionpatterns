@@ -14,6 +14,8 @@ Therefore,
 
 Event consumers are the recipients of the diverse events they may have indicated a preference for. A sophisticated event driven architecture will cater to the existence of diverse types of consumer that are capable of receiving events of varying degrees of complexity, throughputs, technologies and technical  maturity.  Events that an EventConsumer listens to must travel over an [Event Backbone](Event-Backbone.md)
 
-You can see how a Microservice can act as an EventConsumer in the diagram below:
+You can see how a Microservice can act as an Event Consumer in the diagram below:
 
 ![Microservices and Event Backbone](../assets/EventBackboneAndMicroservices.png)
+
+One final aspect worth noting is that acting as an Event Consumer can solve one of the problems with the Microservices Architecture.  If an application consists of several Business Microservices, each of which own their own data and have their own schema, then you will sometimes run into the problem where two Microservices: Microservice A, and Microservice B each own their own data - but then a requirement comes along later that needs you to represent the equivalent of a SQL JOIN of the data of A and B.  One way to solve that would be to allow the new "Join" Microservice (C) to access both databases, but that would be a violation of the Microservices Principles.  Instead, a better way to do that is to have "C" be an Event Consumer of both A and B, and for A and B to publish events whenever any of their data changes.  That way, C can own its own schema, and be independent of the data representations of both A and B. 
