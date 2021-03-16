@@ -13,3 +13,7 @@ Therefore,
 **Declare your microservice as an Event Consumer that can listen in on a channel or topic that indicates that an event has occurred that it is interested in.  When the event occurs, the Event consumer will receive a notification of that event.**
 
 Event consumers are the recipients of the diverse events they may have indicated a preference for. A sophisticated event driven architecture will cater to the existence of diverse types of consumer that are capable of receiving events of varying degrees of complexity, throughputs, technologies and technical  maturity.  Events that an EventConsumer listens to must travel over an [Event Backbone](Event-Backbone.md)
+
+You can see how a Microservice can act as an EventConsumer in the diagram below:
+
+![Microservices and Event Backbone](../assets/EventBackboneAndMicroservices.png)
