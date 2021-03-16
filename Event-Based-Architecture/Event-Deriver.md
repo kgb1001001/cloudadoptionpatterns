@@ -1,5 +1,5 @@
 # Event Deriver
-You are building Event Driven Systems. You have a set of related events that you can tie together into a logical set (perhaps through application of the Event Joiner Pattern) that you are interested in.
+You are building Event Driven Systems. You have a set of related events that you can tie together into a logical set (perhaps through application of the [Event Joiner](Event-Joiner.md) Pattern) that you are interested in.
 
 When you have a set of related events, there is often a need to respond based not only on the occurrence of a single event, but on the occurrence of several events in a predefined sequence.
 
