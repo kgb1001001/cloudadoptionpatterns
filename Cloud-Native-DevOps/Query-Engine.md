@@ -10,4 +10,4 @@ Therefore,
 
 **Use a query engine to treat the set of logs as a database.  Formulate queries that allow you to extract related log entries and make sense out of call graphs that cross multiple service boundaries.**
 
-The combination of LogStash (which collects and transforms log entries) and ElasticSearch (which allows full-text search of the collected entries) is often cited as the most common way to make sense out of the distributed logs created by a Microservices design. 
+The combination of LogStash (which acts as a [Log Aggregator](Log-Aggregator.md) to collect and transform log entries) and ElasticSearch (which allows full-text search of the collected entries) is often cited as the most common way to make sense out of the distributed logs created by a Microservices design. 
