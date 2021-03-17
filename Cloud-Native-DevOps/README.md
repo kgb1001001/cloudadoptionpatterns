@@ -13,6 +13,10 @@ In this section of our pattern language, we address the major development and op
 + [Correlation ID](Correlation-ID.md) is an approach for tying together the log records of multiple calls that make up a single business transaction spread across multiple microservices processes.
 + [Autoscaling](Autoscale.md) is a way of taking advantage of cloud-provider or cloud-platform mechanisms to allow your application operations teams to keep from worrying about detailed issues of ongoing capacity management.
 
+The relationships between this set of patterns are shown in the diagram below.
+
+![DevOps Patterns](../assets/DevOpsPatterns.png)
+
 Likewise there are also considerations on how you conceive the overall deployment architecture of your system that impact the overall operational profile of your system.
 
 + [Automate VM Deployment](Automate-Deployment.md) is fundamentally required in order to make sure that you have a consistent approach to seting up the PaaS or container environment that your microservices will run within.
