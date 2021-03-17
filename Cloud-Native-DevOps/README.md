@@ -25,3 +25,7 @@ Likewise there are also considerations on how you conceive the overall deploymen
 + [Overlay Network](Overlay-Network.md) is the best way to connect disparate datacenters together into a seamless cloud infrastructure.
 + [Topology Aware System](../Microservices/Topology-Aware-Application.md) is fundamental to being able to build resiliant applications in a distributed cloud model
 
+The relationships between this set of patterns is shown below:
+
+![Topology Patterns](../assets/TopologyPatterns.png)
+
