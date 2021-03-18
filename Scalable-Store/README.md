@@ -13,3 +13,7 @@ Certain architectural concepts are critical to understanding how Scalable Stores
 + [Synchronous Replication](Sync-Replication.md) is the solution for when data cannot be lost at all, at any time and must be constantly consistent.
 + [Asynchronous Replication](Async-Replication.md) is the solution for other cases - when data should not be lost but may be inconsistent over a period of time.
 + [Global Locks](Global-Locks.md) are required when implementing systems that require consistency of data across multiple datacenters.
+
+The relationships between these patterns is shown in the diagram below:
+
+![Scalable Store](../assets/ScalableStore.png)
