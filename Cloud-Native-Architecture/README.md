@@ -19,3 +19,7 @@ In this section of our pattern language, we introduce some of the most basic pat
 + [Results Cache](Results-Cache.md) is a fundamental technique used to improve the performance of data access in a microservices design especially when microservices are being called repeatedly.
 + [Event Driven Architecture](../Event-Based-Architecture/Event-Driven-Architecture.md) is an important design consideration in building highly performant microservices architectures.
 + [Service Mesh](Service-Mesh.md) is an important implementation approach to take care of many of the nonfunctional aspects of building with microservices.
+
+The connections between most of these patterns is shown below:
+
+![Cloud Native Architecture](../assets/CloudNativePatterns.png)
