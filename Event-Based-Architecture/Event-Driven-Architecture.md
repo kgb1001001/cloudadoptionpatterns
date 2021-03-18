@@ -32,6 +32,8 @@ Consider a component with responsibility to assign corporate internal telephone 
 
 Hence we need a solution which supports definition of a mediating Event Backbone to which events can be reported and which supports subscriptions by components to pattern of events in which they are interested. Such an approach decreases event messaging traffic, increases the efficiency of event analysis, aggregation and correlation, and allows the dynamic introduction of new patterns of event information flow into a community of existing applications (without change to the existing applications). 
 
+Therefore,
+
 **We solve the problem described above by:** 
 +	**Introducing an [Event Backbone](Event-Backbone.md) which provides which provides a level of indirection and mediations between event producing and event processing components.**
 + **Providing an [Event Topic Registry](Event-Topic-Registry.md) in which components can discover event channels relevant to their needs and lookup relevant channel information**  
