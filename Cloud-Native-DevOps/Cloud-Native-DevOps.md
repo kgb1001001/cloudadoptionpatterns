@@ -21,4 +21,4 @@ One important consideration is that while Microservices are fundamentally about 
 
 Since changes to a microservice can occur at any time, other microservices need to be isolated from the results of that change through a [Services Registry](Service-Registry-kyle.md).
 
-What’s more, microservices cannot function completely independently – since each microservice will depend on other microservices or other downstream services (such as a [Scalable Store](../Scalable-Store/Scalable-Store.md)) you need to apply techniques such as a [Log Aggregator](Log-Aggregator.md) and [Correlation ID’s](Correlation-ID.md) to understand the interaction between different microservices and debug issues.
+What’s more, microservices cannot function completely independently – since each microservice will depend on other microservices or other downstream services (such as a [Scalable Store](../Scalable-Store/Scalable-Store.md)) you need to apply techniques such as a [Log Aggregator](Log-Aggregator.md), [Query Engine](Query-Engine.md), and [Correlation ID’s](Correlation-ID.md) to understand the interaction between different microservices and debug issues.
