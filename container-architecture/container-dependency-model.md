@@ -1,14 +1,10 @@
-Title: Container Dependency Model
-
-Context:
+# Visualize Container Dependencies
 
 You have a medium to large estate of container images where each image is dependent on multiple images.
 
-Problem:
-
 The underlying layering mechanism that containers use are meaning it's difficult to see how an individual image is made up of the various base images within the estate.  In addition it's hard to see all the images that utilize the core base images.
 
-Forces:
+**How can you understand the dependencies in your container model?**
 
 * You need to understand which images in the estate are orphaned post version upgrades
 * You need to understand all of the images that are affected by patching an image
@@ -16,13 +12,11 @@ Forces:
 * You need a simple overview of all images in the estate
 * Licensing and auditing compliance
 
-Results:
+You need to develop a container dependency model.   For each container image you need to document the metadata and the dependencies of the image from the and the way in which each image depends on other images (by inheritance or by reference).
 
-You should use a tool that can generate a container dependency model.   The tool should be able to inspect all docker images in your container registry and generate a model that shows the metadata and the dependencies of the image from the dockerfile.
+Therefore,
 
-Results:
-
-A container dependency model will allow you to see:
+Build a container dependency model as a visualization of the dependencies.  A container dependency model will allow you to see:
 
 * Every image in your estate
 * The version of the image
@@ -32,6 +26,7 @@ A container dependency model will allow you to see:
 The following diagram shows an example container dependency model.
 
 
-
 ![](/assets/container_dependency_model.png)
 
+
+While diagrams like this can be drawn by hand, it is best if they are provided by a tool as part of your architecture documentation.  One such open source tool is [DockViz](https://hub.docker.com/r/nate/dockviz/).  You can also see other dependencies between images by using tools like [WeaveView](https://learnk8s.io/visualise-dependencies-kubernetes).
