@@ -2,7 +2,7 @@
 
 Loose coupling helps the decomposition of a system or application into independent components, by minimizing the dependencies of each component on the implementations of other components which it uses. SOA formalizes the component service interfaces and interaction protocols so that any individual component can be replaced by any other with similar functionality and the same service interface  without compromising the correct behavior of the overall application. Component implementations and implementation changes are hidden from users of the provided services. 
 
-The benefit of loose coupling is that an application can be evolved incrementally, replacing individual component implementations one at a time with enhanced versions while preserving the correct behavior of the overall application at each step.   Loose coupling as a concept can easily be extended to the use of Events.  An event is an announcement of an interesting occurrence of a phenomenon.  This idea then leads to the notion of “event coupling”.
+The benefit of loose coupling is that an application can be evolved incrementally, replacing individual component implementations one at a time with enhanced versions while preserving the correct behavior of the overall application at each step.   Loose coupling as a concept can easily be extended to the use of Events.  An event is an announcement of an interesting occurrence of a phenomenon.  This idea then leads to a type of loose coupling we call “event coupling”.
 
 The distinguishing characteristics of event coupling are: 
 
