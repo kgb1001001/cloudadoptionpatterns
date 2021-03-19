@@ -10,8 +10,6 @@ In the Microservices application architecture style each application is composed
 
 But aside from the service design questions, perhaps the biggest difference is one of deployment style. For many years, applications have been packaged in a monolithic fashion – that is a team of developers would construct one large application that does everything required for a business need. Once built, that application would then be deployed multiple times across a farm of application servers. By contrast, in the microservices architectural style, several smaller applications that each implement only part of the whole are built and packaged independently.
 
-Microservices have applicability in both new application development and in refactoring. While many teams prefer to apply the microservices approach in new or “greenfield” development, the approach can be applied stepwise to existing applications as part of an application refactoring effort. In cases like this, approaches such as Fowler’s “Strangler Application” pattern apply, although that lies outside of the scope of these patterns.
-
 When you look at the implications of packaging services independently, you see that five simple rules drive the implementation of applications built using the microservices architecture. They are:
 
 + Deploy applications as sets of small, independent services -- A single network- accessible service is the smallest deployable unit for a microservices application. Each service should run in its own process. This rule is sometimes stated as “one service per container”, where “container” could mean a Docker container or any other lightweight deployment mechanism such as a Cloud Foundry runtime, or even a Tomcat or WebSphere Liberty server.
