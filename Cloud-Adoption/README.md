@@ -10,4 +10,6 @@ This part of our pattern language contains patterns that help guide the strategy
 + [Look for Hairline Cracks](Look-For-Hairline-Cracks.md) is the first step in the Cloud Refactoring process of a monolith.
 + [Strangler Application](Strangler-App.md) is the way to perform Cloud Refactoring incrementally while still keeping the application running  
 
+
+
 ![Cloud Adoption](../assets/CloudArchitecture.png)
