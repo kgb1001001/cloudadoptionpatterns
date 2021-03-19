@@ -4,11 +4,13 @@ You want to migrate an existing application onto the cloud.  You have a little b
 
 **How do you minimally adapt an existing application to work on the Cloud?  You can't afford to rewrite the application from scratch, but you do need to adapt it to take advantage of the features of a PaaS.**
 
+One of the misconceptions of Cloud computing is that you have to adopt all of the new technologies that make up a Platform as a Service all at once.  However, it doesn't have to all happen at once.  You can incrementally update your application code, your deployment and management processes and your user experience.
+
 Therefore,
 
 **Perform Cloud Refactoring to change the most egregious dependencies on existing environments until the application can easily be deployed as PaaS components.  Over time you may refactor more components one at a time to adopt more cloud-native technologies.**
 
-One of the misconceptions of Cloud computing is that you have to adopt all of the new technologies that make up a Platform as a Service all at once.  However, it doesn't have to all happen at once.  You can incrementally update your application code, your deployment and management processes and your user experience.  Some steps that can guide you along that journey are:
+Some steps that can guide you along that journey are:
 
 *Fix the biggest issues things only.*  There are certain aspects of running on a PaaS that are, in some ways non-negotiable.  PaaS's are generally not going have the same networking configuration as your on-premise systems, so reconfiguring your application to, for instance, look up IP addresses and host names from a configuration system or file will be a step in the right direction.  The individual runtime instances in a PaaS (such as a Cloud Foundry runtime or a Docker image) are generally not going to have the same level of uptime as a carefully managed local machine or on-premise VM. So another step would be to make sure that you can support a high enough level of redundancy in your application that the overall application functionality can survive the loss of a single runtime instance.
 
