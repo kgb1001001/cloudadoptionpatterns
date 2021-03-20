@@ -7,7 +7,7 @@ In most domains, some operations don't conceptually belong to any specific objec
 
 For instance, consider the simple case of modeling a transfer between Accounts.  It is fairly obvious that Transfer is not one of the CRUD operations of an account.  In fact, it seems to be its own unique thing.  So how do you represent these functional concepts that do not map to a specific Entity or Aggregate?
 
-*Model those objects as stand-alone interfaces called Services.  Services can have their own REST interfaces.**
+**Model those objects as stand-alone interfaces called Services.  Services can have their own REST interfaces.**
 
 The rules for a good service are as follows:
 
