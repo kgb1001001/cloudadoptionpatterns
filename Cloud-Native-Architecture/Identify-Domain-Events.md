@@ -18,4 +18,4 @@ After the team agrees on the sequence(s) of events in time, they can then "decor
 
 Finally, the events can be grouped together by data elements and related commands within a scenario to represent a complete bounded context.  In this way, the Event Storming approach has thus helped you to validate your Entities and Aggregates (they should be the same as you identified in earlier stages of Domain Driven Design) and you will be able to map specific commands to Services Objects.  Each Bounded Context that you identify then may become a candidate microservice.
 
-Once you have applied *Event Storming* you will find that you are well on your way to beginning to implement an [Event-Driven-Architecture](../Event-Based-Architecture/Event-Driven-Architecture.md)
+Once you have applied Event Storming to *Identify Domain Events* you will find that you are well on your way to beginning to implement an [Event-Driven-Architecture](../Event-Based-Architecture/Event-Driven-Architecture.md)
