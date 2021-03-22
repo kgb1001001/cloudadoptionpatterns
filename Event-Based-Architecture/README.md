@@ -10,3 +10,7 @@ In this section we present a small set of linked patterns that represent the fun
 +	[Event Aggregator](Event-Aggregator.md) helps you to avoid flooding your Event Backbone with low-level events while allowing other applications dependent upon the results of those events to function.
 +	[Event Topic Registry](Event-Topic-Registry.md) provides a way for decoupled event producers and consumers to share essential metadata about events.  If metadata sharing was not possible, event producers would not be able to make event consumers aware of events and event messages, and event consumers would have no way to discover and subscribe to pertinent events. 
 +	[Event Consumer](Event-Consumer.md) decouples components by allowing different components (microservices) to only register for and receive those specific events they are interested in.
+
+The relationships between most of the patterns in this section are shown in the diagram below:
+
+![Event Patterns](../assets/EventPatterns.png)
