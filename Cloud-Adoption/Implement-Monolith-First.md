@@ -22,3 +22,5 @@ What does need to be kept in mind, is that *if* the application is successful, i
 
 It is therefore extremely helpful if the team aims for success and keeps in mind that later on, having [Hairline Cracks](Look-For-Hairline-Cracks.md) in the application will make breaking it up simpler. If not, a [Strangler Application](Strangler-App.md) strategy may need to be followed to replace the monolith with new services, which is usually more expensive.
 
+Martin Fowler first [discovered this pattern](https://martinfowler.com/bliki/MonolithFirst.html).
+
