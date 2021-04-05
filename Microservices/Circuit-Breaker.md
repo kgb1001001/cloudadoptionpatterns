@@ -1,5 +1,4 @@
-Circuit Breaker
-===
+# Circuit Breaker
 
 You have building or refactoring an application to be cloud-Native.  You are now running it as a collection of microservices as various types in a [Microservices Architecture](Microservice-Architecture.md). As you have deployed continuous deployment pipelines, you are constantly upgrading your application which always introduces the risk of introducing little bugs. As argued in [CI-CD Pipeline](../Cloud-Native-DevOps/CD-Pipeline.md), this is good - issues with small, incremental releases are quickly uncovered and fixed. It does however present you with the problem of how to make clients of services that temporarily show issues handle these well. Apart from bugs, there are more reasons for hiccups in a microservices collective: small network outages, server restarts, etc.
 
