@@ -17,11 +17,11 @@ CQRS separates the "command" operations, used to update application state (also 
 
 One of the key aspects of CQRS is that when it is used for modernization purposes that it requires ta [Data Replication](Data-Replication.md) approach in order to keep the Read Model and the Write Model in synchronization.  Let's imagine that we have set up the following approach by combining existing patterns.  We have created a new Read Model that is a projection of a data set in an existing application by creating a brand new [Business Microservice](../Microservices/Business-Microservice.md). We have also created a new Write Model that is an [Adapter Microservice](../Microservices/Adapter-Microservice.md) that translates from the new API to the existing API of the old application. This will require us to set up some type of Data Replication between the two in order to have the projection of the existing data keep up with changes to the Write Model.
 
-![CQRSDataReplication](../assets/CQRSDataReplication.md)
+![CQRSDataReplication](../assets/CQRSDataReplication.png)
 
 The most common way of setting up this Data Replication in this case would be by introducing an [EventBackbone](../Event-Driven-Architecture/Event-Backbone.md) between the existing application and the microservice that is serving as the Read Model.  In this way, the new Read Model can subscribe to changes made to the existing system, and update its data accordingly. 
 
-![CQRSEventBackbone](../assets/CQRSEventBackbone.md)
+![CQRSEventBackbone](../assets/CQRSEventBackbone.png)
 
 The update events can be created directly in the existing application (if you have the ability to modify the existing application) or if you do not, you can use a technology like Change Data Capture to record changes to the application's underlying database.  What's more, you can even take this farther.  By introducing [Event Sourcing](../Event-Driven-Architecture/Event-Sourcing.md) you don't even necessarily need a database for your Read Model that represents the point-in-time representation of the Read Model.  Instead, we can simply recreate the current state by reading the event sequence either stored directly on the EventBackbone](../Event-Driven-Architecture/Event-Backbone.md) or in a longer-term archival event database.  
 
