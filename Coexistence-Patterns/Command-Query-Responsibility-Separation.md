@@ -1,7 +1,7 @@
 # Command Query Responsibility Separation
 
 
-You are building an application that is following a Microservices architecture.  The team is not operating in a complete greenfield - there are existing sources of functionality or data that must be reused in order to complete the application on time and within budget.  In particular, you cannot transition all at once to a Scaleable Store because critical data is stored in a large, monolithic database.
+You are building an application that is following a [Microservices architecture](../Microservices/Microservices-Architecture.md).  The team is not operating in a complete greenfield - there are existing sources of functionality or data that must be reused in order to complete the application on time and within budget.  In particular, you cannot transition all at once to a Scaleable Store because critical data is stored in a large, monolithic database.
 
 **How do you deal with the fact that you can't usually transition all at once between existing monolithic data stores and the database-per-microservice approach?**
 
