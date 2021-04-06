@@ -19,7 +19,7 @@ One of the key aspects of CQRS is that when it is used for modernization purpose
 
 ![CQRSDataReplication](../assets/CQRSDataReplication.png)
 
-The most common way of setting up this Data Replication in this case would be by introducing an [EventBackbone](../Event-Driven-Architecture/Event-Backbone.md) between the existing application and the microservice that is serving as the Read Model.  In this way, the new Read Model can subscribe to changes made to the existing system, and update its data accordingly. 
+The most common way of setting up this Data Replication in this case would be by introducing an [Event Backbone](../Event-Based-Architecture/Event-Backbone.md) between the existing application and the microservice that is serving as the Read Model.  In this way, the new Read Model can subscribe to changes made to the existing system, and update its data accordingly. 
 
 ![CQRSEventBackbone](../assets/CQRSEventBackbone.png)
 
