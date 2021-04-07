@@ -22,6 +22,6 @@ The simplest version of this pattern (with capture through adapter-based Write M
 
 ![Simple Playback Testing](../assets/PlaybackTestingSimple.png)
 
-Note that the goal is to complete the Playback Testing successfully so that the existing System can be completely eliminated and replaced with the new (refactored) Write Model as shown below.
+Note that the goal is to complete the Playback Testing successfully so that the existing System can be completely eliminated and replaced with the new (refactored) Write Model as shown below. 
 
 ![Refactored CQRS Model](../assets/RefactoredCQRSModel.png)
