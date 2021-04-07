@@ -2,7 +2,7 @@
 
 You are modernizing an existing application and are applying the [Command Query Responsibility Separation](Command-Query-Responsibility-Separation.md) pattern and employing [Event Sourcing](../Event-Based-Architecture/Event-Sourcing.md).  You are doing this over a period of time, using the [Strangler Application](../Microservices/Strangler-Application.md) pattern in such a way that there is always a period of coexistence between the old system and the new (refactored) system.  Likewise, you are changing underlying data structures and/or switching to new [Scalable Stores](../Scaleable-Store/Scaleable-Store.md) as part of your refactoring effort. 
 
-**How do you ensure that the new microservices maintain the same functionality as the old system, especially when the amount of detailed end-to-end application knowledge of the existing application may be limited?  
+**How do you ensure that the new microservices maintain the same functionality as the old system, especially when the amount of detailed end-to-end application knowledge of the existing application may be limited?**  
 
 The Strangler pattern always features a period of co-existence between the new and old systems, but one of the unexpected difficulties of this co-existence period occurs just prior to a new microservice going live.  One of the basic principles of refactoring (first described in Fowler's book) is that before you begin any refactoring effort, an essential precondition is that you have a solid set of tests of the existing system that you can also run against the new system.  However, when refactoring legacy systems, you cannot assume that this solid set of tests covering all potential code paths exists.
 
@@ -10,7 +10,7 @@ Adequate test coverage cannot be assumed for systems that were not built with de
 
 What is needed is a mechanism for ensuring that the behavior of the new system can be reasonably determined to be "the same" as the old system when a portion of the old system is re-implemented in the new system.  Therefore,
 
-**Capture live transactions from existing calls over a period of time from the old system as Events.  Transform those Events as necessary to match the API of the new system, and then play them back as Events on the new system to ensure that the behavior of the old and new systems match. **
+**Capture live transactions from existing calls over a period of time from the old system as Events.  Transform those Events as necessary to match the API of the new system, and then play them back as Events on the new system to ensure that the behavior of the old and new systems match.**
 
 There are three issues in implementing an approach like this.  The first is capturing the events.  If you are following a CQRS approach using Event Sourcing, then one possibility is to capture a set of existing calls to the Write Model, especially if the Write Model is just serving initially as an [Adapter Microservice](../Microservices/Adapter-Microservice.md) to the existing system.  The calls can be wrapped up as Events and then added to the [Event Backbone](../Event-Based-Architecture/Event-Backbone.md) in this case.  If there are still calls going to the underlying existing system that do NOT go through the Write Model, then this becomes a little more complicated, as you may need to construct your Events from log messages or other data capture mechanisms.
 
