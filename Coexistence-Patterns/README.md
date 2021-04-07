@@ -7,3 +7,6 @@ This set of patterns deals with the problem of how to deal with the realities of
 * [Playback Testing](Playback-Testing.md) is an approach that helps you with determining that you can complete the strangulation process for a microservice
 * [Entity Comparator](Entity-Comparator.md) is needed in some cases to help you determine that Playback Testing is succeeding when the team has limited knowledge of the existing system being replaced.
 
+The relationships between these patterns and the patterns they rely on is shown below:
+
+![Coexistence Patterns](../assets/CoexistencePatterns.png)
