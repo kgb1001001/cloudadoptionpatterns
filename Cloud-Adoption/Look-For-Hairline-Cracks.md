@@ -1,6 +1,6 @@
 # Look For Hairline Cracks
 
-You are evaluating an existing application for cloud adoption.  You know you want to take some or all of the functionality of the application and re-architect it for microservices in order to improve the maintainance of the application and to reduce the blast radius of new changes to the application.
+You are evaluating an existing application for cloud adoption.  You know you want to take some or all of the functionality of the application and re-architect it for microservices in order to improve the maintenance of the application and to reduce the blast radius of new changes to the application.
 
 But how do we migrate a monolith into a collection of services? It's not easy to understand all at once how a monolithic application can be broken apart into microservices. 
 
