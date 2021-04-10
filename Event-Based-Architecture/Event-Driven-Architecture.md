@@ -43,4 +43,4 @@ You see the interaction of these components in the diagram below:
 
 ![Event Architecture](../assets/EventArchitecture.png)
 
-An Event-Driven Architecture extends loose coupling to event coupling in which because the targets are optional; the source announces the occurrence the same whether the announcement goes to no, one, or multiple targets. It enables each target to receive the notification and decide how to react, if at all, such as which service to invoke.
+An Event-Driven Architecture extends loose coupling to event coupling in which because the targets are optional; the source announces the occurrence the same way whether the announcement goes to no, one, or multiple targets. It enables each target to receive the notification and decide how to react, if at all, such as which service to invoke.
