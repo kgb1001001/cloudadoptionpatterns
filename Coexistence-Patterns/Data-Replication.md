@@ -1,6 +1,6 @@
 # Data Replication
 
-You are following a [Cloud Refactoring](../Cloud-Adoption/Cloud-Refactoring.md) strategy using the [Strangler Application](../Cloud-Adoption/Strangle-App.md) and you find the need to slowly refactor a database over time so that each [Business Microservice](../Microservices/Business-Microservice.md) can in the end own its own data.  However, since this process may take months or even years, you will find yourself in the situation where you have different clients that are querying and updating the data in the original, monolithic database, and also the data in the individual distributed databases for each microservice.
+You are following a [Cloud Refactoring](../Cloud-Adoption/Cloud-Refactoring.md) strategy using the [Strangler Application](../Cloud-Adoption/Strangler-App.md) and you find the need to slowly refactor a database over time so that each [Business Microservice](../Microservices/Business-Microservice.md) can in the end own its own data.  However, since this process may take months or even years, you will find yourself in the situation where you have different clients that are querying and updating the data in the original, monolithic database, and also the data in the individual distributed databases for each microservice.
 
 **How do you keep the data synchronized between the two different sets of databases?**
 
