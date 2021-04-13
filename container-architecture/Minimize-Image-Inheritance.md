@@ -1,6 +1,6 @@
 # Minimize Image Inheritance
 
-You are practicing Container DevOps and building many container images.
+You are practicing Container DevOps and building many container images using a [Docker Build Pipeline](Docker-Build-Pipeline.md).
 
 **How do you take best advantage of the features of the Dockerfile yet not end up with enormous images?**
 
