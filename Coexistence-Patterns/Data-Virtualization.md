@@ -1,6 +1,6 @@
 # Data Virtualization
 
-You are building a [Microservices Architecture](../Microservices/Microservice-Architecture.md) and you are refactoring applications to Microservices using an approach like the [Strangler Application](../Cloud-Adoption/Strangler-App.md) to pull out microservices a few at a time on a domain by domain basis.  You are in a situation where it is easier to refactor the business logic first before you refactor the data, but you need to be able to plan out a path for refactoring the data.
+You are building a [Microservices Architecture](../Microservices/Microservices-Architecture.md) and you are refactoring applications to Microservices using an approach like the [Strangler Application](../Cloud-Adoption/Strangler-App.md) to pull out microservices a few at a time on a domain by domain basis.  You are in a situation where it is easier to refactor the business logic first before you refactor the data, but you need to be able to plan out a path for refactoring the data.
 
 **How do you allow your microservices code to act as if each owns its own data while in the transition period before the data is fully refactored?**
 
