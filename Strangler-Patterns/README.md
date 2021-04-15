@@ -1,4 +1,4 @@
-#Strangler Patterns Introduction
+# Strangler Patterns Introduction
 
 (NOTE THIS IS DIRECTLY OUT OF THE PAPER AND SHOULD BE EDITED!!!
 
