@@ -1,6 +1,6 @@
 # Strangler Patterns Introduction
 
-(NOTE THIS IS DIRECTLY OUT OF THE PAPER AND SHOULD BE EDITED!!!
+(NOTE: A LOT OF THIS IS DIRECTLY OUT OF THE PAPER AND SHOULD BE EDITED!!!
 
 Over time even a great design can be compromised by successive architectural revisions, especially as technical debt grows. In 1998 the claim was made that the architecture that actually predominates in practice is the Big Ball of Mud [1]. Big Ball of Mud (BBoM) architectures are still seen today. They are the culmination of many design decisions that gradually result in a system that can be difficult to change and maintain. However, BBoMs usually do not result from well-intentioned design ideas gone wrong. Nor are they simply an accretion of expedient implementation hacks. Rather, they can be a mix of doing what it takes to meet business requirements along with obliviousness to technical debt growth and no time given to address these needs.
 
