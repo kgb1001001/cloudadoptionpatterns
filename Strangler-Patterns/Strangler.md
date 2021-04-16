@@ -22,8 +22,6 @@ You have a useful legacy system that is a monolith. There is the need to develop
 
 Extracting logic out of the monolith into microservices may create a situation where the same logic needs to be accessed by both old and new client components. Existing clients need to access the logic the old way, and new clients will access the logic the new way, using current protocols and API standards. A general approach is to create a proxy or façade for old external systems or client components (see Figure 3). This façade sits between the client components and the logic that exists in the monolith which is being moved to microservices. 
 
-<p align="center"><img src="../assets/StranglerFacadeOverview.png" width="905";/><br>
+<p align="center"><img src="../assets/StranglerFacadeOverview.png" width="90%";/><br>
 #insert FIG here...Figure 3—Strangler Evolution</p>
 
-
-![Strangling Evolution](../assets/StranglerFacadeOverview.png "Strangling Evolution")
