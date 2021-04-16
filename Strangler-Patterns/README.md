@@ -32,4 +32,4 @@ One of the first decisions to make is whether to completely rewrite the monolith
 * [Extract Component and Add Façade](Extract-Component-and-Add-Façade.md) Refactor and move components out of the monolith, implementing them as microservices. Use a Façade to deletgate to the new contract or use a different type of connector and message format. 
 * [Proxy Monolith Components to Microservices](Proxy-Monolith-Components-to-Microservices.md) A design solution is needed to address the discrepancy between old client components, inside or outside the monolith, and the new microservice. This patterns provides a proxy from any existing monolith components to either extracted or new created microservices needed by the monolith.
 
-
+Note these patterns were first introduced in a PLoP 2020 paper by [Joseph Yoder](../Joseph-Yoder-bio.md) and Paulo Merson
