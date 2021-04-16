@@ -25,3 +25,7 @@ Extracting logic out of the monolith into microservices may create a situation w
 <p align="center"><img src="../assets/StranglerFacadeOverview.png" width="90%";/><br>
 #insert FIG here...Figure 3—Strangler Evolution</p>
 
+Initially, this façade doesn’t do anything but pass all traffic, unmodified, between old client components and the legacy application (monolith). This approach is a way to Wrap the Monolith to protect old clients from change. As microservices replace monolith components, this façade transcodes protocols from old clients into the protocols, technologies, and contracts used by the new system being created. Note this could be a two-way façade as there could be communication coming back from the monolith to the old client components.
+
+Eventually the legacy monolith becomes strangled and can be removed. This evolution is notionally represented in Figure 3. Note that even when the strangling is complete, there could be some old client components that might not be updated thus still needing the façade.
+
