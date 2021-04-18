@@ -19,7 +19,7 @@ The relationships between this set of patterns are shown in the diagram below.
 
 Likewise there are also considerations on how you conceive the overall deployment architecture of your system that impact the overall operational profile of your system.
 
-+ [Automate VM Deployment](Automate-Deployment.md) is fundamentally required in order to make sure that you have a consistent approach to seting up the PaaS or container environment that your microservices will run within.
++ [Automate VM Deployment](Automate-Deployment.md) is fundamentally required in order to make sure that you have a consistent approach to seting up the PaaS or container environment that your microservices will run within, in addition to any additional IaaS services that container environment may depend on.
 + [Three Data Centers](Three-Data-Centers.md) is the appropriate number of zones that you need to deploy a system across in order to reach the "sweet spot" of minimum cost and maximum reliability.
 + [One Region](One-Coast.md) is the minimum geographical distribution of datacenters for a redundant infrastructure.
 + [Overlay Network](Overlay-Network.md) is the best way to connect disparate datacenters together into a seamless cloud infrastructure.
