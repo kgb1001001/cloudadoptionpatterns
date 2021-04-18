@@ -1,6 +1,6 @@
 Page Cache
 ===
-You are building a web or mobile application using a Microservices Architecture](Microservices-Architecture.md). You are applying the [Backend for Frontends](Backends-For-Frontends.md) Pattern to build dispatchers for a web or mobile application.  Your microservice that represents a business entity or concept may return a great deal of information.
+You are building a web or mobile application using a [Microservices Architecture](Microservices-Architecture.md). You are applying the [Backend for Frontends](Backends-For-Frontends.md) Pattern to build dispatchers for a web or mobile application.  Your microservice that represents a business entity or concept may return a great deal of information.
 
 **How can you effectively manage large data sets returned from a microservice so that they can be easily displayed, particularly on a mobile application, without a great deal of scrolling?**
 
