@@ -4,7 +4,7 @@ You are building an application that is following a Microservices architecture. 
 
 **This existing functionality cannot be migrated to a microservice architecture. We need a way to be able to take advantage of this functionality without abandoning the microservices approach.**
 
-There are many different types of existing functionality that may requires you to reuse existing code.  It may be that there are specific enterprise data sources that can only be accessed through an existing API.  Or it may be that you want to take advantage of a cloud-based (SaaS) API from a clodu provider that provides some or most of the functionality that you would otherwise have to build.
+There are many different types of existing functionality that may requires you to reuse existing code.  It may be that there are specific enterprise data sources that can only be accessed through an existing API.  Or it may be that you want to take advantage of a cloud-based (SaaS) API from a cloud provider that provides some or most of the functionality that you would otherwise have to build.
 
 Therefore,
 
