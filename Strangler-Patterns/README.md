@@ -17,6 +17,10 @@ Typically a monolithic application is packaged as a single deployment file that 
 
 One of the first decisions to make is whether to completely rewrite the monolith or apply [Strangler](Strangler.md). Sometimes rewriting the monolith is the right approach. Sometimes the monolith needs to be reconceptualized and implemented from scratch (possibly using microservices). However, it is usually the case that the cost and duration of a complete rewrite make it infeasible.  Once you have decided to do an evolutionary application of the [Strangler](Strangler.md), there are many possible variations. 
 
+Below we show a pattern map of various “strangling” approaches and the relationships between the patterns. Monolith Application and Complete Rewrite to Microservices noted in italics are not considered part of the patterns in this language.
+
+<p align="center"><img src="../assets/StranglerPatterns.png" width="90%";/><br>
+
 * [Strangler](Strangler.md) If the monolith has become hard to maintain, is hindering new projects, and rewriting it is not a viable path, then it is time to apply [Strangler](Strangler.md) and gradually migrate the monolith. Once the decision has been made to apply Strangler, it is usually a good idea to decide whether you need to protect the system from change by Wrapping the Monolith
 * [Pave the Road](Pave-the-Road.md) If the team is facing their first microservice project, you need to make sure you have the infrastructure and the environment (both technical and organizational) to make it easier to implement microservices ([Pave the Road](Pave-the-Road.md)).
 * [Start Small](Start-Small.md) Starting Small—by having a team implement some new functionality—is a good way to learn about microservices principles.
@@ -25,9 +29,5 @@ One of the first decisions to make is whether to completely rewrite the monolith
 * [Replace as Microservices](Replace-as-Microservice.md) Freeze the functionality in the monolith and completely re-implementing the functionality with microservices.
 * [Extract Component and Add Façade](Extract-Component-and-Add-Façade.md) Refactor and move components out of the monolith, implementing them as microservices. Use a Façade to deletgate to the new contract or use a different type of connector and message format. 
 * [Proxy Monolith Components to Microservices](Proxy-Monolith-Components-to-Microservices.md) A design solution is needed to address the discrepancy between old client components, inside or outside the monolith, and the new microservice. This patterns provides a proxy from any existing monolith components to either extracted or new created microservices needed by the monolith.
-
-Below we show a pattern map of various “strangling” approaches and the relationships between the patterns. Monolith Application and Complete Rewrite to Microservices noted in italics are not considered part of the patterns in this language.
-
-<p align="center"><img src="../assets/StranglerPatterns.png" width="90%";/><br>
 
 Note these patterns were first introduced in a PLoP 2020 paper by [Joseph Yoder](../Joseph-Yoder-bio.md) and Paulo Merson
