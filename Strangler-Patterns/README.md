@@ -26,7 +26,7 @@ Below we show a pattern map of various “strangling” approaches and the relat
 * [Start Small](Start-Small.md) Starting Small—by having a team implement some new functionality—is a good way to learn about microservices principles.
 * [Microservices First Strategy](Microservices-First-Strategy.md) Once one or a few microservices have been successfully created, the team might redirect any new development efforts to add new features or functionality by implmenting it with microservices first if possible. 
 * [Macro then Micro](Macro-then-Micro.md) Sometimes you are not sure how big the microservice should be so you might start with a bigger service then refactor it to smaller services as you learn the domain and more about microservice design.
-* [Replace as Microservices](Replace-as-Microservice.md) Freeze the functionality in the monolith and completely re-implementing the functionality with microservices.
+* [Replace as Microservice](Replace-as-Microservice.md) Freeze the functionality in the monolith and completely re-implementing the functionality with microservices.
 * [Extract Component and Add Façade](Extract-Component-and-Add-Façade.md) Refactor and move components out of the monolith, implementing them as microservices. Use a Façade to deletgate to the new contract or use a different type of connector and message format. 
 * [Proxy Monolith Components to Microservices](Proxy-Monolith-Components-to-Microservices.md) A design solution is needed to address the discrepancy between old client components, inside or outside the monolith, and the new microservice. This patterns provides a proxy from any existing monolith components to either extracted or new created microservices needed by the monolith.
 
