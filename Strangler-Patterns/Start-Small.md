@@ -24,7 +24,7 @@ Note that evolving to microservices requires a minimum level of operational read
 
 <p align="center">* * *</p>
 
-This pattern is closely related to Pave the Road, which can add organizational and technology elements that encourage and enable the successful initial steps prescribed by Start Small. Adding these elements doesn’t happen at once. More likely, the organization will run a pilot microservice project that will drive the adoption of tools, technologies, and practices. This pattern is similar to Baby Steps in Fearless Change [6].
+This pattern is closely related to Pave the Road, which can add organizational and technology elements that encourage and enable the successful initial steps prescribed by Start Small. Adding these elements doesn’t happen at once. More likely, the organization will run a pilot microservice project that will drive the adoption of tools, technologies, and practices. This pattern is similar to Baby Steps in [Fearless Change](https://www.amazon.com/Fearless-Change-Patterns-Introducing-paperback/dp/0134395255).
 
 The Start Small pattern sometimes uses the Macro then Micro approach where you extract some components from the system into services and if needed Proxy Monolith Components to Microservices. It might be a small simple step to extract something larger from the monolith and as you learn. You then later further refactor them into smaller microservices. Once you have been successful Starting Small, the organization can begin to use the Microservices First strategy, avoiding adding anything to the monolith.
 
