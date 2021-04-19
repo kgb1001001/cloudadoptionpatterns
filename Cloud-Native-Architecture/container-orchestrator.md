@@ -17,11 +17,12 @@ An installation of a container orchestrator is called a cluster. A cluster feder
 ![Container Orchestration Cluster Structure](../assets/container-orchestrator.png)
 
 This cluster architecture consists of these components:
-- **Manager**: The brains of the cluster, it manages the nodes and the containers running in the nodes. It runs five services that do much of the work:
+- **Manager**: The brains of the cluster, it manages the nodes and the containers running in the nodes. It runs six services that do much of the work:
+  - **Management API**: Enables clients to direct the manager, such as to deploy an application
   - **Cluster management**: Adding and removing nodes, maintaining their configuration, and monitoring nodes
   - **Replication**: Decides when new containers need to be started and when ones not needed anymore should be stopped
   - **Scheduling**: Decides which node to start a new container on, striving to distribute replicas across the nodes and load balance the nodes
-  - **Health management**: Replaces unhealthy containers
+  - **Health management**: Detects and replaces unhealthy containers
   - **Service discovery**: Centralized lookup for services and the network addresses for the containers that provide the service
 - **Image registry**: The database of container images that can be started on the nodes
 - **Discovery DB**: Records the state of the cluster, such as which contianers are running on which nodes
@@ -49,7 +50,7 @@ The container orchestrator likewise distributes responibilities for handling cli
 1. Service discovery derives state from the discovery DB as a catalog of services mapped to service providers
 2. Service discovery routes each client request to a container that implements the service in one of the nodes
 
-Interestingly, the container orchestrator architecture that originated with Cloud Foundry in 2011 is quite similar to that of a WebSphere Application Server cell from 2002, where application servers run Java workloads instead of containers:
+Interestingly, the container orchestrator architecture that originated with Cloud Foundry in 2011 and Kubernetes perfected in 2015 is quite similar to that of a WebSphere Application Server cell from 2002, where application servers run Java workloads instead of containers:
 - **Deployment manager**: Centralized management of the cell
 - **Nodes**: Server computers that scale horizontally
   - **Node agent**: Manages the node
