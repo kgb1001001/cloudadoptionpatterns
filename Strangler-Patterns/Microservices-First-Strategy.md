@@ -23,7 +23,7 @@ The main objective is to avoid or contain the growth of the monolith. Sometimes 
 
 On the other hand it is usually the case that many teams and developers are more comfortable with changing the monolith and will be tempted to take the more expeditious way to add the new feature by relying on what they have always done in the past. In these cases organizations might want to take the approach of adding “speed bumps” such as using a governance committee. This committee permits new code to be added using microservices, but if you want to change the monolith, you need to convince the committee why the change should be done this way. Figure 5 illustrates this situation. 
 
-<p align="center"><img src="../assets/MicroservicesFirstStrategy.png" width="90%";/><br>
+<p align="center"><img src="../assets/MicroservicesFirstStrategy.png" width="60%";/><br>
 #insert FIG here...Figure 5—Microservices First Strategy</p>
 
 <p align="center">* * *</p>
