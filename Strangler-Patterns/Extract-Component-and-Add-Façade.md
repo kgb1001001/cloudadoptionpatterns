@@ -26,7 +26,7 @@ Figure 8 illustrates the application of this pattern to component X. The compone
 
 In addition to protocol bridging and message transformations, the façade component, which acts as a reverse proxy, can perform several operations, such as security controls, dynamic message routing, traffic monitoring, circuit breaker, and even caching. Figure 8 also shows that a new client application may also call microservice X' directly, if the extra features of the façade just mentioned are not required for this interaction. 
 
-<p align="center"><img src="../assets/ExtractComponentAndAddFacade.png" width="90%";/><br>
+<p align="center"><img src="../assets/ExtractComponentAndAddFacade.png" width="60%";/><br>
 #insert FIG here...Figure 8—Extract Component and Add Façade</p>
 
 Note that in this example, X is decoupled from the rest of the monolith. Usually some detangling is needed to extract the component. If components inside the monolith were clients to X, then you can either adapt those clients to have them calling the new microservice X' through the intercepting façade, or if possible adapt them to directly call X'. Alternatively you could Proxy Monolith Components to Microservices, making X be a proxy to X'. 
