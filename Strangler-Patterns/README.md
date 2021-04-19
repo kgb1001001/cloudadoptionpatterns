@@ -29,7 +29,7 @@ One of the first decisions to make is whether to completely rewrite the monolith
 * [Extract Component and Add Façade](Extract-Component-and-Add-Façade.md) Refactor and move components out of the monolith, implementing them as microservices. Use a Façade to deletgate to the new contract or use a different type of connector and message format. 
 * [Proxy Monolith Components to Microservices](Proxy-Monolith-Components-to-Microservices.md) A design solution is needed to address the discrepancy between old client components, inside or outside the monolith, and the new microservice. This patterns provides a proxy from any existing monolith components to either extracted or new created microservices needed by the monolith.
 
-Below we show a pattern map of various “strangling” approaches and the relationships between the patterns. Monolith Application and Complete Rewrite to Microservices noted in italics are not considered part of the patterns presented in this paper.
+Below we show a pattern map of various “strangling” approaches and the relationships between the patterns. Monolith Application and Complete Rewrite to Microservices noted in italics are not considered part of the patterns in this language.
 
 <p align="center"><img src="../assets/StranglerPatterns.png" width="90%";/><br>
 
