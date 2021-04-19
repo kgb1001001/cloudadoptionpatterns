@@ -21,8 +21,8 @@ Therefore,
 
 This strategy is more challenging when trying to extract pieces out of a monolith. A monolith usually has larger pieces or components that are tightly coupled and harder to extract as smaller pieces without a lot of refactoring. In these cases pulling out a larger piece can make the effort to refactor easier. An example can be seen in Figure 6. In this example the “Buy Service” is first extracted out of the monolith. This service is a first step toward microservices, but it can be a larger service especially if it has some couplings which make it difficult to extract into smaller pieces. Once this intermediary solution is stable, we can more easily separate the “Buy Service” into two separate functions such as “Shopping Cart” and “Checkout” services seen in the example. Once the service is extracted out, new clients can begin to access and use the functionality of the new microservices.
 
-<p align="center"><img src="../assets/MacroThenMicro.png" width="80%";/><br>
-#insert FIG here...Figure 3—Macro then Micro Evolution</p>
+<p align="center"><img src="../assets/MacroThenMicro.png" width="60%";/><br>
+#insert FIG here...Figure 6—Macro then Micro Evolution</p>
 
 <p align="center">* * *</p>
 
