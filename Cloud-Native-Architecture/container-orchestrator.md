@@ -57,7 +57,7 @@ Interestingly, the container orchestrator architecture that originated with Clou
   - **Application server**: The Java JVM/JRE with J2EE extensions
 
 Examples of container orchestrators include:
-- [**Kubernetes**](https://kubernetes.io/) (2015): The most widely used container orchestrator today. The project is managed by the Cloud Native Computing Foundation (CNCF).
+- [**Kubernetes**](https://kubernetes.io/) (2015): The most widely used container orchestrator today. The project is managed by the [Cloud Native Computing Foundation](https://www.cncf.io/) (CNCF).
 - [**Cloud Foundry**](https://docs.pivotal.io/pivotalcf/2-6/concepts/overview.html) (2011): Predecessor to Kubernetes, managed by Pivotal Software as part of the Cloud Foundry Foundation.
 - [**Swarm**](https://docs.docker.com/engine/swarm/) (2015): A mode for managing multiple Docker Engines, managed by Docker, Inc.
 - [**Mesos**](http://mesos.apache.org/) (2016) and [**Marathon**](https://mesosphere.github.io/marathon/) (2016): Server federation and container orchestration, managed by Apache and  Mesosphere respectively.
