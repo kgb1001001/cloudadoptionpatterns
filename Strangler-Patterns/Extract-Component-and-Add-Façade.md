@@ -1,7 +1,7 @@
 # Extract Component and Add Façade 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Extract Service and Add Façade)
 
-You have Started Small, Paved the Road, and began using microservices as part of your implementation. You have a monolith that has been providing value to your organization, but has become hard to change. There is some functionality you want available as a microservice New client applications need to use functionality in the monolith but require a different contract. 
+You have [Started Small](Start-Small.md), [Paved the Road](Pave-the-Road.md), and began using microservices as part of your implementation. You have a monolith that has been providing value to your organization, but has become hard to change. There is some functionality you want available as a microservice New client applications need to use functionality in the monolith but require a different contract. 
 
 **How can we make monolith functionality available as microservices without affecting existing client applications that access the monolith?**
 
@@ -22,9 +22,9 @@ Components are gradually extracted from the monolith and redesigned as microserv
 *They can be rewritten to call the microservices. This option takes time to be rewritten and may not be achievable before these components become microservices. 
 *They can remain unchanged and have their calls go through a routing interceptor—the façade component. The façade component performs the protocol bridging and message transformations for the existing client components to interact with the new microservices.
 
-Figure 8 illustrates the application of this pattern to component X. The component is extracted and becomes microservice X'. An API Gateway or similar application integration product is a good candidate for the implementation of the façade element. Another option is to use the Backend for Frontend (BFF) pattern [2] to implement the façade logic. This approach is similar to the Wiping Your Feet at the Door pattern [10] and can be considered a type of an anti-corruption layer [11]. Note that façades are related to adapters, decorators, mediators, and proxies [13]. 
+Figure 8 illustrates the application of this pattern to component X. The component is extracted and becomes microservice X'. An API Gateway or similar application integration product is a good candidate for the implementation of the façade element. Another option is to use the [Backend for Frontend (BFF)](../Microservices/Backend-for-Frontend.md) pattern to implement the façade logic. This approach is similar to the Wiping Your Feet at the Door pattern [10] and can be considered a type of an anti-corruption layer [11]. Note that façades are related to adapters, decorators, mediators, and proxies [13]. 
 
-In addition to protocol bridging and message transformations, the façade component, which acts as a reverse proxy, can perform several operations, such as security controls, dynamic message routing, traffic monitoring, circuit breaker, and even caching. Figure 8 also shows that a new client application may also call microservice X' directly, if the extra features of the façade just mentioned are not required for this interaction. 
+In addition to protocol bridging and message transformations, the façade component, which acts as a reverse proxy, can perform several operations, such as security controls, dynamic message routing, traffic monitoring, circuit breaker, and even caching. The figure below also shows that a new client application may also call microservice X' directly, if the extra features of the façade just mentioned are not required for this interaction. 
 
 <p align="center"><img src="../assets/ExtractComponentAndAddFacade.png" width="50%";/><br>
 #insert FIG here...Figure 8—Extract Component and Add Façade</p>
@@ -33,5 +33,6 @@ Note that in this example, X is decoupled from the rest of the monolith. Usually
 
   <p align="center">* * *</p>
   
-  Whether you are Starting Small or not, you can Extract Component and Add Façade whenever desired functionality in the monolith can benefit from being moved to a microservice. Sometimes while doing this you may need to apply Macro then Micro. Some components can be extracted to microservices even if you need to rewrite some functionality (Replace as Microservice). Either way, for any functionality in the monolith that needs access to the extracted behavior, you can Proxy Monolith Components to Microservices.
+  Whether you are Starting Small or not, you can Extract Component and Add Façade whenever desired functionality in the monolith can benefit from being moved to a microservice. Sometimes while doing this you may need to apply [Macro then Micro](Macro-to-Micro.md). Some components can be extracted to microservices even if you need to rewrite some functionality (Replace as Microservice). Either way, for any functionality in the monolith that needs access to the extracted behavior, you can [Proxy Monolith Components to Microservices](Proxy-Monolith-Component-to-Microservice.md).
+
 The façade component has the benefit of enabling existing clients to seamlessly interact with the newly created microservice. However, there are trade-offs to consider. The façade is an intermediary that introduces a performance overhead. If not properly designed and monitored, it may become a performance bottleneck and a single point of failure. Besides, its implementation may use platform-specific technology that generates coupling to a given framework or platform. 
