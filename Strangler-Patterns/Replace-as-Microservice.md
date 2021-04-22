@@ -31,7 +31,7 @@ The following outlines the steps for the Replace as Microservice approach.
 
 Sometimes the part of the system you want to extract is tightly coupled and hard to extract. In these cases, you lock down (freeze) code changes to this functionality in the monolith. If any components need access to the new features in X', then they can either directly call X' or you can Proxy Monolith Components to the Microservice from X to X'. If Y is a larger component, you can apply the Macro then Micro approach.
 
-If on the other hand, you can refactor part of the system into components or modules, removing some dependencies, then you can use the two patterns discussed next, Extract Component and Add Façade and Proxy Monolith Components to Microservices.
+If on the other hand, you can refactor part of the system into components or modules, removing some dependencies, then you can use the two patterns discussed next, [Extract Component and Add Façade](Extract-Component-and-Add-Façade.md) and Proxy Monolith Components to Microservices.
 
 Replacing functionality with microservice provides flexibility and the benefits of being able to use new technologies, frameworks, and platforms. Also, teams can experiment with new ideas with less risk of breaking the monolith. On the other hand, the organization loses the benefit of adding features in the monolith for that frozen piece of code. Also it can be complex for pieces in the monolith to take advantage of the new features implemented in microservices. Finally, there could be data-syncing issues between the data store in monolith and data stored in the new microservices; specifically in the data used in the frozen code. 
 
