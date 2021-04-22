@@ -10,6 +10,7 @@ This set of patterns is intended for use by Architects, Lead Developers or Senio
 + [Cloud Client Architecture](Cloud-Client-Architecture/README.md) is a good place to go next.  It starts at the top of the application tree - with a discussion of current client-side application patterns that facilitate cloud-native development.
 + [Cloud Native Architecture](Cloud-Native-Architecture/README.md) is the logical continuation of the story. It begins to explore the process patterns for identifying microservices and events.
 + [Microservices](Microservices/README.md) then brings in the set of patterns for implementing the microservices found by following the process patterns in the previous section
++ [Strangler Patterns](Strangler-Patterns/README.md) are important in making the transition from a traditional monolithic architecture to Microservices.
 + [Event Based Architecture](Event-Based-Architecture/README.md) is the core set of patterns for building microservices that are oriented around event processing.
 + [Coexistence patterns](Coexistence-Patterns/README.md) provide guidance for teams implementing Microservices and Event Based Architectures when there is the need to coexist with an existing system for an extended period of time.
 + [Scalable Store](Scalable-Store/README.md) contains the patterns for identifying the right persistence architecture and persistence mechanism for a particular microservice implementation.
