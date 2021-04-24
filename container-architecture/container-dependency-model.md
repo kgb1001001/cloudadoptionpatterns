@@ -16,17 +16,17 @@ You need to develop a container dependency model.   For each container image you
 
 Therefore,
 
-Build a container dependency model as a visualization of the dependencies.  A container dependency model will allow you to see:
+**Build a container dependency model as a visualization of the dependencies.**
+
+A container dependency model will allow you to see:
 
 * Every image in your estate
 * The version of the image
 * The registry that the image resides in \(and whether it's public or private\)
 * All images the image is dependent on
 
-The following diagram shows an example container dependency model.
-
+The following diagram shows an example visualization of a container dependency model.
 
 ![](/assets/container_dependency_model.png)
-
 
 While diagrams like this can be drawn by hand, it is best if they are provided by a tool as part of your architecture documentation.  One such open source tool is [DockViz](https://hub.docker.com/r/nate/dockviz/).  You can also see other dependencies between images by using tools like [WeaveView](https://learnk8s.io/visualise-dependencies-kubernetes).

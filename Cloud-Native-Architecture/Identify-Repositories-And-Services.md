@@ -12,6 +12,6 @@ Therefore,
 
 Here's the issue: Aggregates and non-aggregate Entities must be discovered through a search based on attributes. When you provide a search mechanism, you want to hide the details of the technical database infrastructure that implements search. The Repository is the thing that "maintains the illusion" that all objects are in-memory and instantly searchable while it hides the messiness of the database implementation behind it.
 
-So a Repository becomes its own unique API (and possibly its own microservice, but not necessarily) that shoudl be separated from the individual Entity or Aggregate API.
+So a Repository becomes its own unique API (and possibly its own microservice, but not necessarily) that should be separated from the individual Entity or Aggregate API.
 
 

@@ -12,7 +12,7 @@ Therefore,
 
 **Start your microservices design by identifying the Entities and Aggregates in your domain.** 
 
-An *Entity* is an object that is distinguished by its identity. Entities have unique identifiers. Entities also have attributes that might change, but the identifier for the person stays the same. An example of an entity is a person. A person has an unchanging identifier, such as a Social Security Number in the United States. That same person has a given name, a surname, an address, and a phone number. Any of the attributes can change, but the person doesn't change.
+An *Entity* is an object that is distinguished by its identity. Entities have unique identifiers. Entities also have attributes that might change, but the identifier for the entity stays the same. An example of an entity is a person. A person has an unchanging identifier, such as a Social Security Number in the United States. That same person has a given name, a surname, an address, and a phone number. Any of the attributes can change, but the person doesn't change.
 
 Evans notes that entity objects must have a well-defined lifecycle and a good definition of what the identity relationship is—what it means to be the same thing as another thing.
 

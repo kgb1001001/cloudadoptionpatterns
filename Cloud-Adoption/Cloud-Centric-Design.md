@@ -16,7 +16,7 @@ Some of the important considerations that you will want to consider when embraci
 
 * Building with Fine-grained components that give you the ability to test more easily than large monolithic components.
 * Employing decoupling measures such as REST API's or Event-driven approaches to keep boundaries between components clean.
-* Minimizing the use of state (it is impossible to entirely eliminate state, but you should ony keep the state that is absolutely required).
+* Minimizing the use of state (it is impossible to entirely eliminate state, but you should only keep the state that is absolutely required).
 * Following a zero-trust model to minimize privileges for security.
 * Practicing Immutable deployment models to remove runtime changes and eliminate runtime administration. 
 
@@ -24,6 +24,6 @@ As a result of addressing these considerations, a Cloud-Centric Design would emb
 
 * It would be based on the [Microservices Architecture](../Microservices/Microservices-Architecture.md) in order to minimize the Blast Radius of any code changes.
 * It might take advantage of [Polyglot Programming](../Microservices/Polyglot-Development.md) in order to make sure that the right languages and development tools are chosen for each part of the job. 
-* It would take advantage of [Scaleable Stores](../Scalable-Store/Scalable-Store.md) that allow development teams to match the data stroage technology to the type of data that being stored and to the data storage and retrieval patterns that are most prevalent for that application
+* It would take advantage of [Scaleable Stores](../Scalable-Store/Scalable-Store.md) that allow development teams to match the data storage technology to the type of data that being stored and to the data storage and retrieval patterns that are most prevalent for that application
 * It can take advantage of [Cloud DevOps](../Cloud-Native-DevOps/README.md).
 

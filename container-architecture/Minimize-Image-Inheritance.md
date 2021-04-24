@@ -1,10 +1,10 @@
 # Minimize Image Inheritance
 
-You are practicing Container DevOps and building many Docker images.
+You are practicing Container DevOps and building many container images using a [Container Build Pipeline](docker-build-pipeline.md).
 
 **How do you take best advantage of the features of the Dockerfile yet not end up with enormous images?**
 
-Docker containers derive a part of their power because of the layered approach of a container image. You can build from existing container images and thus leverage the work done by others. Very often, such images have three large layers:
+Containers derive a part of their power because of the layered approach of a container image. You can build from existing container images and thus leverage the work done by others. Very often, such images have three large layers:
 
 1. The base operating system image, for example a standard (vendor-built) Linux distribution image for Ubuntu, RedHat, or Fedora; 
 2. The application runtime environment, for example a Java virtual machine;
@@ -25,6 +25,6 @@ However, there are drawbacks around this as well; a lot of the drawbacks are sim
 
 Therefore,
 
-**Share layers between Docker images but don't go overboard with very deep hierarchies; staying with around three layers - an OS base layer, a runtime layer, and an application layer are often enough.**
+**Share layers between container images but don't go overboard with very deep hierarchies; staying with around three layers - an OS base layer, a runtime layer, and an application layer are often enough.**
 
 Have a system in place that can find and automatically regenerate base layers. For security, keep track of what applications are using what base layers (either through tooling in your Docker registry or by scanning your version control system). Clearly and extensively tag base layers so it is clear what they contain (for example: 'ubuntu-java:14.04-1.8u123' for an image that a java application can use).
