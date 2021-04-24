@@ -1,4 +1,4 @@
-theme: jekyll-theme-architect
+remote_theme: pmarsceill/just-the-docs
 title: Cloud Adoption Patterns
 description: A set of Patterns for Developers and Architects building for the cloud
 show_downloads: false
