@@ -1,3 +1,7 @@
+---
+title: Identify Domain Events
+parent: Cloud Native Architecture
+---
 # Identify Domain Events
 
 You are starting on a Cloud-Native design and have already begun the process of Domain Driven Design.  You have identified some candidate Entities, Aggregates, and Potential Services.

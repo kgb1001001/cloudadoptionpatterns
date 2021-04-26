@@ -1,3 +1,7 @@
+---
+title: Cloud Refactoring
+parent: Cloud Adoption
+---
 # Cloud Refactoring
 
 You want to migrate an existing application onto the cloud.  You have a little bit of leeway on how many changes you can make to the application and its configuration but you are under time and budget constraints.

@@ -1,3 +1,7 @@
+---
+title: Identify Entities and Aggregates
+parent: Cloud Native Architecture
+---
 # Identify Entities and Aggregates
 
 You are building an application following a Microservices Architecture.  You need to understand how to discover your microservices from a complex business domain.

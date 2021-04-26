@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Birthing Pool
+---
 # Birthing Pool
 
 You have a new cloud native application that is based on a container technology (such as Docker) and you want to ensure that container images with known vulnerabilities are not deployed to your environment. However, some vulnerabilities within a container image cannot be picked up by a static vulnerability scanner as they can only be found in a running container.

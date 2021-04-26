@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: CQRS
+---
 # Command Query Responsibility Separation
 
 You are building an application that is following a Microservices architecture.  The team is not operating in a complete greenfield - there are existing sources of functionality or data that must be reused in order to complete the application on time and within budget.  In particular, you cannot transition all at once to a Scaleable Store because critical data is stored in a large, monolithic database.

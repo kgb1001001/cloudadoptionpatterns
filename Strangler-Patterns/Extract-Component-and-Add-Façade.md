@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Extract and Add Façade
+---
 # Extract Component and Add Façade 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Extract Service and Add Façade)
 

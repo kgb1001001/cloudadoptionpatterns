@@ -1,3 +1,7 @@
+---
+parent: Scaleable Store
+title: Columnar Store
+---
 Columnar Store
 ===
 

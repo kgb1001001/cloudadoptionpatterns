@@ -1,3 +1,7 @@
+---
+title: Containerize The Monolith
+parent: Cloud Adoption
+---
 # Containerize The Monolith
 
 You are migrating an existing system into the Cloud.  Your application is relatively up-to-date, in that it is based on versions of standards and frameworks (such as JEE or Spring) that are supported by recent versions of middleware.  What's more, your middleware vendors support a containerization strategy.

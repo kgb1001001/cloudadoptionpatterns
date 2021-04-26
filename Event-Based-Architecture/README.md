@@ -1,3 +1,8 @@
+---
+title: Event-based Architecture
+nav_order: 7
+has_children: true
+---
 # Event Based Architecture Introduction
 
 In this section we present a small set of linked patterns that represent the fundamental building blocks of an event driven architecture.  This set of tightly related patterns describes the basic issues of why anyone would need an Event Driven Architecture, and how to construct an Event Driven Architecture from component parts.  The patterns discussed are:

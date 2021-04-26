@@ -1,3 +1,6 @@
+---
+title: Single Page Application
+parent: Cloud Client Architecture
 # Single Page Application
 
 You are developing a new web application or you are refactoring a section of a web application to make it more modern.

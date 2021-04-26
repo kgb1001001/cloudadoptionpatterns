@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Image Inheritance
+---
 # Minimize Image Inheritance
 
 You are practicing Container DevOps and building many container images using a [Container Build Pipeline](docker-build-pipeline.md).

@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: One Region
+---
 One Region
 ===
 

@@ -1,3 +1,8 @@
+---
+title: Cloud Client Architecture
+nav_order: 3
+has_children: true
+---
 # Cloud Client Architecture Introduction
 
 This set of patterns is built around developing a consistent client architecture that is compatible with a cloud-native application development style.

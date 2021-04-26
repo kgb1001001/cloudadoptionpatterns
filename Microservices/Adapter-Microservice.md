@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: Adapter
+---
 # Adapter Microservice
 
 You are building an application that is following a Microservices architecture.  The team is not operating in a complete greenfield - there are existing sources of functionality or data that must be reused in order to complete the application on time and within budget.  However,

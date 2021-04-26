@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Start Small
+---
 # Start Small
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Gradually Evolve the System, Baby Steps)
 

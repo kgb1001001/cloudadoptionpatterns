@@ -1,3 +1,7 @@
+---
+title: Look For Hairline Cracks
+parent: Cloud Adoption
+---
 # Look For Hairline Cracks
 
 You are evaluating an existing application for cloud adoption.  You know you want to take some or all of the functionality of the application and re-architect it for microservices in order to improve the maintenance of the application and to reduce the blast radius of new changes to the application.

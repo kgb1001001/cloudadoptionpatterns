@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: Business Microservice
+---
 # Business Microservice
 
 You are implementing an application using the Microservices Architecture style or refactoring an application to use that architectural style. The application may run in either the cloud or on-premise.  You know you have a set of business logic that you must implement in order to provide the functionality of your application to your clients. 

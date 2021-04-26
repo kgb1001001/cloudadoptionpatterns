@@ -1,4 +1,8 @@
-#Hybrid Cloud Model
+---
+title: Hybrid Cloud Model
+parent: Cloud Adoption
+---
+# Hybrid Cloud Model
 
 One of the earliest decisions many teams make (although perhaps too early) when moving to the cloud is deciding what destination that they should move to. A common misconception is that moving to the cloud means moving workloads to a specific *public* cloud.  The problem is that this is too simplistic to reflect the real world - you can have cloud computing without necessarily moving to a public cloud, and what's more, systems can actually cross multiple clouds, both public and private.
 

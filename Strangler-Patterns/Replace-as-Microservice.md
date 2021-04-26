@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Replace as Microservice
+---
 # Replace as Microservice
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka aka Extract to Service, Replace as a Service)
 

@@ -1,3 +1,7 @@
+---
+parent: Coexistence Patterns
+title: CQRS
+---
 # Command Query Responsibility Separation
 
 

@@ -1,3 +1,7 @@
+---
+parent: Scaleable Store
+title: Synchronous Replication
+---
 Synchronous Replication
 ===
 

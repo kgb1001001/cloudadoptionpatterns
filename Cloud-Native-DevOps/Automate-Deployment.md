@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Automate VM Deployment
+---
 [//]: # (This is Cees' "Automate" pattern, which probably needs work)
 
 # Automate VM Deployment

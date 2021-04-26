@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Build Pipeline
+---
 # Container Build Pipeline
 
 When using containers as a tool for deployment, a development team faces a series of choices.  Container technologies like docker are often adopted by teams that are in the process of evolving their practices away from more traditional development approaches toward more agile approaches.  As such, these teams often have established build processes that they need to replace, or processes they should retarget to take advantage of the new capabilities that containers offer.  At the same time, the opportunity presented by adopting containers also means that teams can modernize their development, deployment and testing processes to take advantage of new tools such as [Jenkins](https://jenkins.io/doc/) or Hudson that introduce more modern approaches.

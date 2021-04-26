@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Service Registry (cees)
+---
 [//]: # (This is the version from Cees' paper, should be merged with Kyle's)
 
 Service Registry

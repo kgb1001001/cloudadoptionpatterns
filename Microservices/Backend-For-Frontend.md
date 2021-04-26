@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: Backend for Frontend
+---
 # Backend for Frontend
 
 You are designing an application using a *Microservices Architecture.* You realize that the *Business Microservices* that encapsulate individual business functions do not map cleanly to the channel-specific needs of your client applications. All of the server-side functionality a client application needs should be accessible through a single API.

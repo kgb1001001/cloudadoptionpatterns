@@ -1,3 +1,7 @@
+---
+parent: Scaleable Store
+title: Key-value Store
+---
 # Key Value Store
 
 You are building an application with a [Microservices Architecture](../Microservices/Microservices-Architecture.md).

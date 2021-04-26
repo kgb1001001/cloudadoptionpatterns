@@ -1,3 +1,7 @@
+---
+title: Bounded Context
+parent: Cloud Native Architecture
+---
 # Bounded Context
 
 Your team is building applications using a Microservices Architecture.  Your Two Pizza Team is part of a much larger team, but you need to keep out of each others way as you develop your systems.

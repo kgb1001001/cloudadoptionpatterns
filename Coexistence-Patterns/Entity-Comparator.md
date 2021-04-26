@@ -1,3 +1,7 @@
+---
+parent: Coexistence Patterns
+title: Entity Comparator
+---
 # Entity Comparator
 
 You are refactoring to a [Microservices Architecture](../Microservices/Microservices-Architecture.md) by using the [CQRS]() pattern and are applying [Playback Testing](Playback-Testing.md).  Your situation is complex in that simply checking for the final state of the system after running a number of transactions through the playback would not be sufficient.  This may be because you don't truly understand the way in which the current system functions, or because you do not have a full test suite for the existing system.  

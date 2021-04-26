@@ -1,3 +1,7 @@
+---
+title: Cloud Centric Design
+parent: Cloud Adoption
+---
 # Cloud Centric Design
 
 Many teams are able to work within what can be termed a greenfield.  In that situation, you have a problem to solve, and also have the ability to write a brand new application (or rewrite an existing one) and the time in which to do that application development work.  When you are in that situation you still have all of the same project development issues to resolve that you have in an existing application, (e.g. you still need to balance time, cost and people) but you often have more flexibility to choose among how you will trade off each of these.

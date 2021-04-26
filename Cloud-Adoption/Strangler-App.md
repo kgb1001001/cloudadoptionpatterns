@@ -1,3 +1,7 @@
+---
+title: Strangler Application
+parent: Cloud Adoption
+---
 # Strangler Application
 
 You are starting with a legacy monolith that is implemented as a Web application.  When migrating legacy applications to the cloud you often need to consider how to replace the application in a piecemeal way.  Often, a legacy monolith does not show obvious Hairline Cracks. How can we replace it with a [Microservices Architecture](../Microservices/Microservices-Architecture.md) without doing a full rewrite?  A full all-at-once rewrite and replace is a risky operation and would also be expensive and would not show value until the complete rewrite is finished.  

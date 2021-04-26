@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Microservices First
+---
 # Microservices First Strategy
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka All new functionality as Microservices)
 

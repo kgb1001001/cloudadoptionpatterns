@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Backbone
+---
 # Event Backbone
 
 You are building applications that will follow an [Event Driven Architecture](Event-Driven-Architecture.md). You have several disparate systems that all generate events and that need to respond to events.

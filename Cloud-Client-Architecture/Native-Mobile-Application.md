@@ -1,3 +1,7 @@
+---
+title: Native Mobile Application
+parent: Cloud Client Architecture
+---
 Native Mobile Application
 ===
 

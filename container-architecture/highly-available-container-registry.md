@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Container Registry
+---
 # HA Container Registry
 
 You have an Service Level Agreement (SLA) for your cloud application (such as 99.99 availability) and you need to ensure that you meet your SLA's and that you have a fast time to recovery.

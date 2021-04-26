@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Single Image Registry
+---
 Title: Single Image Registry
 
 Context:

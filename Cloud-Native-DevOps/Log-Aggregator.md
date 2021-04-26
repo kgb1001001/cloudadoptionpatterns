@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Log Aggregator
+---
 Log Aggregator
 ===
 

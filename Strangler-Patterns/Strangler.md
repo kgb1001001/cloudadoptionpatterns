@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Strangler
+---
 # Strangler
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Strangle the Monolith, Evolve System with Microservices)
    

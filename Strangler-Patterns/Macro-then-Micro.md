@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Macro then Micro
+---
 # Macro then Micro
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Divide and Conquer)
 

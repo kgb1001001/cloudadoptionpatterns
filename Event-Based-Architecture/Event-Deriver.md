@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Deriver
+---
 # Event Deriver
 You are building Event Driven Systems. You have a set of related events that you can tie together into a logical set (perhaps through application of the [Event Joiner](Event-Joiner.md) Pattern) that you are interested in.
 

@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Visualize Dependencies
+---
 # Visualize Container Dependencies
 
 You have a medium to large estate of container images where each image is dependent on multiple images.
