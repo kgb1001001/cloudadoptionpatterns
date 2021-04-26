@@ -26,21 +26,21 @@ This pipeline has steps for building the system (clone/clean/build), unit and in
 <p align="center">* * *</p>
 
 The following is a set of related practices to gain confidence and assist with a quality pipeline:
-*Small Incremental Releases - keep releasing small changes into production.
-*Automate as you go - automate what you can as soon as you can.
-*Continuous Inspection - getting regular feedback.
-*Blue-Green Deployment - separate deployment from release.
-*Staged Releases - first in a safe environment and spread out.
-*Canary and Rolling Deployments - gradually roll out your release..
-*Health Checks - Smoke Tests to make sure things are ok, etc.
+* Small Incremental Releases - keep releasing small changes into production.
+* Automate as you go - automate what you can as soon as you can.
+* Continuous Inspection - getting regular feedback.
+* Blue-Green Deployment - separate deployment from release.
+* Staged Releases - first in a safe environment and spread out.
+* Canary and Rolling Deployments - gradually roll out your release..
+* Health Checks - Smoke Tests to make sure things are ok, etc.
 
 The following are some advantages of Quality Delivery Pipeline: 
-*Freeing teams up from needing to think about delivering quality makes them more productive as important quality validations are built into the pipeline; 
-*Some important critical tasks can be done more quickly and with confidence.
-*You can ensure that what gets delivered meets a minimum quality.
+* Freeing teams up from needing to think about delivering quality makes them more productive as important quality validations are built into the pipeline; 
+* Some important critical tasks can be done more quickly and with confidence.
+* You can ensure that what gets delivered meets a minimum quality.
 There are also some potential disadvantages to Quality Delivery Pipeline:
-*Automating all quality checks might be very difficult,.
-*Creating a quality pipeline can require a lot of technical expertise.
+* Automating all quality checks might be very difficult,.
+* Creating a quality pipeline can require a lot of technical expertise.
 
 Automate as you Go can helps ensure the Quality Delivery Pipeline is run frequently, and error prone steps are avoided. The Quality Delivery Pipeline becomes a form of Continuous Inspection during the release cycle. 
 
