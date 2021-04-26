@@ -1,14 +1,14 @@
-#remote_theme: pmarsceill/just-the-docs
-remote_theme: "mmistakes/minimal-mistakes"
 title: Cloud Adoption Patterns
 description: A set of Patterns for Developers and Architects building for the cloud
 baseurl: "/cloudadoptionpatterns" # the subpath of your site, e.g. /blog
 url: "https://ijmitch.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+breadcrumbs: true
+permalink: pretty
+markdown: kramdown
+remote_theme: "pmarsceill/just-the-docs"
+
 plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-github-metadata
-show_downloads: false
-github:
-  is_project_page: false
