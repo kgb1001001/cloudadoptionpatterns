@@ -1,3 +1,6 @@
+---
+nav_exclude: true
+---
 # Summary
 
 * [Introduction](README.md)
