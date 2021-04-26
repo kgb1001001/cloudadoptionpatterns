@@ -1,3 +1,6 @@
+---
+permalink: /
+---
 # Introduction
 
 This is a work in progress.  We hope you will find it useful even in its infancy as we continue to build out this site.
