@@ -38,6 +38,7 @@ The following are some advantages of Quality Delivery Pipeline:
 * Freeing teams up from needing to think about delivering quality makes them more productive as important quality validations are built into the pipeline; 
 * Some important critical tasks can be done more quickly and with confidence.
 * You can ensure that what gets delivered meets a minimum quality.
+
 There are also some potential disadvantages to Quality Delivery Pipeline:
 * Automating all quality checks might be very difficult,.
 * Creating a quality pipeline can require a lot of technical expertise.
