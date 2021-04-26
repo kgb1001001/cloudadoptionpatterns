@@ -30,4 +30,5 @@ Below we show a pattern map of various “strangling” approaches and the relat
 
 Note these patterns were first introduced and evolved from a PLoP 2020 paper by [Joseph Yoder](../Joseph-Yoder-bio.md) and Paulo Merson
 
-#### Footnote #### <p id="#footnote">*One of the natural wonders of <the rain forests of the Queensland coast of Australia> are the huge strangler figs. They seed in the upper branches of a fig tree and gradually work their way down the tree until they root in the soil. Over many years they grow into fantastic and beautiful shapes, meanwhile strangling and killing the tree that was their host.”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://martinfowler.com/bliki/StranglerFigApplication.html </p>
+#### Footnote 
+*One of the natural wonders of <the rain forests of the Queensland coast of Australia> are the huge strangler figs. They seed in the upper branches of a fig tree and gradually work their way down the tree until they root in the soil. Over many years they grow into fantastic and beautiful shapes, meanwhile strangling and killing the tree that was their host.”&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;https://martinfowler.com/bliki/StranglerFigApplication.html 
