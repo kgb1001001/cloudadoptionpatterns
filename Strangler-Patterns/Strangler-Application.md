@@ -1,8 +1,4 @@
----
-parent: Strangler Patterns
-title: Strangler
----
-# Strangler
+# Strangler Application
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Strangle the Monolith, Evolve System with Microservices)
    
 You have a monolith that has been providing value to your organization for some time. The software requirements are changing more rapidly than your organization can accommodate; adapting the software, adding features, and managing existing features in the monolith are difficult due to: (i) significant coupling between components in the monolith, or (ii) significant synchronization complexity in the deployment process among the teams working on the monolith. Sometimes the need for rapid changes to the software comes with a need for the organization to evolve and grow. The decision has been made to evolve to using the microservice architecture style.
@@ -11,6 +7,8 @@ You have a monolith that has been providing value to your organization for some 
 
 A legacy monolith is used by several client applications; the monolith and those applications are still providing value to the organization. There is a lot of code and tight coupling within the monolith that make rewriting it expensive. Adding functionality to the monolith is becoming harder and sometimes creates bugs. 
 
+When migrating legacy applications you often need to consider how to replace the application in a piecemeal way. A legacy monolith rarely shows obvious semas for separating it cleanly. How can we replace it with a Microservices Architecture without doing a full rewrite? A full all-at-once rewrite and replace is a risky operation and would also be expensive and would not show value until the complete rewrite is finished.
+
 There is a desire and sometimes potential benefit to use new protocols and technologies. However, client applications make use of the monolith by calling services that use old protocols and technologies (e.g., SOAP, EJB) or by adding module dependencies to the monolith and directly calling the logic inside it. 
 New applications being developed use different technologies, programming languages, frameworks, and API design standards from those used for the monolith, thus limiting reuse of the monolith by these new applications.
 
@@ -18,7 +16,9 @@ Deployment becomes difficult—it requires testing the whole system because the 
 
 Therefore,
 
-**Gradually create microservices that are independent of the monolith, growing them in number over time until the monolith is replaced (strangled) by the new microservices.**
+**Gradually create microservices that are independent of the monolith, growing them in number over time until the monolith is replaced (strangled) by the new microservices. Redirect requests for these new services as needed.**
+
+The main idea of the strangelr application is to use an approach that allows you to avoid a full "big-bang" rewrite and replace, yet still allows you gradually evolve and replace the monolith. This is done in anevolutionary process that redirect requests for parts of the applications from the legacy monolith and towards a new "microseervices" implementation of those features. This is done by adding these features incrementally (the strangler application) and updating the redirection logic towards the new features as they are added.
 
 You have a useful legacy system that is a monolith. There is the need to develop new applications that use different programming languages, different frameworks, or simply newer incompatible versions of languages or frameworks. Consequently, these new applications cannot directly call components in the monolith. Perhaps the software needs to evolve or grow rapidly, but it is getting harder to evolve the current system. The following situations can complicate the process of transforming a monolith to microservices:
 * A monolith uses old versions of libraries and frameworks. Developers want to upgrade to the latest versions, but the upgrades are not fully backward compatible and require updating a lot of code in the monolith. These upgrades have been postponed time and again over the years, and now the discrepancy between the old version and the latest makes the upgrades costly and risky. 
