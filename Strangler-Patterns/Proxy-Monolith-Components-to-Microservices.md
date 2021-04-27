@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Proxy Monolith Components
+---
 # Proxy Monolith Components to Microservices 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Proxy Monolith Service to Microservice)
 

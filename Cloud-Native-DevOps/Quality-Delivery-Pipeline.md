@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Start Small
+---
 # Quality Delivery Pipeline
 
 Continuous Integration has become a key factor for most software development teams as a means to safely evolve the code ensuring that we have not broken anything that we have to interact with. A step to be successful with this is to setup servers and scripts for continuous integration. Continuous Delivery [Humble] is an extension of this by taking the automatic or semi-automatic promotion of builds and process them into something that can be delivered. The goal is to take changes from version control to production by making deployment to different environments as automated and as reliably as possible.
