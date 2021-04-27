@@ -15,8 +15,7 @@ Martin Fowler coined the term “Strangler Application” as a metaphor in 2004 
 
 Typically a monolithic application is packaged as a single deployment file that runs on an application server. The monolith consists of many components that may contain business logic from various subdomains. These monolith components can include services, modules, libraries, or any type of implementation. They also have dependencies among themselves that typically increase over the years. Monolith components that are visible on the network may use protocols, message formats, and API design standards that are not fully compatible with network calls being used in new client applications. For example, the monolith may provide EJB services, and new applications in Python are not able to directly call these services. The general scenario is illustrated in Figure 1. The generic connector symbol (→) in the diagram may represent a HTTP request to REST service, a platform-specific invocation mechanism, or an in-process call to modules in the same deployment unit. In a real project scenario, different types of connectors may be used in the design. Note that in this diagram the components appear to be mostly decoupled but in reality, there is usually a lot of coupling in the monolith architecture. The red “X” illustrates that new code is written to avoid directly accessing the monolith.
 
-<p align="center"><img src="../assets/MonolithProblem.png" width=400;/><br>
-#insert FIG here...Figure 1—monolith general scenario</p>
+![MonolithProblem](../assets/MonolithProblem.png)
 
 One of the first decisions to make is whether to completely rewrite the monolith or apply [Strangler](Strangler-Application.md). Sometimes rewriting the monolith is the right approach. Sometimes the monolith needs to be reconceptualized and implemented from scratch (possibly using microservices). However, it is usually the case that the cost and duration of a complete rewrite make it infeasible.  Once you have decided to do an evolutionary application of the [Strangler](Strangler-Application.md), there are many possible variations. 
 
@@ -31,7 +30,7 @@ One of the first decisions to make is whether to completely rewrite the monolith
 
 Below we show a pattern map of various “strangling” approaches and the relationships between the patterns. Monolith Application and Complete Rewrite to Microservices noted in italics are not considered part of the patterns in this language.
 
-<p align="center"><img src="../assets/StranglerPatterns.png" width="90%";/><br>
+![StranglerPatterns](../assets/StranglerPatterns.png)
 
 Note these patterns were first introduced and evolved from a PLoP 2020 paper by [Joseph Yoder](../Joseph-Yoder-bio.md) and Paulo Merson.
 
