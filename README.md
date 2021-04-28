@@ -1,9 +1,9 @@
 ---
-title: Introduction
+title: Patterns for Developers and Architects building for the cloud
 nav_order: 1
 permalink: /
 ---
-# Introduction
+# Patterns for Developers and Architects building for the cloud
 
 This is a work in progress.  We hope you will find it useful even in its infancy as we continue to build out this site.
 
