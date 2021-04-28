@@ -40,4 +40,4 @@ The power of the combination of these points (each of which will be referenced i
 You can see how most of the patterns relate to each other in the diagram below:
 
 
-![Microservices Patterns](../assets/MicroservicesPatterns.png)
+![Microservices Patterns](/assets/MicroservicesPatterns.png)

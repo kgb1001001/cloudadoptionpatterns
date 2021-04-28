@@ -30,7 +30,7 @@ One of the first decisions to make is whether to completely rewrite the monolith
 
 Below we show a pattern map of various “strangling” approaches and the relationships between the patterns. Monolith Application and Complete Rewrite to Microservices noted in italics are not considered part of the patterns in this language.
 
-![StranglerPatterns](../assets/StranglerPatterns.png)
+<p align="center"><img src="/assets/StranglerPatterns.png" width="90%";/><br>
 
 Note these patterns were first introduced and evolved from a PLoP 2020 paper by [Joseph Yoder](../Joseph-Yoder-bio.md) and Paulo Merson.
 
