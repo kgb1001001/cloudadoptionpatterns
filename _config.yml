@@ -1,7 +1,7 @@
 title: Cloud Adoption Patterns
 description: A set of Patterns for Developers and Architects building for the cloud
 baseurl: "/cloudadoptionpatterns" # the subpath of your site, e.g. /blog
-url: "https://ijmitch.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://kgb1001001.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 breadcrumbs: true
 permalink: pretty
