@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Canary Testing
+---
 # Canary Testing
 
 You are following a Cloud-Native DevOps approach and may be deploying an application with a [Microservices Architecture](../Microservices/Microservices-Architecture.md). You are deploying new and improved services at an ever increasing rate, but you have a large number of users that can only withstand a minimal amount of disruption during the process. 

@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: Results Cache
+---
 You are building a microservices based architecture, particularly one that uses the Adapter Microservice pattern.
 
 **How do you avoid calling your back end service that your microservice adapts to too frequently?**

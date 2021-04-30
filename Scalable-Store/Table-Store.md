@@ -1,3 +1,7 @@
+---
+parent: Scaleable Store
+title: Table Store
+---
 Table Store
 ===
 

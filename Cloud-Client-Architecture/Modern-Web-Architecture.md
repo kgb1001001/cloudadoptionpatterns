@@ -1,3 +1,7 @@
+---
+title: Modern Web Architecture
+parent: Cloud Client Architecture
+---
 # Modern Web Architecture
 
 You are building a new application or refactoring an existing application that needs to provide a rich user interface that can be

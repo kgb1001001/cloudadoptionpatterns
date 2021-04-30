@@ -1,3 +1,7 @@
+---
+parent: Coexistence Patterns
+title: Playback Testing
+---
 # Playback Testing
 
 You are modernizing an existing application and are applying the [Command Query Responsibility Separation](Command-Query-Responsibility-Separation.md) pattern and employing [Event Sourcing](../Event-Based-Architecture/Event-Sourcing.md).  You are doing this over a period of time, using the [Strangler Application](../Microservices/Strangler-Application.md) pattern in such a way that there is always a period of coexistence between the old system and the new (refactored) system.  Likewise, you are changing underlying data structures and/or switching to new [Scalable Stores](../Scaleable-Store/Scaleable-Store.md) as part of your refactoring effort. 

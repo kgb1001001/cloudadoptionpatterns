@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Aggregator
+---
 # Event Aggregator
 
 You are building applications using an [Event Driven Architecture](Event-Driven-Architecture.md). You have applications in your architecture that are interested in different types of events. For instance, you may have applications only interested in business events, and other applications that are only interested in high-level infrastructure events. Finally, you have applications that generate many types of events, ranging from the very high level to the very low-level.

@@ -1,3 +1,8 @@
+---
+title: Coexistence Patterns
+nav_order: 8
+has_children: true
+---
 # Coexistence Patterns Introduction
 
 A major issue with adopting cloud is that in most Enterprises, the applications that most need to run on the cloud are not new.  Enterprises rarely get to build brand new "greenfield" applications. Instead, most applications are "brownfield" meaning that they were built for one set of purposes and under a particular set of assumptions.  Unfortunately, those were rarely the assumptions that apply on the cloud.

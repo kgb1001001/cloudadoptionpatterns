@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Red/Black Deploy
+---
 Red/Black Deploy
 ===
 

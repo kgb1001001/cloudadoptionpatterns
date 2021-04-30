@@ -1,3 +1,7 @@
+---
+title: Web Cache
+parent: Cloud Native Architecture
+---
 Web Cache
 ===
 

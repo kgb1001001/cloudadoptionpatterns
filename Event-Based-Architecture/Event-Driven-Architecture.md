@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Event-driven Architecture
+---
 # Event Driven Architecture
 
 Loose coupling helps the decomposition of a system or application into independent components, by minimizing the dependencies of each component on the implementations of other components which it uses. SOA formalizes the component service interfaces and interaction protocols so that any individual component can be replaced by any other with similar functionality and the same service interface  without compromising the correct behavior of the overall application. Component implementations and implementation changes are hidden from users of the provided services. 

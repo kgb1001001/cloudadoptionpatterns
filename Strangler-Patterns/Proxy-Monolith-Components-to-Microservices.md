@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Proxy Monolith Components
+---
 # Proxy Monolith Components to Microservices 
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Proxy Monolith Service to Microservice)
 
@@ -19,8 +23,7 @@ In this variation of Strangler, old client components remain unchanged. Monolith
 
 Figure 9 illustrates the application of the pattern to components X and Y. The components are extracted and become microservices X' and Y'. The diagram illustrates the fact that extracted services can be synchronous or asynchronous. For example: service Y' can be a synchronous REST service, and service X' can be a consumer of a message queue (e.g., a Kafka topic) and hence be activated by asynchronous messages or events. In this example Y is proxying directly to Y’, while X is proxying by sending a message to a queue that X’ subscribes to.
 
-<p align="center"><img src="../assets/ProxyMonolithComponentsToMicroservices.png" width="50%";/><br>
-#insert FIG here...Figure 9—Proxy Monolith Components to Microservices</p>
+![ProxytoMicroservices](../assets/ProxyMonolithComponentsToMicroservices.png)
 
  <p align="center">* * *</p>
  

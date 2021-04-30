@@ -1,3 +1,8 @@
+---
+title: Cloud Adoption
+nav_order : 2
+has_children: true
+---
 # Cloud Adoption
 
 This part of our pattern language contains patterns that help guide the strategy for cloud adoption. This includes addressing questions on how to move to the cloud.  This is influenced by a number of factors--greenfield projects have an easier time than legacy software--and the patterns on cloud adoption should prove useful in selecting what strategy to use in what context.

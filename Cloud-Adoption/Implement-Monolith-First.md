@@ -1,3 +1,7 @@
+---
+title: Implement Monolith First
+parent: Cloud Adoption
+---
 # Implement Monolith First
 
 Sometimes, time is of an essence in a greenfield project and microservices are known to add overhead.

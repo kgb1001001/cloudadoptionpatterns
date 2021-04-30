@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Query Engine
+---
 # Query Engine
 
 You are building a system made up of many cooperating services, some of which you have created on your own with a Microservices Architecture, some of which may be obtained from third parties or a cloud provider.  

@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Event Sourcing
+---
 # Event Sourcing
 
 When you are designing applications that use Events you often find that the approach of representing the state of your application simply in a "point in time" is not compatible with the overall architectural goals that Event Driven Architecture fosters.

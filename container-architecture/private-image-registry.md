@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Private Image Registry
+---
 # Private Image Registry
 
 You have developed a new internal application that will run on containers and you need to host the image in a container image registry so that the container technology (such as Docker) can pull and run the image on your container environment.

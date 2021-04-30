@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: Legacy Adapter
+---
 # Legacy Adapter Microservice
 
 You are designing an application using a *Microservices Architecture*. You want it to incorporate existing services (e.g. SOAP, JMS, or mainframe-based services) but their APIs do not use the RESTful or queue-based approach that is consistent with the microservices architecture.

@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Public Registry Proxy
+---
 # Public Registry Proxy
 
 You have developed a new internal application that will run on containers.  The solution has dependencies on third party images hosted in a Public Image Registry.

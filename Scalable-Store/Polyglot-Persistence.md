@@ -1,3 +1,7 @@
+---
+parent: Scaleable Store
+title: Polyglot Persistence
+---
 You are building applications using a [Microservices Architecture](../Microservices/Microservices-Architecture.md).
 
 **How do you encourage teams to use the most optimized storage mechanism for the particular data structures, query and update requirements that each microservice requires?**

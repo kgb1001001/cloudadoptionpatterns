@@ -1,3 +1,7 @@
+---
+title: Container Orchestrator
+parent: Cloud Native Architecture
+---
 # Container Orchestrator
 
 You are building a new application with a [*cloud native architecture*](README.md) that runs in [multiple containers](../Cloud-Native-DevOps/Container-Per-Service.md). Other applications have even more containers. You need a way to manage these containers and keep them running even while circumstances in the cloud keep changing.

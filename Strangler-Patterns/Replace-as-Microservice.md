@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Replace as Microservice
+---
 # Replace as Microservice
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka aka Extract to Service, Replace as a Service)
 
@@ -17,8 +21,7 @@ Therefore,
 
 Some core pieces of functionality are tightly coupled within the monolith, and hence are almost impossible to extract from the monolith. The functionality in these core pieces is nonetheless needed outside the monolith, and it would be useful to make them available as microservices. This scenario warrants the option to rewrite a component that provides core functionality as a microservice—an example of such component is X in Figure 7. The new version is microservice X', and it becomes the primary locus for that functionality. The original component X in the monolith is locked down (frozen) from evolution. New client components should call microservice X' instead of X. As microservice X' evolves, a client component of X inside the monolith may need to access functionality that is in the microservice. In this case, there are two main alternatives. One is to rewrite the client component to call X', as shown in Figure 7 for component Y. The other is to have component X proxying calls to new features in X', as described in Proxy Components to Microservices. This alternative could be in use for Z and W in Figure 7. 
 
-<p align="center"><img src="../assets/ReplaceAsMicroservice.png" width="90%";/><br>
-#insert FIG here...Figure 7—Replace as Microservice Evolution</p>
+![Replace](../assets/ReplaceAsMicroservice.png)
 
 The following outlines the steps for the Replace as Microservice approach.
 * Code-freeze the functionality in the monolith.

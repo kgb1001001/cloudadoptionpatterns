@@ -1,3 +1,7 @@
+---
+parent: Scaleable Store
+title: Asynchronous Replication
+---
 # Asynchronous Replication
 
 You are building a system that has data in multiple distributed locations.  You need to make sure that the data in those locations is consistent.

@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Event Stream Management
+---
 Event Stream Management
 ===
 

@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: Tolerant Reader
+---
 Tolerant Reader
 ===
 

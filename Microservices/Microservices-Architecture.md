@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: Microservices Architecture
+---
 # Microservices Architecture
 
 You’re designing a server-side, multi-user application. You want your application to be modular, and you want the modules to be independent.  Your application modules need to be capable of composition, scalability, and continuous deployment.

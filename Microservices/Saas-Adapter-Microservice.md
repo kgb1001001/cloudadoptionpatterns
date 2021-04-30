@@ -1,3 +1,7 @@
+---
+parent: Microservices
+title: Saas Adapter
+---
 # SaaS Adapter Microservice
 
 Software-as-a-Service as a mechanism for offering applications comes with a lot of advantages: customers do not need to install and maintain software, and the supplier has full control over usage and thus can very precisely charge for the offering. Often, a SaaS solution provides functionality that is ready to plug into a microservices architecture. However, the vendor control itself can create issues.

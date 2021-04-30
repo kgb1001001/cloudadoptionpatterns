@@ -1,3 +1,7 @@
+---
+title: Lift and Shift
+parent: Cloud Adoption
+---
 # Lift and Shift
 
 You’re evaluating a number of different cloud provider options. You have an existing application in mind you want to move to the cloud, but you don’t have the luxury of rewriting it.  The application may have dependencies on existing databases, or may be written using middleware that is not available from a PaaS provider, or may simply be architected in a way that makes it incompatible with refactoring using the Strangler Application approach.  In other situations, the development team is not available to work on refactoring the application - as may be true if the application is a COTS application or if the development team is an offshore team.

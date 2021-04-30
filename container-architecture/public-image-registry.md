@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Public Image Registry
+---
 # Public Image Registry
 
 You have developed a new container image that you wish to make available to the wider development community.  This may be a new container image you wish to make available to your customers, a new open-source application that you wish to make available, or an improved installation of an existing open-source product that you wish to contribute back to the community.

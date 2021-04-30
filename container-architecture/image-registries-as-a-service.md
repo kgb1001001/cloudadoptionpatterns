@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Cloud Hosted Image Registry
+---
 Title: Cloud Hosted Image Registry
 
 Context:

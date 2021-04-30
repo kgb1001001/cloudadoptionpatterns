@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Topic Registry
+---
 # Event Topic Registry
 Event producers and consumers are expected to be decoupled, yet they have a shared interest in certain aspects of events and event messages. 
 

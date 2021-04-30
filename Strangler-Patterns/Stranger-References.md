@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: References
+---
 # References
 
 

@@ -1,3 +1,8 @@
+---
+title: Container DevOps
+nav_order: 11
+has_children: true
+---
 # Container DevOps Introduction
 
 This part of our pattern language is concerned with the problems inherent in building and delivering software using Containers,

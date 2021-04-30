@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Joiner
+---
 # Event Joiner
 You are building applications that will follow an Event Driven Architecture.
 

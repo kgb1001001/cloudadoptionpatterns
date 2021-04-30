@@ -1,3 +1,7 @@
+---
+parent: Strangler Patterns
+title: Pave the Road
+---
 # Pave the Road
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Make Microservices Development Easier)
 

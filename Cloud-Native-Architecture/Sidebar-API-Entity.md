@@ -1,3 +1,7 @@
+---
+title: Api or Objects - which first?
+parent: Cloud Native Architecture
+---
 # Which comes first: the API or the objects?
 
 An ongoing argument exists about which comes first: the design of your API or the design of the Objects that implement your API. Many early distributed-computing proponents advocated designing the Objects first and then making your API the same as your Object API. This approach led to problems in the granularity of the API, which often resulted in APIs that represented technical interfaces instead of business interfaces.

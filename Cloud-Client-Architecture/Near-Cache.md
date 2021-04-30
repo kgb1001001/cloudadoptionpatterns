@@ -1,3 +1,7 @@
+---
+title: Near Cache
+parent: Cloud Client Architecture
+---
 Near Cache
 ===
 

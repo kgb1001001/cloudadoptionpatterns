@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Container per Service
+---
 # Container per Service
 
 You are building an application with a [Microservices Architecture](../Microservices/Microservices-Architecture.md).  You want to use containers within a Container Platform like Kubernetes, or a Platform as a Service like Cloud Foundry.

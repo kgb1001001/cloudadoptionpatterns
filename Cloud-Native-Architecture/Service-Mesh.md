@@ -1,3 +1,7 @@
+---
+title: Service Mesh
+parent: Cloud Native Architecture
+---
 # Service Mesh
 
 You are building an application following a Microservices Architecture.

@@ -1,3 +1,7 @@
+---
+parent: Cloud Native DevOps
+title: Three Datacenters
+---
 Three Datacenters
 ===
 

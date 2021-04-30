@@ -1,3 +1,7 @@
+---
+title: Results Cache
+parent: Cloud Native Architecture
+---
 Results Cache
 ===
 

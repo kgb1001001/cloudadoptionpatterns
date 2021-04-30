@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Consumer
+---
 # Event Consumer
 
 You are building a [Microservices Architecture](../Microservices/Microservices-Architecture.md) and you need to decouple one microservice from another

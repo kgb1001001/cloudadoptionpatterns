@@ -1,3 +1,7 @@
+---
+parent: Container DevOps
+title: Approved Image Repository
+---
 # Approved Image Repository
 
 You have developed a new internal application that will run on containers.  The solution has dependencies on third party images hosted in a [Public Image Registry](public-image-registry.md).  In general, developers should not have to worry about the use of third party images.  However, there is a balance that needs to be struck between ease of use and security.

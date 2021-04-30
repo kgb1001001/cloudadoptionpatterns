@@ -1,3 +1,7 @@
+---
+parent: Scaleable Store
+title: Global Locks
+---
 Global Locks
 ===
 

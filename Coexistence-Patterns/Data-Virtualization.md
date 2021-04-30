@@ -1,3 +1,7 @@
+---
+parent: Coexistence Patterns
+title: Data Virtualization
+---
 # Data Virtualization
 
 You are building a [Microservices Architecture](../Microservices/Microservices-Architecture.md) and you are refactoring applications to Microservices using an approach like the [Strangler Application](../Cloud-Adoption/Strangler-App.md) to pull out microservices a few at a time on a domain by domain basis.  You are in a situation where it is easier to refactor the business logic first before you refactor the data, but you need to be able to plan out a path for refactoring the data.
