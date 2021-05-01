@@ -11,5 +11,6 @@ This set of patterns is built around developing a consistent client architecture
 + [Native Mobile Application](Native-Mobile-Application.md) describes one solution for a client that is increasingly common as mobile devices proliferate
 + [Chatbots](Chatbot.md) are a common and important user interface channel for specialized types of user interaction like customer suppport.
 + [Single Page Application](Single-Page-Application.md) is the most common approach to building client-side applications that fully use the power of modern browsers
++ [Public API](Public-API.md) is the mechanism for making your application services available to the outside world.
 + [Micro Frontends](micro-frontends.md) are a way to avoid recommitting the mistakes of Monoliths within a client-side application.
 + [Near Cache](Near-Cache.md) is a way of making Single Page Applications perform well when combined with a Microservices Architecture.
