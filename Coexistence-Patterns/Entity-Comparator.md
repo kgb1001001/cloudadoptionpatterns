@@ -14,8 +14,8 @@ However, even if the code cannot be easily understood or analyzed to build a fun
 
 Therefore,
 
-**Build an Entity Comparator that plays back each transaction one at a time and then compares the state of the corresponding affected entities in both the existing and new systems then logs a report of the comparison values discovered throughout the entire playback sequence. **
+**Build an Entity Comparator that plays back each transaction one at a time and then compares the state of the corresponding affected entities in both the existing and new systems then logs a report of the comparison values discovered throughout the entire playback sequence.**
 
 Applying this pattern will help your team gain confidence in the functional test coverage of the new application even when it is impossible to determine all of the functional requirements of the existing application.  
 
-This pattern is only implemented when you are also implementing the Playback Testing pattern. 
+This pattern is only implemented when you are also implementing the [Playback Testing](Playback-Testing.md) pattern. 
