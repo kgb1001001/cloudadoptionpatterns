@@ -9,7 +9,7 @@ This set of patterns is built around developing a consistent client architecture
 
 + [Modern Web Architecture](Modern-Web-Architecture.md) is the root pattern of this section and describes the overall structure of a client application.
 + [Native Mobile Application](Native-Mobile-Application.md) describes one solution for a client that is increasingly common as mobile devices proliferate
-+ [Chatbots](Chatbot.md) are a common and important user interface channel for specialized types of user interaction like customer suppport.
++ [Chatbots](Chatbot.md) are a common and important user interface channel for specialized types of user interaction like customer support.
 + [Single Page Application](Single-Page-Application.md) is the most common approach to building client-side applications that fully use the power of modern browsers
 + [Public API](Public-API.md) is the mechanism for making your application services available to the outside world.
 + [Micro Frontends](micro-frontends.md) are a way to avoid recommitting the mistakes of Monoliths within a client-side application.
