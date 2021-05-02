@@ -1,3 +1,7 @@
+---
+parent: Organization and Process Patterns
+title: Two Pizza Team
+---
 # Two Pizza Team
 
 You are implementing a Cloud Native Design or implementing Cloud Refactoring
