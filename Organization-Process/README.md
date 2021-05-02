@@ -1,6 +1,6 @@
 ---
 title: Organization and Process Patterns
-nav_order : 9
+nav_order : 12
 has_children: true
 ---
 # Organization and Process Patterns
