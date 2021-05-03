@@ -17,7 +17,7 @@ Typically a monolithic application is packaged as a single deployment file that 
 
 <p align="center">
   <!-- ![MonolithProblem](../assets/MonolithProblem.png) -->
-  <img src="/cloudaddoptionpatterns/assets/MonolithProblem.png" alt="MonolithProblem" width="60%"> 
+  <img src="/cloudadoptionpatterns/assets/MonolithProblem.png" alt="MonolithProblem" width="60%"> 
 </p>
 
 One of the first decisions to make is whether to completely rewrite the monolith or apply [Strangler](Strangler-Application.md). Sometimes rewriting the monolith is the right approach. Sometimes the monolith needs to be reconceptualized and implemented from scratch (possibly using microservices). However, it is usually the case that the cost and duration of a complete rewrite make it infeasible.  Once you have decided to do an evolutionary application of the [Strangler](Strangler-Application.md), there are many possible variations. 
