@@ -1,6 +1,6 @@
 ---
 parent: Cloud Native DevOps
-title: Service Registry (Kyle)
+title: Service Registry
 ---
 Service Registry
 ===
