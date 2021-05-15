@@ -12,11 +12,15 @@ In order to understand why the simplistic model of "cloud==one public cloud" is 
 
 In short, cloud computing can embrace multiple models, both on-premise and off-premise.  While there are obviously many cases in which a public cloud provider is exactly the right choice for many projects, there are perhaps just as many in which it is the wrong choice for a particular workload. There are several factors which weigh on this:
 
-Security and Data Residency:  While public cloud security 
-Productivity and Skills:
-Cost-Effectiveness:
+* Security and Data Residency:  While public cloud security has improved to the point that it is possible to build cloud-based systems that are as secure if not more secure than on-premises systems, the fact remains that the perception of cloud-based systems as being less secure remains.  So long as that perception remains, many companies will be reticent to put their most important data onto a public cloud.  However, while the overall security perception is only in the mind, what is a hard reality is the fact that many countries have a data residency requirement that insists that private information about their citizens remain within their borders.  This means that for those solutions that are based in a public cloud that does not have a presence in that particular country that the best choice for compliance in storing that data remains in an on-premise data store.
+
+* Productivity and Skills:  Teams that have built and operate entirely cloud-native systems can be enormously productive, as research such as [Forsgren](https://www.amazon.com/Accelerate-Software-Performing-Technology-Organizations/dp/1942788339) has decisively proved.  However, being that productive requires that teams aquire a skill set around Agile methods, particularly the technical practices of Agile methods, DevOps and cloud native technologies such as Containers and Automation.  Many teams do not yet have that skill set.  What's more, they do not have the support within their organization to enable them to acquire that skill set.  What we have seen is that there is no magic in the cloud - if you build, manage, and operate a system on the cloud in the same way in which you have built, managed, and operated systems on-prem, then there is no net new benefit derived from being on the cloud in this regard.  It will take just as long to build systems, it will take just as long to test them, and tit will take perhaps even more time to operate them and solve production issues due to the extra complexity added by an unfamiliar VM, storage and networking environment.
+
+* Cost-Effectiveness:  No myth is more persistent than that that the cloud is cheaper than any on-premise option.  The fact is that the cloud can be cheaper, and substantially so, but only if an application is designed and enabled to take advantage of the technical features that make the cloud cheaper.  There are many of these, but the simplest to understand is elasticity - if your application is able to scale horizontally both up and down in response to traffic, then you can save a substantial amount of cost related to compute infrastructure by only paying for the infrastructure you need, when you need it.  However, all applications are not designed to take advantage of horizontal scalability.  If an application is built around the assumption that servers are forever fixed in size, number and connectivity to one another, then this cost savings is illusory. 
 
 Therefore,
 
 **Choose a Hybrid Cloud model that allows project teams to choose the right location, on-premise or off-premise, private or public, that fits their needs for security, data protection, cost-effectiveness, and skills**
+
+
 
