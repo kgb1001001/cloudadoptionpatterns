@@ -33,9 +33,9 @@ The following is a set of related practices to gain confidence and assist with a
 * Small Incremental Releases - keep releasing small changes into production.
 * Automate as you go - automate what you can as soon as you can.
 * Continuous Inspection - getting regular feedback.
-* Blue-Green Deployment - separate deployment from release.
+* [Blue-Green Deployment](Red-Black-Deployment.md) - separate deployment from release.
 * Staged Releases - first in a safe environment and spread out.
-* Canary and Rolling Deployments - gradually roll out your release..
+* [Canary](Canary-Testing.md) and Rolling Deployments - gradually roll out your release..
 * Health Checks - Smoke Tests to make sure things are ok, etc.
 
 The following are some advantages of Quality Delivery Pipeline: 
