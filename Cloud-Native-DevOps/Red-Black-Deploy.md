@@ -3,6 +3,7 @@ parent: Cloud Native DevOps
 title: Red/Black Deploy
 ---
 Red/Black Deploy
+aka Blue/Green Deploy
 ===
 
 When doing continuous deployment in a Microservices Architecture, especially with a [CI-CD Pipeline](CD-Pipeline.md), new service versions need to be rolled out quickly and safely. Classical methods of upgrading code did often require downtime, but user expectations have moved beyond that - services are expected to be able to be available.
