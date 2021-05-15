@@ -1,6 +1,6 @@
 ---
 parent: Cloud Native DevOps
-title: Start Small
+title: Quality Delivery Pipeline
 ---
 # Quality Delivery Pipeline
 
