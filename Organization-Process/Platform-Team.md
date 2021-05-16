@@ -1,3 +1,7 @@
+---
+parent: Organization and Process Patterns
+title: Platform Team
+---
 # Platform Team
 
 You are building one or more applications for the Cloud and you are following a [Hybrid Cloud Model](../Cloud-Native-Architecture/Hybrid-Cloud-Model.md) which results in you having several different environments; some on public cloud, and possibly some on private cloud.  You need to enable your [Stream Teams]() to be productive, without weighing them down with unnecessary infrastructure management.
