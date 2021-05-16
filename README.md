@@ -21,6 +21,7 @@ This set of patterns is intended for use by Architects, Lead Developers or Senio
 + [Scalable Store](Scalable-Store/README.md) contains the patterns for identifying the right persistence architecture and persistence mechanism for a particular microservice implementation.
 + [Cloud Native DevOps](Cloud-Native-DevOps/README.md) introduces the DevOps conversation by discussing many of the fundamental patterns around developing, testing and managing a cloud-native architecture.
 + [Container DevOps](container-architecture/README.md) continues the discussion of DevOps by introducing patterns around building a DevOps pipeline for and managing the containers that your microservices will be deployed into.
++ [Organization and Process Patterns](../Organization-Process/README.md) are required to provide the constraints that team size and composition put on the types of practices that teams can implement.
 
 The relationship between the different sets of patterns in this language are shown below:
 
