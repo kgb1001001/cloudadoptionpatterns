@@ -1,3 +1,7 @@
+---
+parent: Organization and Process Patterns
+title: Stream Team
+---
 # Stream Team
 
 You are either building a new application with [Cloud Centric Design]() or applying [Cloud Refactoring]() in order to modernize an existing application to run on the cloud.  
