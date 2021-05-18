@@ -22,5 +22,5 @@ Therefore,
 
 **Define an Aggregate Descriptor of services, runtimes, and the connections between them.  This Aggregate Descriptor is executed by a Deployment Engine that reads the descriptor and creates the necessary containers and other aspects of the runtime system.  The resulting combination of Descriptor and Engine should respect idempotency and not repeat deploying what is already at the same level and version.**
 
-Examples: Terraform, HELM charts, Docker Compose YML’s, Operators
+Examples of implementations of this pattern include [Terraform templates](https://www.terraform.io/) and [HELM charts](https://helm.sh/).
 
