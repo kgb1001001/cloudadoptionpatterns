@@ -1,28 +1,13 @@
 ---
 parent: Cloud Native DevOps
-title: Container Grouping
+title: Aggregate Descriptor
 ---
-Container Grouping
+Aggregate Descriptor
 ===
 
-Context: Clound Native Devops.
+**How do you define a reusable architecture independent of particular application artifacts?**
 
-I think the following three slides from KB's deck are relevant here - copy/paste job:
+**Define an Aggregate Descriptor of services, runtimes, and the connections between them.  This Aggregate Descriptor is executed by a Deployment Engine that reads the descriptor and creates the necessary containers and other aspects of the runtime system.**
 
-## Deployment: Containerization
-
-Context: Application Development
-Problem: How do you package a section of an application such that its function will be absolutely consistent across lifecycle stages and deployment targets?
-
-Solution: Take advantage of Containerization and package your application code inside a container.
-
-Examples: Docker, Warden Containers in Cloud Foundry, Windows Server Containers and Hyper-V Containers in Azure
-
-## Deployment: Aggregate
-
-Problem: When performing Cloud Tuning, how do you define a reusable architecture that defines a generic application structure independent of particular application artifacts?
-
-Solution: Define an Aggregate of services, runtimes, and the connections between them
-
-Examples: PureApplication Patterns, HOT Templates, Docker Compose YML’s
+Examples: HELM charts, Docker Compose YML’s, Operators
 
