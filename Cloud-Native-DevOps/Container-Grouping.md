@@ -16,9 +16,11 @@ The problem comes in as you start thinking about how you can bring all of these 
 1. You could do all of the deployment and configuration manually
 2. You could write deployment scripts that automate the process
 
+The problem with the first option is that it is both error prone and difficult to repeat.  No one wants to have to use a GUI or type parameters in multiple times to deploy an application every time there is a change.  Likewise, the problem with the second is that idempotency becomes an issue.  You can write shell scripts, or scripts in other languages to deploy application components, but you have to include checks in every routine to decide what to do if the component is already deployed, or you can risk either disaster in losing existing configuraiton or data, or out-of-control costs as you end up with multiple deployments of everything.  The answer has to lie somewhere in-between.
+
 Therefore,
 
-**Define an Aggregate Descriptor of services, runtimes, and the connections between them.  This Aggregate Descriptor is executed by a Deployment Engine that reads the descriptor and creates the necessary containers and other aspects of the runtime system.**
+**Define an Aggregate Descriptor of services, runtimes, and the connections between them.  This Aggregate Descriptor is executed by a Deployment Engine that reads the descriptor and creates the necessary containers and other aspects of the runtime system.  The resulting combination of Descriptor and Engine should respect idempotency and not repeat deploying what is already at the same level and version.**
 
 Examples: Terraform, HELM charts, Docker Compose YML’s, Operators
 
