@@ -21,4 +21,4 @@ Certain architectural concepts are critical to understanding how Scalable Stores
 
 The relationships between these patterns is shown in the diagram below:
 
-![Scalable Store](../assets/ScalableStore.png)
+![Scalable Store](../assets/ScaleableStore.png)
