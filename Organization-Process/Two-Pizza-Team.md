@@ -16,7 +16,7 @@ What we have seen in practice, is that there are two alternative approaches to b
 
 Therefore,
 
-**Make teams small, self-sufficient entities that have all necessary expertise on board (development, operations, testing, business, etcetera) but keep them to a size where two pizzas are sufficient to provide lunch/dinner for the whole team.**
+**Make teams small, self-sufficient entities that have all necessary expertise on board (development, operations, testing, business, etc.) but keep them to a size where two pizzas are sufficient to provide lunch/dinner for the whole team.**
 
 Anecdotally, this limitation to team size is attributed to Jeff Bezos.  
 
