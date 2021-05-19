@@ -1,3 +1,7 @@
+---
+parent: Organization and Process Patterns
+title: Frequent Releases
+---
 # Frequent Releases
 
 **How do you ensure that your team does not become mired in the complexity of testing many changes at once, with the accompanying difficulty in merging changes from several different streams?**
