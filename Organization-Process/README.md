@@ -14,3 +14,5 @@ Instead, we would consider the set of patterns that we outline here to be the mi
 * [Stream Team](Stream-Team.md) describes the basic team structure of a team building an application for the cloud.  Teams need to be autonomous, cross-disciplinary and importantly, small enough to focus on one (and only one) particular aspect of a domain that they understand very well.  These teams need to be tied together to produce larger applications, but the basic unit still needs to be small enough to share lunch.
 
 * [Platform Team](Platform-Team.md) is also foundational in that it recognizes the fact that Stream teams cannot go it alone without ensuring that they work together within a common platform, be that in a public cloud, private cloud, or even a [Hybrid Cloud Model](../Cloud-Native-Architecture/Hybrid-Cloud-Model.md).  
+
+* [Frequent Releases] is a basic process principle that underlies many of the Agile practices and is the reason behind many DevOps patterns.  One of the main reasons to keep teams to a size of a [Two Pizza Team](Two-Pizza-Team.md) and employ architectural principles like the [Microservices Architecture]() is to make Frequent Releases possible.
