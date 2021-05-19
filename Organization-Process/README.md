@@ -15,4 +15,4 @@ Instead, we would consider the set of patterns that we outline here to be the mi
 
 * [Platform Team](Platform-Team.md) is also foundational in that it recognizes the fact that Stream teams cannot go it alone without ensuring that they work together within a common platform, be that in a public cloud, private cloud, or even a [Hybrid Cloud Model](../Cloud-Native-Architecture/Hybrid-Cloud-Model.md).  
 
-* [Frequent Releases] is a basic process principle that underlies many of the Agile practices and is the reason behind many DevOps patterns.  One of the main reasons to keep teams to a size of a [Two Pizza Team](Two-Pizza-Team.md) and employ architectural principles like the [Microservices Architecture]() is to make Frequent Releases possible.
+* [Frequent Releases](Frequent-Releases.md) is a basic process principle that underlies many of the Agile practices and is the reason behind many DevOps patterns.  One of the main reasons to keep teams to a size of a [Two Pizza Team](Two-Pizza-Team.md) and employ architectural principles like the [Microservices Architecture]() is to make Frequent Releases possible.
