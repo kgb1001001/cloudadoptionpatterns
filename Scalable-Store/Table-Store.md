@@ -7,9 +7,9 @@ Table Store
 
 You are building a cloud-native application, particularly one following the [Microservices Architecture](../Microservices/Microservices-Architecture.md).  You may be either creating a new, greenfield application or following [Cloud Refactoring](../Cloud-Adoption/Cloud-Refactoring.md) principles to refactor an existing application.
 
-**How do I represent data that is going to be queried arbitrarily?**
+**How do I represent data that is going to be queried arbitrarily and updated frequently?**
 
-Some applications go beyond basic "CRUD" operations in that they require the ability to arbitrarily query on data.  This is particularly true of applications that have a reporting element, especially in cases where the reports change frequently.
+Some applications go beyond basic "CRUD" operations in that they require the ability to arbitrarily query on data.  This is particularly true of applications that have a reporting element, especially in cases where the reports change frequently.  What's more, many applications change their data frequently - there are hundreds, if not thousands of updates made every second.
 
 Likewise many existing applications are already using a table format for their data.  If the level of pain caused by ORM is low (for instance, the application is a standard CRUD application and is using a simple ORM like Hibernate) then there is no pressing reason to force a different data representation.
 
