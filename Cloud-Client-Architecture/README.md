@@ -32,3 +32,7 @@ The patterns include:
 + [Public API](Public-API.md) is the mechanism for making your application services available to the world of developers outside of your own team.  They are important wherever you have interactions with third parties such as suppliers, business partners or governmental entities.
 + [Micro Frontends](micro-frontends.md) are a  way to avoid recommitting the mistakes of Monoliths within a client-side application built using the Single Page Application architectural approach.
 + [Near Cache](Near-Cache.md) is a way of making Single Page Applications perform well when combined with other aspects of a Microservices Architecture.
+
+The relationships between the patterns in this section are shown below.
+
+![Cloud Client Architecture](../assets/CloudClientArchitecture.md)
