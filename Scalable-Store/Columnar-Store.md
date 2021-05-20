@@ -9,7 +9,7 @@ You are building an application that needs to store data in such a way that you 
 
 **How do I store data when I'm often interested in a subset of the columns of all rows?**
 
-Traditional [Table Stores](Table-Store.md) store data by row.  Thus, doing a query over any column will require you to do eithe ra linear search, or to use an index to do a hashed search.  For most applications, that is fine - the tradeoff between being able to insert and update data quickly vs. a slight increase in query time is acceptable.  However, many types of analytics applications put a premium on query time, and do not require fast updates or inserts.  In this case, the row-oriented storage approach of a Table Store is not optimal.
+Traditional [Table Stores](Table-Store.md) store data by row.  Thus, doing a query over any column will require you to do either a linear search, or to use an index to do a hashed search.  For most applications, that is fine - the tradeoff between being able to insert and update data quickly vs. a slight increase in query time is acceptable.  However, many types of analytics applications put a premium on query time, and do not require fast updates or inserts.  In this case, the row-oriented storage approach of a Table Store is not optimal.
 
 Therefore,
 
