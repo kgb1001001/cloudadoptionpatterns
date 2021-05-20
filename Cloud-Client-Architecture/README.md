@@ -35,4 +35,4 @@ The patterns include:
 
 The relationships between the patterns in this section are shown below.
 
-![Cloud Client Architecture](../assets/CloudClientArchitecture.md)
+![Cloud Client Architecture](../assets/CloudClientArchitecture.png)
