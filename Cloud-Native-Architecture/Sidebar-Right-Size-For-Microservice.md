@@ -67,7 +67,7 @@ At this point, some purists may be shouting, “But wait! This would require 10,
 
 What we have found is that it is always better to initially err on side of making a microservice too large than too small. It is easier to take a larger (coarser grained) microservice and split it into two than it is to take two fine-grained microservices and combine them.
 
-##Finding the right level of abstraction
+## Finding the right level of abstraction
 
 If this is the right lower bound for a microservices design, then how do you practically go about identifying all of those aggregates and especially the services that go along with those aggregates?  Luckily, the Domain Driven Design community has recently (in the last couple of years) come up with a very good answer to that question – start your design process by performing Event Storming.
 
