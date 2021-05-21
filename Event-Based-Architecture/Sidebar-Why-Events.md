@@ -54,4 +54,4 @@ This solution depends  on each service vendor being able to react to notificatio
 *	Provide the means to register dependency on either of these objects (flight and/or itinerary)
 *	Provide notification to an object’s dependents when the object changes 
 
-In this way, event notification can be used to provide complex coordination amongst separate vendors working together to provide coordinated services. Each vendor does is responsible for adjusting its own part of the service. No vendor has more information than it needs except to know what resources it depends on (such as a rental car company or hotel needing to know a customer’s incoming flight).
+In this way, event notification can be used to provide complex coordination amongst separate vendors working together to provide coordinated services. Each vendor is responsible for handling notifications when they occur and providing notifications when needed. No vendor has more information than it needs, except to know what resources it depends on (such as a rental car company or hotel needing to know a customer’s incoming flight).
