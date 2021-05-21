@@ -5,7 +5,7 @@ has_children: true
 ---
 # Event Based Architecture Introduction
 
-In this section we present a small set of linked patterns that represent the fundamental building blocks of an Event Driven architecture.  An Event Driven approach is an important (some would say essential) extension to the services approach that supports decoupling services in a way that is not just compatible with a cloud approach, but in many cases, absolutely required when you are pursuing a Hybrid Cloud approach.  For more information on Why an Event Driven approach can help, see this [sidebar]().
+In this section we present a small set of linked patterns that represent the fundamental building blocks of an Event Driven architecture.  An Event Driven approach is an important (some would say essential) extension to the services approach that supports decoupling services in a way that is not just compatible with a cloud approach, but in many cases, absolutely required when you are pursuing a Hybrid Cloud approach.  For more information on Why an Event Driven approach can help, see this [sidebar](Sidebar-Why-Events.md).
 
 This set of tightly related patterns describes the basic issue of how to construct an Event Driven Architecture from component parts.  The patterns discussed are:
 
