@@ -1,3 +1,7 @@
+---
+parent: Event-based Architecture
+title: Sidebar: Why add Event Driven Architecture?
+---
 # Sidebar:  Why add Event Driven Architecture?
 
 One of the more common questions we receive when discussing why you need to add Event Driven Architecture to an existing Services-Based architecture (for instance one based on REST) is "What does this do that we can't do with traditional REST service calls?"  It's easiest to understand the difference, and the advantages of an Event-Driven approach, through an example.  A good example that is easy to understand is the effect on a travel itinerary where a flight runs late.  What effects can a flight running late have?
