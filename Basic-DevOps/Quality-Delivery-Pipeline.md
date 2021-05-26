@@ -1,5 +1,5 @@
 ---
-parent: Cloud Native DevOps
+parent: Basic DevOps
 title: Quality Delivery Pipeline
 ---
 # Quality Delivery Pipeline
