@@ -49,4 +49,4 @@ There are also some potential disadvantages to Quality Delivery Pipeline:
 
 Automate as you Go can helps ensure the Quality Delivery Pipeline is run frequently, and error prone steps are avoided. The Quality Delivery Pipeline becomes a form of Continuous Inspection during the release cycle. 
 
-Note these patterns were first introduced and evolved from a SugarLoaf PLoP 2018 paper by Joseph Yoder, Ademar Aguiar, and Hironori Washizaki.
+Note this pattern were first introduced and evolved from a SugarLoaf PLoP 2018 paper by Joseph Yoder, Ademar Aguiar, and Hironori Washizaki.
