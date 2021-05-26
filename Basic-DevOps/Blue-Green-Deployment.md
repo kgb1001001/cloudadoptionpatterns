@@ -47,6 +47,7 @@ When the new version requires database schema changes and/or data migration, emp
 * Make each version access a separate database (separate DB server or separate logical space/owner within the same DB server). In this case, the data is replicated across the old version DB and the new version DB. Therefore, a data synchronization mechanism must be established. This is an eventual consistency setting that has the additional drawback that an application may consume stale data.
 
 *** THESE ARE RELATED PATTERNS I USE SOME Stars to separate ***
+
 Blue-green deployment can be problematic when the new version contains API changes that make old client applications incompatible. In this case, we might need an interceptor placed between the clients and the old and new application to perform message transformations to deal with the API changes.
 
 Blue-green deployment can use feature toggles to emulate a form of canary deployment, by toggling on/off certain features for certain users roles.
