@@ -42,6 +42,7 @@ Similar to blue-green deployment, canary deployment incurs the cost of having tw
 **Alternatives to Canary Deployments**
 An alternative to canary deployment is to deploy the new version to everyone with feature toggles turned off for the new features. Then you selectively enable features to different users. As you validate the release, you increase the number of users access to the new features. This approach requires a special implementation using “feature toggles” combined with canary user identification.
 
+❖ ❖ ❖
 * * *
 
 You can also use blue-green deployment to push the release out to the green server for example, and then only move a few users from the blue server to the green server for the canary deployment. Then as you validate the release you can move more and more users to the green server.
