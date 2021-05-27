@@ -1,5 +1,5 @@
 ---
-parent: Basoc DevOps
+parent: Basic DevOps
 title: Blue-Green Deployment
 ---
 # Blue-Green Deployment 
