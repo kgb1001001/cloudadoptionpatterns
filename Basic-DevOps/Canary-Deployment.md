@@ -7,7 +7,7 @@ title: Canary Deployment
 
 You are doing continuous delivery as part of DevOps by making deployment to different environments as automated and as quick as possible. You are releasing to a live environment that has potentially many users.
 
-** How can we get feedback on the new release, verify if it is working properly, and get early reactions from users? **
+**How can we get feedback on the new release, verify if it is working properly, and get early reactions from users?**
 
 Building and releasing into production environments can be tedious and error prone.
 
