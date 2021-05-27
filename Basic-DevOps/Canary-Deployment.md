@@ -46,3 +46,5 @@ An alternative to canary deployment is to deploy the new version to everyone wit
 * * *</p>
 
 You can also use blue-green deployment to push the release out to the green server for example, and then only move a few users from the blue server to the green server for the canary deployment. Then as you validate the release you can move more and more users to the green server.
+
+Note this pattern were first introduced and evolved from a AsianPLoP 2019 paper by Joseph Yoder, Ademar Aguiar, Paulo Merson, and Hironori Washizaki.
