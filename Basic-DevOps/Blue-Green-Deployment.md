@@ -54,5 +54,4 @@ Blue-green deployment can use feature toggles to emulate a form of canary deploy
 
 Blue-green deployment can be used in conjunction with canary deployment. In other words you can push the new release completely to the second environment. And then route selected users from the first environment to the second environment in a canary fashion. 
 
-
-
+Note this pattern were first introduced and evolved from a AsianPLoP 2019 paper by Joseph Yoder, Ademar Aguiar, Paulo Merson, and Hironori Washizaki.
