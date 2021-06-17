@@ -5,7 +5,7 @@ parent: Cloud Client Architecture
 Near Cache
 ===
 
-You are writing ea [Native Mobile Application](Native-Mobile-Application.md). The application must be able to operate efficiently even when Internet connectivity is not available at the highest speeds.
+You are writing a [Native Mobile Application](Native-Mobile-Application.md). The application must be able to operate efficiently even when Internet connectivity is not available at the highest speeds.
 
 **How do you reduce the total number of calls to back-end microservices (particularly to [Backend for Frontends](../Microservices/Backend-For-Frontend.md)) for repeated information?**
 
