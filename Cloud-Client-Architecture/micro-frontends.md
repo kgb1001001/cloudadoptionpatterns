@@ -36,4 +36,4 @@ In this example, a team building a customer website for an airline is divided in
 
 By implementing the Micro Frontend pattern you can develop and deploy small features with more agility than in a monolithic [Single Page Application](Single-Page-Application.md). This enables cross functional teams, ownership of frameworks, end to end ownership of features and reduces complexity.
 
-See more about [Micro Frontends](https://micro-frontends.org/)
+Read more about [Micro Frontends](https://micro-frontends.org/) in the article that originally introduced them to the world.
