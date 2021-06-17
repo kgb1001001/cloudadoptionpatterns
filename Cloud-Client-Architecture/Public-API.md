@@ -21,4 +21,13 @@ Therefore,
 
 **Build a separate, externally facing, microservice that implements a Public API. The service essentially operates as a facade to internal services.  This microservice will act as a specialized Backend for Frontend.**
 
+Public API’s are sometimes subdivided yet again into Partner (closed) API’s and Public (open) API’s.  The difference between these two is that partner API’s are usually controlled through some contractual agreement and thus are more restricted in how fast they can change than a Public API.  In either case, you need to think about both subtypes as being products – they have consumers outside of your development organization, and you have to think about the impact of any changes on that external user community. That is why the [Backend for Frontend](../Microservices/Backend-For-Frontend.md) approach of creating unique Public API’s is so powerful – it allows you to isolate changes that affect your external user community (the Public API) from changes to your internal services.
+
+
 Something that is important to understand is that a *Public API* is NOT the same thing as an [API Gateway](https://microservices.io/patterns/apigateway.html).  The API Gateway pattern solves a slightly different problem caused by the creation of Public API's - that is that they should be discoverable, documented, versioned, and that access to them should be limited to those clients that are properly authenticated and have the right level of authorization.  What has happened is that many API Gateway products also provide a form of the [Adapter Microservice](../Microservices/Adapter-Microservice.md) pattern as part of their implementation - thus people have often built the implementations of their Public API's directly into the API Gateway.  This is limiting in several ways; first of all, it locks you in to that particular API Gateway vendor implementation, second, these products are often limited in how sophisticated the adaptation can be - resulting in Public API's that often are barely disguised versions of internal Microservices implementations.  This is dangerous in that it exposes too much of your private implementation to the outside world, and second, it limits your ability to change your underlying implementation.  Takeing the architectural approach that a Public API should be its own, carefually designed entity on its own avoids this problem.
+
+However, having said this, the API Gateway is an often-useful addition to the Public API pattern in that you can use these products to secure, manage and track your Public API usage. An example of an architecture that combines both can be seen below:
+
+![Public API Architecture](../assets/PublicAPI.png)
+
+
