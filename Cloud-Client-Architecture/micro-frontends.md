@@ -30,7 +30,7 @@ To allow the team to own features and functionality from Frontend to Backend the
 
 An example of an architecture (and team organization) that follows this pattern is shown below:
 
-![Micro Frontend Architecture](../assets/MicroFrontend.md)
+![Micro Frontend Architecture](../assets/MicroFrontend.png)
  
 In this example, a team building a customer website for an airline is divided into three Stream Teams, each one responsible for one major epic that represents a major chunk of functionality in the application.  Each Stream Team is responsible for both the front-end and back-end development of their epics, although teams may connect at the microservices level, such as the booking team needing to be able to find flight availability if a flight is cancelled and must be rebooked.
 
