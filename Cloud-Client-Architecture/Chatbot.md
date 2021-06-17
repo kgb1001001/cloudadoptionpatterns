@@ -14,7 +14,8 @@ What is needed is some way to meet these users where they are - to give them an 
 
 Therefore,
 
-Build a chatbot as a microservice that can be plugged into different web sites, mobile applications and social media platforms.
+**Build a chatbot as a microservice that can be plugged into different web sites, mobile applications and social media platforms.**
+
 Chatbots are not a new form of technology - in a sense they can be traced back all the way to the Eliza program written by Joseph Weizenbaum in 1966. However, recent improvements in Natural Language Processing has made it easier and more efficient to build them than before.  Most chatbots share a common set of architectural features that allow them to be built easily from existing open-source libraries or commercial web-based API’s.  Therefore, they can be implemented as microservices that can be called from within mobile apps, web apps, chat applications (such as slack or discord) and social media platforms.  An example of a typical Chatbot architecture is shown below:
 
 ![Chatbot Architecture](../assets/Chatbot.png)
