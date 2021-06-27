@@ -70,17 +70,16 @@ Docker engine 17.05 introduced the idea of a “multistage build” that effecti
 
     FROM ubuntu:20.04 AS builder
     MAINTAINER Kyle Brown “brownkyl@us.ibm.com"
-    RUN apt-get update
-    RUN apt-get install -y git
-    RUN DEBIAN_FRONTEND=noninteractive apt-get install -y default-jdk
-    RUN apt-get install -y wget
+    RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y \
+        default-jdk \
+        git \
+        wget
     WORKDIR minecraft
     RUN wget "https://hub.spigotmc.org//jenkins/job/BuildTools/lastSuccessfulBuild/artifact/target/BuildTools.jar" -O BuildTools.jar
     RUN java -jar BuildTools.jar --rev 1.16.1
 
     FROM ubuntu:20.04
-    RUN apt-get update
-    RUN DEBIAN_FRONTEND=noninteractive apt-get install -y default-jre
+    RUN apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y default-jre
     WORKDIR minecraft
     COPY --from=builder /minecraft/spigot-1.16.1.jar .
     RUN echo "eula=true" > eula.txt
