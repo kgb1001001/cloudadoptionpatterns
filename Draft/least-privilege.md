@@ -1,5 +1,15 @@
 # Least Privilege
 
-**How do you ensure that you are not open to container privilege escalations?**
+You are building a container image that includes third party code (perhaps open source libraries, or a third party application).  You want to ensure that this code running in your container cannot access resources that it is not supposed to be able to access (such as the file system of the host).
 
-**Build an image that combines everything by privilege level to minimize escalations.  Create a dedicated user and group in the Docker image for the application using the USER directive.  Never execute a process from the image as root.**
+**How do you ensure that your containers are not open to container privilege escalations?**
+
+Privilege escalation is the process of obtaining more permissions for a resource (such as a process).  Malicious code does this through exploiting weaknesses in different entry points into the Linux kernel.  While code scanners can usually detect known vulernabilities and malicious code in third party libraries, it only takes one undetected zero-day exploit to render your system insecure.
+
+Therefore,
+
+**Follow the principle of least privilege.**
+
+1. Build an image that combines everything by privilege level to minimize escalations.  
+2. Create a dedicated user and group in the Docker image for the application using the USER directive.  
+3. Never execute a process from the image as root.
