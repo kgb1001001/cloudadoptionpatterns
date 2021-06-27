@@ -13,6 +13,8 @@ The process to building a server in Linux is:
 3. Install Git (used by the Build JAR to fetch the latest code)
 4. Run the Build Jar at the Java command line
 
+After the Build Jar has run, a new server Jar file (named spigot-<version>.jar) is created.  That Jar file looks in the "plugins" directory for other Plugin Jar files when it executes.  
+
 This process has been encoded in the Dockerfile below:
 
     FROM ubuntu:20.04
