@@ -8,7 +8,7 @@ Privilege escalation is the process of obtaining more permissions for a resource
 
 Therefore,
 
-**Follow the principle of least privilege.  A process should have only those access rights that are needed to accomplish each task and no more. **
+**Follow the principle of least privilege.  A process should have only those access rights that are needed to accomplish each task and no more.**
 
 1. Build an image that combines everything by privilege level to minimize the possibility of escalations.  
 2. Create a dedicated user and group in the Docker image for the application using the USER directive.  
