@@ -13,3 +13,13 @@ Therefore,
 1. Build an image that combines everything by privilege level to minimize the possibility of escalations.  
 2. Create a dedicated user and group in the Docker image for the application using the USER directive.  
 3. Never execute a process from the image as root.
+
+The last two are especially important in limiting the possibility of privilege escalation.  First of all, begin by creating the user and group in the Dockerfile.  An example of this is would be to use:
+
+    RUN groupadd -r postgres && useradd --no-log-init -r -g postgres postgres
+    
+ Next, you want to use the USER command to change to the non-root user you just created.
+ 
+    USER postgres
+     
+The downside (if it can be considered a downside) of this approach is that this will only work if the process can run without root privileges.  However, requiring root privileges in Unix or Linux can be considered a bug for most software.  However, if a preparation or build step requires escalated privileges, then you can perhaps consider combining this pattern with [Multistage Build](Multi-Stage-Build.md) to escalate privileges in the temporary build image that is created, and then only using the newly created user (with fewer privileges) in the final production image that the build creates.  In any case, you want to avoid constantly switching users within your Dockerfile - you want to avoid switching users at all if you can, and if you cannot, at least group all of the commands that have to execute under a particular user together.
