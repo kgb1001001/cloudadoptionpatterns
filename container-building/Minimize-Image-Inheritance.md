@@ -1,5 +1,5 @@
 ---
-parent: Container DevOps
+parent: Container Building
 title: Image Inheritance
 ---
 # Minimize Image Inheritance
