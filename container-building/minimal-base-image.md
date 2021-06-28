@@ -1,3 +1,7 @@
+---
+parent: Container Building
+title: Minimal Base Image
+---
 # Minimal Base Image
 
 You are building an application for deployment into containers.  You want to be able to take advantage of the benefits of containers, such as rapid startup and small memory footprint.  However, you want to spend your time developing your application and not spending time and effort in packaging.
