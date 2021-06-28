@@ -1,3 +1,7 @@
+---
+parent: Container Building
+title: Least Privilege
+---
 # Least Privilege
 
 You are building a container image that includes third party code (perhaps open source libraries, or a third party application).  You want to ensure that this code running in your container cannot access resources that it is not supposed to be able to access (such as the file system of the host).
