@@ -1,3 +1,7 @@
+---
+parent: Container Building
+title: Multistage Build
+---
 # Multistage Build
 
 You are building an application with containers.  You have a complex build process that requires several tools to complete the build.  However, these tools are no longer needed once the container has been built, as they are not required at runtime.
