@@ -1,6 +1,6 @@
 ---
-parent: Container DevOps
-title: Visualize Dependencies
+parent: Container Building
+title: Visualize Container Dependencies
 ---
 # Visualize Container Dependencies
 
