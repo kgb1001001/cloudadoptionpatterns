@@ -34,7 +34,3 @@ The relationships between the patterns in this section can be found in the diagr
 
 ![Figure 2](../assets/Figure2.png)
 
-In addition, we have found a few patterns that are helpful in constructing the images themselves, although this is an area that we continue to research and develop more patterns in.  These include
-
-+ [Minimize Image Inheritance](Minimize-Image-Inheritance.md) deals with the issue that container inheritance can easily get out of hand.
-+ [Visualize Container Dependencies](container-dependency-model.md) reinforces the importance of visualizing the set of dependencies of different types among images 
