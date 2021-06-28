@@ -1,3 +1,7 @@
+---
+parent: Container Building
+title: Intentional Layer
+---
 # Intentional Layer
 
 You are building a container image and have a complex Dockerfile.
