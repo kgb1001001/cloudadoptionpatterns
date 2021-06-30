@@ -31,6 +31,6 @@ A container dependency model will allow you to see:
 
 The following diagram shows an example visualization of a container dependency model.
 
-![](/assets/container_dependency_model.png)
+![](../assets/container_dependency_model.png)
 
 While diagrams like this can be drawn by hand, it is best if they are provided by a tool as part of your architecture documentation.  One such open source tool is [DockViz](https://hub.docker.com/r/nate/dockviz/).  You can also see other dependencies between images by using tools like [WeaveView](https://learnk8s.io/visualise-dependencies-kubernetes).
