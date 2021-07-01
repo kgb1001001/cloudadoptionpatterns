@@ -37,7 +37,7 @@ This process has been encoded in the Dockerfile below:
     CMD java -XX:MaxPermSize=128M -Xms512m -Xmx1024m -jar spigot-1.16.1.jar nogui
     EXPOSE 25565
 
-Now here’s the issue we have to consider - we’ve just added multiple tools to the image that are not needed at runtime!  A version Java will still be needed in the final image - not only is is needed for the build stage, but also to invoke the Java command to start the Minecraft server at the end.  However, the JDK (which adds XXXX to the size of an image) is not really needed - instead, a JRE (which is much smaller at only adding YYYYYY) would suffice.  Git is not needed in the end, nor is wget, both of which could potentially contain vulnerabilities that could be exploited.
+Now here’s the issue we have to consider - we’ve just added multiple tools to the image that are not needed at runtime!  A version Java will still be needed in the final image - not only is is needed for the build stage, but also to invoke the Java command to start the Minecraft server at the end.  However, the JDK is not really needed - instead, a JRE (which adds 239MB less to an image size) would suffice.  Git is not needed in the end, nor is wget, both of which could potentially contain vulnerabilities that could be exploited.
 
 Now, one way you could do this (which was actually common early in the development of docker images) is to combine all of the commands to obtain a tool, use a tool and then delete the tool (and its associated artifacts) in one long Unix command line.  An example of this is shown below
 
