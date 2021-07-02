@@ -93,3 +93,5 @@ Docker engine 17.05 introduced the idea of a “multistage build” that effecti
     EXPOSE 25565
 
 Note that what happens is that this Dockerfile separates the process of creating an image for building the Jar file (the top half of the file, which is defining the “builder” image) from the process of creating an image to run the resulting file (the bottom half, which is what is returned from docker build as the final image).  The difference in size is stark.  The previous Dockerfile, when built, results in an image which is 907MB in size.  The second Dockerfile results in an image which is only 556MB in size.   Given that one of the main reasons why you choose to use Docker images is the ability to pack in more instances in the same amount of memory, in this example you’ve just roughly doubled the number of containers built from this image that can be run on the same Kubernetes node. 
+	
+In order to control the overall size of the image, you want to begin from a [Minimal Base Image](minimal-base-image.md).  You always need to follow the principle of [Least Privilege](least-privilege.md) when starting processes and requesting access to resources.
