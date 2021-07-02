@@ -8,7 +8,9 @@ To package an application for deployment in a container, you are designing an [a
 
 **How do you ensure that you reduce the total amount of work you have to do in preparing your container images while ensuring that the image includes the latest patches and a minimal attack surface?**
 
-Every container image is built from a more basic container image. (Makes you wonder where the first image came from!) What base image should you build your image from?
+*Application runtime image* explains that an application image consists of three large layers: OS libraries, language runtime, and application. Where do the first two layers come from?
+
+Every container image is built from a more basic container image. (Makes you wonder where the first image came from!) What base image should you build your image from? Clearly, one that contains the OS libraries and, ideally, the language runtime needed to run your application.
 
 The community has lots of base images to choose from. They're available in widely-shared [image registries](../container-architecture/image-registries-as-a-service.md) such as Docker Hub and Red Hat's registry of certified container images.
 
@@ -24,26 +26,45 @@ A base image designed to include a specific language runtime can be better optim
 
 How do you know which base images you can trust and, better yet, how they were built? Docker Hub has a designation called Official Images, ones that Docker, Inc. has reviewed and published. For example, the images in the *ubuntu*, *alpine*, *node*, and *openjdk* directories (and many more) on Docker Hub are all labeled as "Docker Official Images."
 
-Another option for finding trusted images is to look on the software vendor's website. Often they have instructions for downloading their official images, such as specifying their official directory in Docker Hub. For example, the Open Liberty website says to pull the open-liberty image, which pulls from the *open-liberty* directory on Docker Hub. The images in this directory are Docker Official Images which, as the Docker Hub website describes, are maintained by the Open Liberty Community.
+Another option for finding trusted images is to look on the software vendor's website. Often they have instructions for downloading their official images, such as specifying their official directory in Docker Hub. For example, the Open Liberty website says to pull the open-liberty image, which pulls from the `open-liberty` directory on Docker Hub. The images in this directory are Docker Official Images which, as the Docker Hub website describes, are maintained by the Open Liberty Community.
 
 Some vendors offer prebuilt base images for a range of uses. For example, Red Hat offers a set of Universal Base Images (UBI) that contain libraries from Red Hat Enterprise Linux (RHEL) and optionally a language runtime for languages like Java (OpenJDK), Node.js, Python, PHP, and others.
 
-Resistries such as Docker Hub often show how the image is built. You can review these to confirm that an image is built properly before trusting it. For example, the OpenLiberty/ci.docker repository in GitHub shows releases of the Open Liberty container image and the Dockerfiles used to build them. Likewise, Red Hat's registry of certified container images shows how each UBI is built, its health rating, and more.
+Resistries such as Docker Hub often show how the image is built. You can review these to confirm that an image is built properly before trusting it. For example, the `OpenLiberty/ci.docker` repository in GitHub shows releases of the Open Liberty container image and the Dockerfiles used to build them. Likewise, Red Hat's registry of certified container images shows how each UBI is built, its health rating, and more.
 
-## Example: AdoptOpenJDK
+## Example: Java SE from AdoptOpenJDK
 
-AdoptOpenJDK is a community that produces free OpenJDK (Java) binaries. Their AdoptOpenJDK/openjdk-docker repositry in GitHub contains the source code they use to build the images they push to the *adoptopenjdk* directory in Docker Hub as Docker Official Images. To build an image for a Java SE application, start your Dockerfile with a line like this:
+AdoptOpenJDK is a community that produces free OpenJDK (Java) binaries. Their `AdoptOpenJDK/openjdk-docker` repositry in GitHub contains the source code they use to build the images they push to the `adoptopenjdk` directory in Docker Hub as Docker Official Images. Their Dockerfiles show that they install their JDK on Ubuntu images, which are also Official Images in Docker Hub.
+
+We asked earlier: Where did the first container image come from? The Ubuntu image shows how that's done now. Its Dockerfiles build its images from a base image called `scratch`. Docker's documentation explains:
+
+> You can use Docker’s reserved, minimal image, `scratch`, as a starting point for building containers.
+>
+> While `scratch` appears in Docker’s repository on the hub, you can’t pull it, run it, or tag any image with the name `scratch`.
+
+To build an image for a Java SE application, start your Dockerfile with a line like this:
 
 ```dockerfile
 FROM adoptopenjdk:8-jre-openj9
 ```
 
-## Example: Red Hat Universal Base Image for Node.js 14
+## Example: Jakarta EE from Open Liberty
 
-Red Hat Universal Base Images (UBI) are images that Red Hat supports when running in Red Hat OpenShift and that are freely distributable. Red Hat makes available UBIs for several language runtimes and versions. To build an image for a Node.js 14 applicaion, start your Dockerfile with a line like this:
+Open Liberty is an open source application server that implements the Java EE and Jakarta EE APIs, based on IBM's WebSphere Liberty. Their `OpenLiberty/ci.docker` repository in GitHub contains the Dockerfiles they use to build the images they push to the `open-liberty` directory in Docker Hub as Docker Official Images. Their Dockerfiles show that they build their images from AdoptOpenJDK images (explained above).
+
+To build an image for a Jakarta EE application, start your Dockerfile with a line like this:
+
+```dockerfile
+FROM open-liberty:full-java11-openj9
+```
+
+## Example: Node.js from Red Hat as a Universal Base Image
+
+Red Hat Universal Base Images (UBI) are images that Red Hat supports when running in Red Hat OpenShift and that are freely distributable. Red Hat makes available UBIs for several language runtimes and versions. Their certified container images registry shows the Dockerfiles they use to build their UBIs. They build from the UBI 8 images OpenShift uses for its source-to-image (s2i) feature, which the registry shows is built from their base UBI image, which is built on the Koji image from the Fedora project.
+
+To build an image based on a UBI for a Node.js 14 applicaion, start your Dockerfile with a line like this:
 
 ```dockerfile
 FROM registry.access.redhat.com/ubi8/nodejs-14:latest
 ```
-
 
