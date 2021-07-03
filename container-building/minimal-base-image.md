@@ -10,7 +10,7 @@ To package an application for deployment in a container, you are designing an [a
 
 *Application runtime image* explains that an application image consists of three composite layers: OS libraries, language runtime, and application. Where do the first two layers come from?
 
-Every container image is built from a more basic container image. (Makes you wonder where the first image came from!) What base image should you build your image from? Clearly, one that contains the OS libraries and, ideally, the language runtime needed to run your application.
+Every container image is built from a more basic container image, all ultimately deriving from a minimal empty image (called “scratch”).  What base image should you build your image from? Clearly, one that contains the OS libraries and, ideally, the language runtime needed to run your application.
 
 The community has lots of base images to choose from. They're available in widely-shared [image registries](../container-architecture/image-registries-as-a-service.md) such as Docker Hub and Red Hat's registry of certified container images.
 
