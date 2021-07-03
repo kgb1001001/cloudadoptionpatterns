@@ -17,10 +17,10 @@ Unfortunately, these benefits do not come for free.  You can easily end up with 
 
 We cannot solve every possible problem that can lead to this loss of benefits, but there are several common approaches that can help to guarantee that your images will remain small, fast and secure.  The patterns that capture those approaches are:
 
-+ [Minimal Base Image](minimal-base-image.md) talks about how you need to think about what your image is based upon before starting development
++ [Application Runtime Image](Application-Runtime-Image.md) is the place to begin in that it shows how to build most application images from a few basic images without letting container inheritance get out of hand.
++ [Minimal Base Image](minimal-base-image.md) builds on this basic principle by ensuring that you think about what your image is based upon before starting development
 + [Efficiently Layered Image](intentional-layer.md) deals with the basic question of how many layers your image should contain
 + [Least Privilege](least-privilege.md) addresses how to secure your container image
 + [Multistage Build](multistage-image-build.md) discusses how the process of constructing the artifacts in an image can be separated from the final image for production
-+ [Application Runtime Image](Application-Runtime-Image.md) shows how to build most application images by dealing with the issue that container inheritance can easily get out of hand.
 + [Visualize Container Dependencies](container-dependency-model.md) reinforces the importance of visualizing the set of dependencies of different types among images 
 
