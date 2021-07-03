@@ -8,7 +8,7 @@ To package an application for deployment in a container, you are designing an [a
 
 **How do you write a Dockerfile to build a container image with minimal complexity and maximum efficiency?**
 
-*Application runtime image* explains that an application image consists of three composite layers: OS libraries, language runtime, and application. The base image provides the first two of these composite layers, and hopefully you've chosen one that minimizes complexity and maximizes efficiency. Now your Dockerfile needs to not only deploy your application but also create an image that runs efficiently.
+[Application runtime image](Application-Runtime-Image.md) explains that an application image consists of three composite layers: OS libraries, language runtime, and application. The base image provides the first two of these composite layers, and hopefully you've chosen one that minimizes complexity and maximizes efficiency. Now your Dockerfile needs to not only deploy your application but also create an image that runs efficiently.
 
 The efficiency of a container image is measured in multiple ways: How much bandwidth does it need to download? How much space does it consume in the [image registry](../container-architecture/image-registries-as-a-service.md)? How quickly does a new container start? How much memory do multiple containers from the same image consume when running in the same container engine? A container image built efficiently to work efficiently will optimize all of these measurements.
 
