@@ -4,11 +4,11 @@ title: Application Runtime Image
 ---
 # Application Runtime Image
 
-You are practicing Container DevOps and building many container images using a [Container Build Pipeline](docker-build-pipeline.md).  You want to build an application with as few layers as possible, and still have an application that will occupy a minimal amount of memory and also allow for fast startup.
+You are practicing Container DevOps and building many container images using a [Container Build Pipeline](docker-build-pipeline.md).  You want to build an image for your application that is as small as possible, that will occupy a minimal amount of memory and also allow for fast startup.  However you also don't want to spend a lot of time and effort in constructing your image if at all possible.
 
 **How do you take best advantage of the layered approach of containers yet not end up with enormous images?**
 
-Containers derive a part of their power from the layered approach of a container image. You can build new images from existing container images and thus leverage the work done by others. Layers inherit from each other, which makes it possible to have all "Ubuntu" applications run from a standardized image, all "Java" applications run from an image derived from that standard, and only the application binary distribution is the final layer that makes the container run the resulting application-specific image.
+Containers derive a great part of their power from the layered approach of a container image. You can build new images from existing container images and thus leverage the work done by others. Images inherit from each other, which makes it possible to have all "Ubuntu" applications run from a standardized image, all "Java" applications run from an image derived from that standard, and only the application binary distribution is the final layer that makes the container run the resulting application-specific image.
 
 The benefits of layering in this way are many:
 
