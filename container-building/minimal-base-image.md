@@ -36,7 +36,7 @@ Registries such as Docker Hub often show how the image is built. You can review 
 
 Many base images have multiple builds of the same software version. To save space in the final container image, use the smallest build that the application can run in successfully.
 
-Once you have a base image that will run your application, use it to build an [efficiently layered image](intentional-layer.md) that includes the application.
+Once you have a base image that will run your application, use it to build an [efficiently layered image](Efficiently-Layered-Image.md) that includes the application.
 
 ## Example: Java SE from AdoptOpenJDK
 
