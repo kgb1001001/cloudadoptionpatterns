@@ -33,7 +33,7 @@ For two images to share a layer, not only must the layer's content be the same i
 
 Each command in a Dockerfile (e.g. `RUN`, `COPY`, `ADD`, etc.) creates a new layer in the resulting image. The fewer commands the Dockerfile needs to create the image, the fewer layers the image will have. If two images are the same size, the one with fewer layers will download faster and its containers will start faster.
 
-Ideally, an image should have a low number of layers but those layers should be as reusable as possible. We see this in a *minimal base image* where the OS libraries composite layer, such as a version of Ubuntu, is very reusable; and the language runtime composite layer, such as a version of the Node.js runtime, is very reusable. The base image makes the combination of the two composite layers very reusable, and the small number of layers in each composite layer make the base image very efficient.
+Ideally, an image should have a low number of layers but those layers should be as reusable as possible. We see this in a [minimal base image](minimal-base-image.md) where the OS libraries composite layer, such as a version of Ubuntu, is very reusable; and the language runtime composite layer, such as a version of the Node.js runtime, is very reusable. The base image makes the combination of the two composite layers very reusable, and the small number of layers in each composite layer make the base image very efficient.
 
 **Build an *efficiently layered image* that adds an optimized set of layers for the application to a base image with optimized layers.**
 
