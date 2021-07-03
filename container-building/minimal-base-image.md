@@ -18,6 +18,8 @@ The problem with using someone else's image is that you need to be able to trust
 
 Your application won't run in a base image that only contains a few base OS libraries. Your application is written in a *modern application language* and requires that language runtime. So either you will need to install that runtime into a base image that you choose, or better yet, choose a base image that includes the runtime that your application requires. 
 
+Therefore,
+
 **Select a *minimal base image* that includes only the OS libraries needed for your application's language runtime, and ideally one that already includes the language runtime as well.**
 
 Deploying your application into such a base image will be fairly easy. If the base image does not include the language runtime for your application, install it. Once it's installed, or if the base image already includes the the language runtime, deploy your application into that image and save it as the image for your application.
