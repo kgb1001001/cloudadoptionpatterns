@@ -5,7 +5,7 @@ has_children: true
 ---
 # Image Building Patterns
 
-In other parts of this work we have discussed the advantages of containers as a technology for building applications to be deployed into a Hybrid Cloud Environment.  We have also introduced the concept of Container Orchestration projects like Kubernetes and their prevalence as a part of the Cloud ecosystem.  Finally, we've covered specialized issues invovled in building DevOps Pipelines for applications that are to be delivered as Docker (or other container technology) Images.  In this section, we will adddress another fundamental set of problems in deveooping container-based applications, that is building these images and following best practices for image development. 
+In other parts of this work we have discussed the advantages of containers as a technology for building applications to be deployed into a Hybrid Cloud Environment.  We have also introduced the concept of Container Orchestration projects like Kubernetes and their prevalence as a part of the Cloud ecosystem.  Finally, we've covered specialized issues involved in building DevOps Pipelines for applications that are to be delivered as Docker (or other container technology) Images.  In this section, we will adddress another fundamental set of problems in developing container-based applications; that is building these images and following best practices for image development. 
 
 These patterns are important because, like nearly any other technology, it's easy to get lost along the way of adopting container images and end up not gaining the benefits that the technology promises.  In particular, as we have discussed earlier, teams adopt container technology because it promises:
 
