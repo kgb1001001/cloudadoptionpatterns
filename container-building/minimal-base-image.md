@@ -4,7 +4,7 @@ title: Minimal Base Image
 ---
 # Minimal Base Image
 
-To package an application for deployment in a container, you are designing an [application runtime image](Minimize-Image-Inheritance.md). You want to be able to take advantage of the benefits of containers, such as rapid startup and small memory footprint. However, you want to spend your time developing your application and not spending time and effort in packaging.
+To package an application for deployment in a container, you are designing an [application runtime image](Application-Runtime-Image.md). You want to be able to take advantage of the benefits of containers, such as rapid startup and small memory footprint. However, you want to spend your time developing your application and not spending time and effort in packaging.
 
 **How do you ensure that you reduce the total amount of work you have to do in preparing your container images while ensuring that the image includes the latest patches and a minimal attack surface?**
 
