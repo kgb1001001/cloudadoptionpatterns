@@ -19,8 +19,8 @@ We cannot solve every possible problem that can lead to this loss of benefits, b
 
 + [Application Runtime Image](Application-Runtime-Image.md) is the place to begin in that it shows how to build most application images from a few basic images without letting container inheritance get out of hand.
 + [Minimal Base Image](minimal-base-image.md) builds on this basic principle by ensuring that you think about what your image is based upon before starting development
-+ [Efficiently Layered Image](intentional-layer.md) deals with the basic question of how many layers your image should contain
-+ [Least Privilege](least-privilege.md) addresses how to secure your container image
++ [Efficiently Layered Image](intentional-layer.md) deals with the basic question of how many literal layers your image should contain and how to minimize your layer depth and memory footprint.
++ [Least Privilege](least-privilege.md) addresses how to secure your container image by not granting unneeded permissions to resources
 + [Multistage Build](multistage-image-build.md) discusses how the process of constructing the artifacts in an image can be separated from the final image for production
 + [Visualize Image Dependencies](Visualize-Image-Dependencies.md) reinforces the importance of visualizing the set of dependencies of different types among images to track the possible impact of changes within the set of images
 
