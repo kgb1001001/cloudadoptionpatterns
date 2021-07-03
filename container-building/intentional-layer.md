@@ -4,7 +4,7 @@ title: Efficiently Layered Image
 ---
 # Efficiently Layered Image
 
-To package an application for deployment in a container, you are designing an [application runtime image](Minimize-Image-Inheritance.md). You already have a [minimal base image](minimal-base-image.md) that you've either downloaded or built yourself. You are writing a Dockerfile to install your application into the base image.
+To package an application for deployment in a container, you are designing an [application runtime image](Application-Runtime-Image.md). You already have a [minimal base image](minimal-base-image.md) that you've either downloaded or built yourself. You are writing a Dockerfile to install your application into the base image.
 
 **How do you write a Dockerfile to build a container image with minimal complexity and maximum efficiency?**
 
