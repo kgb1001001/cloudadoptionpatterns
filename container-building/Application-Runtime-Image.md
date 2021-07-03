@@ -1,10 +1,10 @@
 ---
 parent: Container Building
-title: Image Inheritance
+title: Application Runtime Image
 ---
-# Minimize Image Inheritance
+# Application Runtime Image
 
-You are practicing Container DevOps and building many container images using a [Container Build Pipeline](docker-build-pipeline.md).
+You are practicing Container DevOps and building many container images using a [Container Build Pipeline](docker-build-pipeline.md).  You want to build an application with as few layers as possible, and still have an application that will occupy a minimal amount of memory and also allow for fast startup.
 
 **How do you take best advantage of the features of the Dockerfile yet not end up with enormous images?**
 
