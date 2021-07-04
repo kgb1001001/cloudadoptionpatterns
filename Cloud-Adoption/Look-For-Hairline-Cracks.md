@@ -2,7 +2,7 @@
 title: Hairline Crack
 parent: Cloud Adoption
 ---
-# Hairline Crack
+# Hairline Crack (aka Fracture Plane)
 
 You are evaluating an existing application for cloud adoption.  You know you want to take some or all of the functionality of the application and re-architect it for microservices in order to improve the maintenance of the application and to reduce the blast radius of new changes to the application.
 
@@ -16,7 +16,7 @@ Therefore,
 
 **Look for Hairline Cracks - these are the places where the monolith will be easy to break.**
 
-In large monolithic Java applications, there are at least three very simple cases where you can find obvious cracks that can be exploited regarding services.  These three cases are:
+The places where a monolith can be forced apart most easily are those places in the application where there are already some sort of interface between sections of the monolith.  This is analogous to a hairline crack in a piece of metal or a Fracture plane in some rocks.  In large monolithic Java applications, there are at least three very simple cases where you can find obvious cracks that can be exploited regarding services.  These three cases are:
 
 Case 1: Existing REST or JMS services – This is by far the easiest case for refactoring.  It may be that you have existing services that are already compatible with a Microservices architecture, or that could be made compatible. Start by untangling each REST or simple JMS service from the rest of the WAR and then deploy each service independently.  At this level duplication of supporting JAR files is fine – this is still mostly a question of packaging.  Here you have begun the process by splitting things off into what may be called a "Macroservice", but remember that this is just a step toward a refactoring into Microservices.  Your application will still need to not only follow the principle of doing one and only one business function, but also you will need to make sure you're following accepted [Cloud DevOps](../Cloud-Native-DevOps/Cloud-Native-DevOps.md) principles.
 
