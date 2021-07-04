@@ -13,7 +13,7 @@ This part of our pattern language contains patterns that help guide the strategy
 + [Hybrid Cloud Model](Hybrid-Cloud-Model.md) is something that teams should consider when applying any of the above patterns, as it enables teams to choose the right environment for any application.
 + [Containerize The Monolith](Containerize-The-Monolith.md) is another option for getting started in the Cloud that sets you up for later refactoring.  It's a good "half-step" onto the road toward Cloud Native.
 + [Cloud Refactoring](Cloud-Refactoring.md) is where you begin for existing applications that need to take advantage of Cloud capabilities.
-+ [Look for Hairline Cracks](Look-For-Hairline-Cracks.md) is the first step in the Cloud Refactoring process of a monolith.
++ [Hairline Crack](Look-For-Hairline-Cracks.md) shows where to look for places to begin the Cloud Refactoring process of a monolith.
 + [Strangler Application](Strangler-App.md) is the way to perform Cloud Refactoring incrementally while still keeping the application running  
 
 
