@@ -1,8 +1,8 @@
 ---
-title: Look For Hairline Cracks
+title: Hairline Crack
 parent: Cloud Adoption
 ---
-# Look For Hairline Cracks
+# Hairline Crack
 
 You are evaluating an existing application for cloud adoption.  You know you want to take some or all of the functionality of the application and re-architect it for microservices in order to improve the maintenance of the application and to reduce the blast radius of new changes to the application.
 
@@ -22,7 +22,7 @@ Case 1: Existing REST or JMS services – This is by far the easiest case for re
 
 Case 2: Existing SOAP or EJB services – If you have existing services, they were probably built following a functional approach (such as the Service Façade pattern).  In this case, functionally based services design can usually be refactored into an asset-based services design.  This is because in many cases, the functions in the Service façade were originally written as CRUD operations on a single object.   In the case where that is true, the mapping to a RESTful interface is simple – just re-implement the EJB session bean interface or JAX-WS interface as a JAX-WS interface – you may need to convert object representations to JSON in order to do this, but that’s usually not very difficult, especially where you were already using JAX-B for serializations.   In cases where it’s not a simple set of CRUD operations (for instance account transfer) then you can apply a number of different approaches for constructing RESTful services (such as building simple functional services like /accounts/transfer) that implement variants of the Command pattern.
 
-Case 3: Simple Servlet/JSP interfaces.  Many Java programs are really just simple Servlet/JSP front-ends to database tables. They may not have what is referred to as a “Domain Object” Layer at all, especially if they follow design patterns like the Active Record pattern.  In this case, creating a domain layer that you can then represent as a RESTful service is a good first step.   Identifying your domain objects by applying Domain Driven Design will help you identify your missing domain services layer.  Once you’ve built that (and packaged each new service in its own WAR) then you can either refactor your existing Servlet/JSP app to use the new service or you can build a whole new interface, perhaps a [Single Page Application](../Cloud-Client-Architecture/Single-Page-Application.md) with JavaScript, HTML5 and CSS, or maybe as a [Native mobile application](../Cloud-Client-Architecture/Native-Mobile-Application.md).
+Case 3: Simple Servlet/JSP interfaces.  Many Java programs are really just simple Servlet/JSP front-ends to database tables. They may not have what is referred to as a “Domain Object” Layer at all, especially if they follow design patterns like the Active Record pattern.  In this case, creating a domain layer that you can then represent as a RESTful service is a good first step.   Identifying your domain objects by applying Domain Driven Design will help you identify your missing domain services layer.  Once you’ve built that (and packaged each new service in its own WAR) then you can either refactor your existing Servlet/JSP app to use the new service or you can build a whole new interface following the [Multichannel Architecture](../Cloud-Client-Architecture/Multichannel-Architecture.md) approach.
 
 In any of these cases, what you want to do is then to apply [Microservice Design](../Cloud-Native-Architecture/Microservice-Design.md) in order to determine what design you want to refactor toward.
 
