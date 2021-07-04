@@ -4,7 +4,7 @@ title: Backend for Frontend
 ---
 # Backend for Frontend
 
-You are designing an application using a *Microservices Architecture.* You realize that the *Business Microservices* that encapsulate individual business functions do not map cleanly to the channel-specific needs of your client applications. All of the server-side functionality a client application needs should be accessible through a single API.
+You are designing an application using a [Microservices Architecture](Microservices-Architecture.md). You realize that the [Domain Microservices](Business-Microservice.md) that encapsulate individual business functions do not map cleanly to the channel-specific needs of your client applications. All of the server-side functionality a client application needs should be accessible through a single API.
 
 **How do you represent a channel-specific service interface that is consistent with an overall microservices architecture but allows enough uniqueness that it can be adapted to the needs of a specific client type?**
 
