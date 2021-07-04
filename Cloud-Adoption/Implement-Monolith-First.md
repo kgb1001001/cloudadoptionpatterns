@@ -24,7 +24,7 @@ It's also quite possible (and common) to containerize these "mini-monoliths".  T
 
 What does need to be kept in mind, is that *if* the application is successful, it will probably see more investment in terms of adding development capacity and more load in terms of usage. There will be a point in time when the initial monolith will be deemed cumbersome because neither development effort nor usage scale well with monolithic applications.
 
-It is therefore extremely helpful if the team aims for success and keeps in mind that later on, having [Hairline Cracks](Look-For-Hairline-Cracks.md) in the application will make breaking it up simpler. If not, a [Strangler Application](Strangler-App.md) strategy may need to be followed to replace the monolith with new services, which is usually more expensive.
+It is therefore extremely helpful if the team aims for success and keeps in mind that later on, having [Hairline Cracks](Hairline-Crack.md) in the application will make breaking it up simpler. If not, a [Strangler Application](Strangler-App.md) strategy may need to be followed to replace the monolith with new services, which is usually more expensive.
 
 Martin Fowler first [discovered this pattern](https://martinfowler.com/bliki/MonolithFirst.html).
 
