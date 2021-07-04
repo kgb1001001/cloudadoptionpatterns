@@ -26,7 +26,7 @@ When you look at the implications of packaging services independently, you see t
 The power of the combination of these points (each of which will be referenced in the patterns below) and the benefits obtained from following them is the primary reason why the microservices architecture has become so popular.  In this section, we will help address a few of those issues by introducing a set of simple patterns that can help developers understand how to apply microservices in a variety of different situations.
 
 + [Microservices Architecture](Microservices-Architecture.md) is the root pattern of this section. It explains why a microservices architecture aids in decoupling.
-+ [Business Microservice](Business-Microservice.md) introduces the most basic concepts of a microservice.
++ [Domain Microservice](Business-Microservice.md) introduces the most basic view of a microservice as implementing a concept from your business domain.
 + [Adapter Microservice](Adapter-Microservice.md) provides a mechanism to bring external systems into a *Microservices Architecture* without unduly creating direct dependencies on the external system.
 + [Legacy Adapter Microservice](Legacy-Adapter-Microservice.md) embodies the common concept in enterprise systems that microservices can still be useful as a transitional step in the refactoring of back-end systems by providing a modern API to legacy data.
 + [SaaS Adapter Microservice](Saas-Adapter-Microservice.md) is a specialization of *Adapter Microservice* for a common case where the system being adapted is a third-party system.
