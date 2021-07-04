@@ -2,13 +2,15 @@
 parent: Microservices
 title: Business Microservice
 ---
-# Business Microservice
+# Domain Microservice
 
 You are implementing an application using the Microservices Architecture style or refactoring an application to use that architectural style. The application may run in either the cloud or on-premise.  You know you have a set of business logic that you must implement in order to provide the functionality of your application to your clients. 
 
-**Despite the hype associated with the microservices architecture it's not entirely clear from the basic microservices principles exactly what your microservices should do**
+Despite the hype associated with the microservices architecture it's not entirely clear from the basic microservices principles exactly what your microservices should do.  
 
-Nonetheless, there are some general principles we can derive from the definition of the microservices architecture:
+**What should the scope of a single microservice in your application entail?**
+
+There are some general principles we can derive from the definition of the microservices architecture:
 
 -   Each microservice should implement one complete business function and only one business function.  Thus, an individual component of the overall solution should be limited in scope to a single business concept.
 
@@ -18,7 +20,7 @@ Nonetheless, there are some general principles we can derive from the definition
 
 Therefore, 
 
-**Develop each business function as a *Business Microservice* that provides a unified API for that function and encapsulates the business logic to implement that function, and makes it composable with other business functions.**
+**Develop each business function as a *Domain Microservice* that provides a unified API for that function and encapsulates the business logic to implement one domain concept (as a business function), and makes it composable with other business functions.**
 
 The business functionality of an entire application is composed of individual business functions implemented as business microservices. Deciding to implement each business entity as a microservice is not the end of your design problems, however. You must also think about how you would implement the microservice and how that microservice relates to the other services in your overall business application.
 
