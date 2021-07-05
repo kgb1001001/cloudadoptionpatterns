@@ -5,7 +5,7 @@ title: Service Registry
 Service Registry
 ===
 
-You are building applications using a [Microservices Architecture](../Microservices/Microservices-Architecture). You have many different [Business Microservices](../Microservices/Business-Microservice.md) comprising your application.
+You are building applications using a [Microservices Architecture](../Microservices/Microservices-Architecture). You have many different [Domain Microservices](../Microservices/Business-Microservice.md) comprising your application.
 
 **How do you decouple the physical location of a service instance from its clients so that the client code will not have to change if the address of the service changes?**
 
