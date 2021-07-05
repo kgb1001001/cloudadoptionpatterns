@@ -3,7 +3,7 @@ parent: Event-based Architecture
 title: Joiner
 ---
 # Event Joiner
-You are building applications that will follow an Event Driven Architecture.
+You are building applications that will follow an [Event Driven Architecture](Event-Driven-Architecture.md).
 
 Events are tricky and often transient things. There are many cases where a single event is only interesting when considered in the context of other events that may have previously occurred or may occur later.  Connecting together events where unique identifiers are not consistent (sometimes called event correlation) is handled in many every day processes. 
 
