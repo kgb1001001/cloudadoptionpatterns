@@ -27,7 +27,7 @@ A *repository* is a collection of related images that have unique tags.  A tag i
 +	[Public Image Registry](public-image-registry.md) is a solution for making images available to others who may be outside of your development organization.
 + [Private Image Registry](private-image-registry.md) is a solution for making images available to those within your organization, particularly useful in cases of intellectual property restriction or security restriction.
 + [Approved Image Repository](approved-image-repository.md) is the location for approved images once they have been through the scanning and vetting process.
-+ [HA Container Registry](highly-available-container-registry.md) is important because a registry is only useful when it can be accessed.  Encountering a single point of failure on docker host startup will result in your entire Docker architecture being unavailable. 
++ [HA Container Registry](highly-available-container-registry.md) is important because a registry is only useful when it can be accessed.  Encountering a single point of failure on docker host startup will result in your entire container architecture being unavailable. 
 + [Public Registry Proxy](public-registry-proxy.md) is a way of improving performance of image pulls in some use cases by locally caching images nearer to the Docker hosts.
 
 The relationships between the patterns in this section can be found in the diagram below:
