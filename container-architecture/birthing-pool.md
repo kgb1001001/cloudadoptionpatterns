@@ -29,4 +29,4 @@ The introduction of the birthing pool means that a dynamic scan can be performed
 
 *Figure 4: Isolation of the Birthing Pool*
 
-Images should pass through a Birthing Pool before they are placed by a [Docker Build Pipeline](docker-build-pipeline.md) into an [Approved Image Repository](approved-image-repository.md).
+Images should pass through a Birthing Pool before they are placed by a [Container Build Pipeline](docker-build-pipeline.md) into an [Approved Image Repository](approved-image-repository.md).
