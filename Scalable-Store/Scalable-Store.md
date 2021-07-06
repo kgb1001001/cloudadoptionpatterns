@@ -4,7 +4,7 @@ title: Scaleable Store
 ---
 # Scalable Store
 
-You are developing an application using [Business Microservices](../Microservices/Business-Microservice.md). However, your application will need persistent state to represent current and previous user interaction.
+You are developing an application using [Doimain Microservices](../Microservices/Business-Microservice.md). However, your application will need persistent state to represent current and previous user interaction.
 
 **How do you represent persistent state in an application?**
 
