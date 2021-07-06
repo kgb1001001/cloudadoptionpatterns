@@ -16,7 +16,7 @@ Therefore,
 
 Up to this point, we have been considering that the isolation provided by Docker itself, in that each image is functionally isolated from other images by the container execution environment is adequate for all types of vulnerabilities that may be found in an image.  However, that may not be true.  There is the possibility that a side-channel or container infrastructure attack (such as forkbomb, see [Baset](https://www.slideshare.net/SalmanBaset/unraveling-docker-security-lessons-from-a-production-cloud-70513798)) may interfere with the operation of your container execution environment and thus affect other Docker images. Thus the need exists to have at least two separate container execution environments, each segmented from the other, in order to eliminate this possibility.
 
-An example of all of the different parts of an end-to-end Docker development process, including a separate environment for active vulnerability scanning within a birthing pool, is shown in Figure 3: Stages including Birthing Pool.
+An example of all of the different parts of an end-to-end container development process, including a separate environment for active vulnerability scanning within a birthing pool, is shown in Figure 3: Stages including Birthing Pool.
  
 ![Stages including Birthing Pool](../assets/Figure3.png) 
 
