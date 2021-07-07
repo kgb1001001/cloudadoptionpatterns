@@ -25,17 +25,22 @@ Therefore,
 
 **Build images in layers by inheriting from other images but don't go overboard with very deep hierarchies; staying with around three conceptual layers - an OS base layer, a runtime layer, and an application layer are often enough.**
 
-The simplest conceptual layers are relatively simple to think about or visualize:
+Containers run in a host environment. The container host consists of two conceptual layers:
 
-1. The base operating system image, for example a standard (vendor-built) Linux distribution image for Ubuntu, RedHat, or Fedora; 
-2. The application runtime environment, for example a Java virtual machine;
-3. The application itself.
+1. **Linux kernel** -- The foundation between a computer's hardware and Linux processes
+1. **Container engine** -- Pulls and runs containers as managed processes in the Linux kernel
 
-We show this in the following diagram:
+Then each container running on the container host consists of three conceptual layers:
 
-![Image Layers](../assets/ConceptualLayers.png)
+1. **Linux libraries** -- OS functionality that the container needs in addition to the kernel
+1. **Language runtime** -- The binaries for a runtime environment for a language such as Java, Node.js, etc.
+1. **Application** -- The custom logic that implements user functionality in a language such as Java, Node.js, etc.
 
-We should note that we are explicitly referring to these as "conceptual" layers as distinct from the actual "literal" layers that a Dockerfile can create in the resulting image.  That is because even a conceptual base layer may consist of several literal layers laid down during the build of the image. For instance, often a very early command in any Dockerfile (at least in debian-based images) is to download the latest updated package information with "RUN apt-get update".  That will create a literal layer with that new package information.  The Dockerfile will then contain other commands to install specific packages which create additional literal layers.  However, it's easiest to think of all of these together as being a single conceptual layer. 
+This diagram illustrates all five layers:
+
+![Image Layers](../assets/container-host-arch.png)
+
+We should note that we are explicitly referring to these as "conceptual" layers as distinct from the actual "literal" layers that comprise an [efficiently layered image](efficiently-layered-image.md).  That is because even a conceptual base layer may consist of several literal layers laid down during the build of the image. For instance, often a very early command in any Dockerfile (at least in debian-based images) is to download the latest updated package information with "RUN apt-get update".  That will create a literal layer with that new package information.  The Dockerfile will then contain other commands to install specific packages which create additional literal layers.  However, it's easiest to think of all of these together as being a single conceptual layer. 
 
 You should note that the "three layers" rule is loose - for instance, three layers would be all you need for an application built using Spring Boot. However, there are often reasons to add additional literal layers between these layers.  For instance, if you were using an Application Server like Tomcat or OpenLiberty, you may well have four conceptual layers, each of which is represented by an image the next is built from; the OS, the JDK, the Application Server, and your Application.  
 
