@@ -13,7 +13,7 @@ These patterns are important because, like nearly any other technology, it's eas
 2. Faster application startup (again, because of the shared operating system, container startup is faster than VM startup)
 3. Better isolation and security than in a model where multiple standard processes share a common VM
 
-Unfortunately, these benefits do not come for free.  You can easily end up with very large container images that contain unnecessary elements that can bloat your resulting containers. Likewise, it's possible to add unnecessary process startup and other resource requirements that can slow down you image startup from milliseconds to seconds or minutes.  And finally, it's not just possible but far to easy to render the promised security benefits moot and allow malware or simply badly coded applications to escalate privileges and gain improper access to the resources of the container host.
+Unfortunately, these benefits do not come for free.  You can easily end up with very large container images that contain unnecessary elements that can bloat your resulting containers. Likewise, it's possible to add unnecessary process startup and other resource requirements that can slow down your image startup from milliseconds to seconds or minutes.  And finally, it's not just possible but far to easy to render the promised security benefits moot and allow malware or simply badly coded applications to escalate privileges and gain improper access to the resources of the container host.
 
 We cannot solve every possible problem that can lead to this loss of benefits, but there are several common approaches that can help to guarantee that your images will remain small, fast and secure.  The patterns that capture those approaches are:
 
