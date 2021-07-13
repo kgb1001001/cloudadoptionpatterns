@@ -8,7 +8,7 @@ To package an application for deployment in a container, you are designing an [a
 
 **How do you ensure that you reduce the total amount of work you have to do in preparing your container images while ensuring that the image includes the latest patches and a minimal attack surface?**
 
-*Application runtime image* explains that an application image consists of three composite layers: OS libraries, language runtime, and application. Where do the first two layers come from?
+[Application runtime image](Application-Runtime-Image.md) explains that an application image consists of three composite layers: OS libraries, language runtime, and application. Where do the first two layers come from?
 
 Every container image is built from a more basic container image, all ultimately deriving from a minimal empty image (called “scratch”).  What base image should you build your image from? Clearly, one that contains the OS libraries and, ideally, the language runtime needed to run your application.
 
@@ -16,7 +16,7 @@ The community has lots of base images to choose from. They're available in widel
 
 The problem with using someone else's image is that you need to be able to trust it and the organization who built it. The image needs to have been built well, with no extraneous software that bloats the image and introduces new points for hackers to attack, and that doesn't include any malicious software.
 
-Your application won't run in a base image that only contains a few base OS libraries. Your application is written in a *modern application language* and requires that language runtime. So either you will need to install that runtime into a base image that you choose, or better yet, choose a base image that includes the runtime that your application requires. 
+Your application won't run in a base image that only contains a few base OS libraries. Your application is written in a modern application development language and requires that language runtime. So either you will need to install that runtime into a base image that you choose, or better yet, choose a base image that includes the runtime that your application requires. 
 
 Therefore,
 
