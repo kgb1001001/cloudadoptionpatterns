@@ -9,7 +9,7 @@ The decision has been made to evolve to using the microservice architectural sty
 
 **How can we pull pieces out of the monolith and migrate them to be implemented with microservices?**
 
-The monolith is a large deployment unit that encompasses functionality pertaining to different subdomains. Some changes to the system require changes across subsystems, sometimes creating bugs or other issues. Teams don’t have a full understanding of the domains and subdomains.The monolith has certain larger components where analysis has shown that pieces can be broken out.
+The monolith is a large deployment unit that encompasses functionality pertaining to different subdomains. Some changes to the system require changes across subsystems, sometimes creating bugs or other issues. Teams don’t have a full understanding of the domains and subdomains. The monolith has certain larger components where analysis has shown that pieces can be broken out.
 
 There is a desire to pull out pieces that are causing pain and start using new protocols, languages, and more—specifically by implementing pieces using microservices.
 
