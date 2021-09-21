@@ -32,7 +32,7 @@ In addition to protocol bridging and message transformations, the façade compon
 
 ![](../assets/ExtractComponentAndAddFacade.png)
 
-Note that in this example, X is decoupled from the rest of the monolith. Usually some detangling is needed to extract the component. If components inside the monolith were clients to X, then you can either adapt those clients to have them calling the new microservice X' through the intercepting façade, or if possible adapt them to directly call X'. Alternatively you could Proxy Monolith Components to Microservices, making X be a proxy to X'. 
+Note that in this example, X is decoupled from the rest of the monolith. Usually some detangling is needed to extract the component. If components inside the monolith were clients to X, then you can either adapt those clients to have them calling the new microservice X' through the intercepting façade, or if possible adapt them to directly call X'. Alternatively, you could Proxy Monolith Components to Microservices, making X be a proxy to X'. 
 
   <p align="center">* * *</p>
   
