@@ -17,7 +17,7 @@ You would like to have the monolith take advantage of the new features provided 
 
 Therefore,
 
-**As you move functionality out of the monolith components into micro services, keep the old components in the monolith solely as proxies to redirect calls to the new microserves.**
+**As you move functionality out of the monolith components into micro services, keep the old components in the monolith solely as proxies to redirect calls to the new microservices.**
 
 In this variation of Strangler, old client components remain unchanged. Monolith components that were rewritten as microservices no longer process the calls. These components still expose the same contract, but all they do now is to route calls to the new, microservice-based implementation. Therefore, instead of adding a façade interceptor component, in this variation we have the monolith components acting as proxies to the new microservices—in a sense, the monolith is being converted into a façade. Because new microservices may have different contracts, monolith components acting as proxies may need to perform the message transformation and protocol bridging. 
 
