@@ -3,7 +3,7 @@ parent: Strangler Patterns
 title: Replace as Microservice
 ---
 # Replace as Microservice
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka aka Extract to Service, Replace as a Service)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(aka Extract to Service, Replace as a Service)
 
 The decision has been made to evolve to using the microservice architectural style. Parts of the system have been written using microservices. Other parts of the system that are changing a lot are still in the monolith and causing some challenges.
 
@@ -13,7 +13,7 @@ New features typically require several pieces of the monolith to change in a coo
 
 You would like for teams working with the monolith to evolve and take advantage of new technologies. However, the team that is responsible for the monolith might not be willing to add features or evolve the monolith in any way. The team might have budget or time constraints, or maybe the monolith is a legacy system that uses deprecated technology and they simply decided not to evolve it.
 
-The organization has moved to use continuous delivery for the deployment of its software solutions to improve agility and shorten the build-test-deploy cycle. However, the monolith has grown large and it is getting hard to change it without affecting large parts of the system. Also, its deployment requires the coordination of several development and DevOps teams, making it infeasible for continuous delivery 
+The organization has moved to use continuous delivery for the deployment of its software solutions to improve agility and shorten the build-test-deploy cycle. However, the monolith has grown large and it is getting hard to change it without affecting large parts of the system. Also, its deployment requires the coordination of several development and DevOps teams, making it infeasible for continuous delivery. 
 
 Therefore,
 
