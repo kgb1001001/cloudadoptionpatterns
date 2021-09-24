@@ -1,6 +1,6 @@
 ---
 title: Identify Entities and Aggregates
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 # Identify Entities and Aggregates
 
