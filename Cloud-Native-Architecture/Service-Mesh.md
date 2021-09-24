@@ -1,6 +1,6 @@
 ---
 title: Service Mesh
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 # Service Mesh
 
