@@ -1,6 +1,6 @@
 ---
 title: Container Orchestrator
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 # Container Orchestrator
 
