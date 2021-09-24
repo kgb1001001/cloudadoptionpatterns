@@ -1,6 +1,6 @@
 ---
 title: Microservice Design
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 # Microservice Design
 
