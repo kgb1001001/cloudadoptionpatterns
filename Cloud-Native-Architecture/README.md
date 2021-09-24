@@ -1,9 +1,9 @@
 ---
-title: Cloud Native Architecture
+title: Microservices Design
 nav_order: 4
 has_children: true
 ---
-# Cloud Native Architecture Introduction
+# Microservices Design Introduction
 
 Cloud-native applications are those that are specifically written to run on the cloud, usually within a PaaS. They take advantage of the benefits of the cloud directly - for instance, using cloud functions like elastic scaling to meet capacity needs. What's more, these applications are built using different tools and runtimes than traditional applications.   They tend to be more likely to employ Polyglot Development and Polyglot Persistence. For example, an application might not use a relational database but instead use a NoSQL database, such as Cloudant or MongoDB.  Likewise, a Cloud-native application has a different set of assumptions about what is provided by its infrastructure and how.
 
