@@ -1,6 +1,6 @@
 ---
 title: Identify Repositories
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 # Identify Repositories
 
