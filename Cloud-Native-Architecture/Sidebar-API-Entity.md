@@ -1,6 +1,6 @@
 ---
 title: Api or Objects - which first?
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 # Which comes first: the API or the objects?
 
