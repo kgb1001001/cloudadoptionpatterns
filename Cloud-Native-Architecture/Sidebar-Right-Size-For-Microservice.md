@@ -1,6 +1,6 @@
 ---
 title: What's the right size for a Microservice?
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 # What’s the right size for a Microservice?
 
