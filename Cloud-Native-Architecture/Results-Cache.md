@@ -1,6 +1,6 @@
 ---
 title: Results Cache
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 Results Cache
 ===
