@@ -1,6 +1,6 @@
 ---
 title: Identify Domain Events
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 # Identify Domain Events
 
