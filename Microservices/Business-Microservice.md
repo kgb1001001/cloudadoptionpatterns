@@ -1,6 +1,6 @@
 ---
 parent: Microservices
-title: Business Microservice
+title: Domain Microservice
 ---
 # Domain Microservice
 
