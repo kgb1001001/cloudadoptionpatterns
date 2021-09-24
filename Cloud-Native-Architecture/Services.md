@@ -1,6 +1,6 @@
 ---
 title: Services
-parent: Cloud Native Architecture
+parent: Microservices Design
 ---
 Services
 ===
