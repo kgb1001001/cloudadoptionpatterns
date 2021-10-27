@@ -17,9 +17,9 @@ In this section of our pattern language, we introduce some of the most basic pat
 
 + [Microservice Design](Microservice-Design.md) is the root pattern of this section.  It leads you into a process of discovering your microservices through Domain-Driven and Event-Driven Design.
   + [Bounded Context](Context.md) is a key concept for developing a good microservice
+  + Performing [Event Storming](Identify-Domain-Events.md) is the crucial step that helps you set the stage for the other pieces in your microservice design.
   + Identifying [Entities and Aggregates](Identify-Entities-And-Aggregates.md) is required to find the basic concepts to be implemented as microservices in a domain
   + Identifying [Repositories](Identify-Repositories-And-Services.md) and [Services](Services.md) help you identify processing elements in your microservices
-  + Performing [Event Storming](Identify-Domain-Events.md) is the crucial step that helps you tie together the other pieces in your microservice design.
 + [Container Orchestrator](container-orchestrator.md) solves the problem of deploying numerous containers across multiple servers and managing them while they run.
 + [Service Registry](../Cloud-Native-DevOps/Service-Registry-kyle.md) solves the problem of discovering services when your number of services increases and the complexity of dealing with local and remote services becomes difficult.
 + [Event Driven Architecture](../Event-Based-Architecture/Event-Driven-Architecture.md) is an important design consideration in building highly performant microservices architectures.
