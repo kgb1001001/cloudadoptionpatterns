@@ -1,8 +1,8 @@
 ---
-title: Identify Domain Events
+title: Event Storming
 parent: Microservices Design
 ---
-# Identify Domain Events
+# Event Storming
 
 You are starting on a Cloud-Native design and have already begun the process of Domain Driven Design.  You have identified some candidate Entities, Aggregates, and Potential Services.
 
