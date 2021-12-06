@@ -34,5 +34,5 @@ Another advantage of the approach shown above is that the AJAX calls that are is
 
 In a complex business application, you may implement several *Single Page Application* instances. Each one represents a single logical set of screen interactions that perform a business function. This approach maps extremely well into the microservices approach, as you can match an SPA to the capabilities of one or more [Domain Microservices](../Microservices/Business-Microservice.md). However, you may need to perform some translation or conversion of the results of a [Domain Microservice](../Microservices/Business-Microservice.md) in order to match the unique user interface requirements of your SPA. That will naturally lead to the need for the Backends for Frontends pattern.
 
-*Single Page Architectures* can sometimes, unfortunately, grow to the same size and complexity of the monoliths they are expected to replace. To avoid that, build complex applications as a set of Micro Frontends that are composable.
+*Single Page Architectures* can sometimes, unfortunately, grow to the same size and complexity of the monoliths they are expected to replace. To avoid that, build complex applications as a set of [Micro Frontends](Micro-Frontend.md) that are composable.
 
