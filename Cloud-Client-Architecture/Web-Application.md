@@ -1,4 +1,8 @@
-Web Application
+---
+title: Web Application
+parent: Cloud Client Architecture
+---
+# Web Application
 
 You are building an application that needs to reach the largest possible user community.  You know you want to follow a Multimodal Architecture, but at the same time you need to get something out quickly to your users.
 
@@ -15,7 +19,6 @@ Therefore,
 **Build a Web Application that serves up HTML pages from a server-side application and that takes input through HTML forms.  This works best for relatively small and simple applications, particularly those that do not absolutely require intense graphical interaction or that are used sporadically or rarely.**
 
 A canonical example of this approach is PHP (a recursive acronym for PHP the Hypertext Processor).  PHP runs inside virtually any web server software and will work with most databases.  PHP programs are written inside of HTML pages where PHP statements are interpreted inside special tags that are differentiated from HTML tags, usually with the syntax <?php...?>.  Any PHP code inside the tag is dynamically interpreted and evaluated to render HTML that is then inserted into the appropriate place in the HTML page as it is returned to the page requestor by the web server.  This type of architecture is shown in Figure 5: Simple Template System below:
-
  
 Figure 5: Simple Template System
 
