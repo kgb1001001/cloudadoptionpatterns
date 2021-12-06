@@ -23,7 +23,7 @@ Practically, what this means is that you should NEVER assign a front end and its
 
 One of the fundamental principles that sits behind all of the advice we will provide in these patterns is that there should be a distinct and firm boundary between UI code and business logic.  While this advice is so old that giving it again here may seem almost quaint, the problem is that in practice, many teams fail to follow this principle.  Perhaps one of the best examples of this architectural principle is Alistair Cockburn’s *Hexagonal Architecture* , sometimes called the “Ports and Adapters” architecture.  In this approach, he separates the core business functions of an application from the four different styles of interaction that humans or other systems have with the application (see below).  These are user interface, persistence, administration and notification.  The concept is that the core business logic is isolated from these interactions by specialized “adapters” that operate on more abstract “ports” for each style of interaction.
  
-[Hexagonal Architecture](../assets/HexagonalArchitecture.png)
+![Hexagonal Architecture](../assets/HexagonalArchitecture.png)
 
 If we only concern ourself with the user interface portion of this approach, then we realize that what this approach was presaging was the separation of the code of a Domain Microservice from the code that calls the Domain Microservice. In fact, the entire Microservices Architecture is an architectural and organizational mechanism for enforcing this separation.  
 
@@ -52,4 +52,4 @@ The patterns in this section all stem in one form or another from these basic pr
 
 The relationships between the patterns in this section are shown below:
  
-[Client Patterns](../assets/CloudClientPatterns.png)
+![Client Patterns](../assets/CloudClientPatterns.png)
