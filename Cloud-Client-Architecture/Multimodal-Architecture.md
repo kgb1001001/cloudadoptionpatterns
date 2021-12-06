@@ -3,6 +3,7 @@ title: Multimodal Architecture
  	(aka Multichannel Architecture)
 parent: Cloud Client Architecture
 ---
+# Multimodal Architecture (aka Multichannel Architecture)
 
 You are building a new application or refactoring an existing application that needs to provide a rich user interface that can be usable on many different devices such as smartphones, tablets, or laptops.  However, you need to provide the absolutely best user experience on each device, and need the interface to be best-in-class on each platform.
 
