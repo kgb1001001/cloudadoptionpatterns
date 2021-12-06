@@ -31,7 +31,7 @@ An example of this type of architecture (drawn from the airline example) is show
 
 ![Airline Example](../assets/AirlineExample.png)
 
-In this particular example, we were replacing three existing monolithic systems (one for each channel, e.g. web, kiosk, and mobile) by refactoring the code into two new *Single Page Applications* that both shared common code and that used a common *Backend for Frontend*.  We likewise refactored the existing mobile application to share the new common *Domain Microservices* and [Adapter Microservices](../Microservices/Adapter-Microservice.md) through a new *Backend for Frontend*.
+In this particular example, we were replacing three existing monolithic systems (one for each channel, e.g. web, kiosk, and mobile) by refactoring the code into two new *Single Page Applications* that both shared common code and that used a common *Backend for Frontend*.  We likewise refactored the existing mobile application to share the new common [Domain Microservices](../Microservices/Business-Microservice.md) and [Adapter Microservices](../Microservices/Adapter-Microservice.md) through a new *Backend for Frontend*.
 
 This refactoring enabled us to keep the different user interaction types but take advantage of the commonality between them at the microservices layer, and thus reduce the overall code size.  It also enabled us to replace the existing systems over time as we applied the Strangler Application pattern as sections of the existing systems moved over to the new approach one at a time. The *Multimodal Architecture* pattern is independent of whether you are using a monolith or microservices approach, but in this case, it facilitated our transition to the microservices approach.
 
