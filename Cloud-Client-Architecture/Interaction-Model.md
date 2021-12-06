@@ -3,7 +3,7 @@ title: Interaction Model
  	(aka Application Model)
 parent: Cloud Client Architecture
 ---
-#Interaction Model (aka Application Model)
+# Interaction Model (aka Application Model)
   
 You are building an application (or application suite) in a Multimodal Architecture that needs to interact with the user on multiple technology platforms, such as a Mobile application, a Web Site, or through a Social Media platform. 
 
