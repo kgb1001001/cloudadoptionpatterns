@@ -1,8 +1,8 @@
 ---
-title: Micro Frontends
+title: Micro Frontend
 parent: Cloud Client Architecture
 ---
-# Micro Frontends
+# Micro Frontend
 
 You are developing a new web application or you are refactoring a section of a web application to make it more modern.  You realize that the temptation exists to place unrelated functionality for several business processes together in the same Single Page Application, even though that “feels” contrary to the microservices approach.  You are already applying a microservices architecture to divide up your domain into separate services.
 
@@ -36,4 +36,4 @@ In this example, a team building a customer website for an airline is divided in
 
 By implementing the Micro Frontend pattern you can develop and deploy small features with more agility than in a monolithic Single Page Application This enables cross functional teams, ownership of frameworks, end to end ownership of features and reduces complexity.
 
-You can read more about Micro Frontends in the article that originally introduced them to the world .
+You can read more about Micro Frontends in the [article](https://micro-frontends.org) that originally introduced them to the world .
