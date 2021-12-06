@@ -22,9 +22,9 @@ Therefore,
 
 The SPA approach is a variation on the traditional MV* patterns used in the dynamic web approach in that Views are not complete web pages.  They are simply portions of the DOM that make up the viewable areas of the screen.   The initial HTML load is simply a shell that is broken up into child containers (or regions).  Developers often use a MV*  framework, such as React, Angular, or Vue, to handle the difficult parts of the application management such as routing to the right view, combining data from AJAX calls with template HTML fragments, and managing the lifecycle of each View.
 
-The main benefit of the Single Page Application approach is that it allows for very responsive, fast applications that render quickly. JavaScript code that executes within a web page can control not only the look and feel of the application by generating and manipulating the client-side DOM in any way it chooses, but can request information from the server at any point based on user interactions – resulting in more responsive user interfaces. The overall flow of information in the SPA approach is shown in Figure 8: SPA Interactions below.
+The main benefit of the Single Page Application approach is that it allows for very responsive, fast applications that render quickly. JavaScript code that executes within a web page can control not only the look and feel of the application by generating and manipulating the client-side DOM in any way it chooses, but can request information from the server at any point based on user interactions – resulting in more responsive user interfaces. The overall flow of information in the SPA approach is shown below.
  
-Figure 8: SPA Interactions
+![SPA Interactions](../assets/SPA.png)
 
 Another advantage of the approach shown above is that the AJAX calls that are issued by the SPA to the server have generally smaller payloads, and thus are faster to execute, than corresponding calls that would transmit a completely rendered HTML page. 
 
