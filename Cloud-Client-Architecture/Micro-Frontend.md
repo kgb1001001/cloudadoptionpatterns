@@ -28,7 +28,7 @@ However, this can result in of the downsides of the Micro Frontend approach in p
 
 To allow the team to own features and functionality from Frontend to Backend then the Micro Frontends should be aligned to the backend microservices -- especially those microservices that implement the Backends for Frontends pattern.  The best way to do this is not to separate these teams, but to keep development of an end-to-end feature together as a single Stream Team. 
 
-An example of an architecture (and team organization) that follows this pattern is shown below in Figure 9: Micro Frontend Division:
+An example of an architecture (and team organization) that follows this pattern is shown below:
  
 ![Micro Frontend Division](../assets/MicroFrontend.png)
 
