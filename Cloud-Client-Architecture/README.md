@@ -52,4 +52,4 @@ The patterns in this section all stem in one form or another from these basic pr
 
 The relationships between the patterns in this section are shown below:
  
-Figure 2: Client Patterns
+[Client Patterns](../assets/CloudClientPatterns.png)
