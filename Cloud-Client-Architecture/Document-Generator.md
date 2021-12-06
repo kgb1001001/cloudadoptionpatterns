@@ -1,3 +1,7 @@
+---
+title: Document Generator
+parent: Cloud Client Architecture
+---
 # Document Generator
 
 You are building an application following the Multimodal Architecture, but you need to communicate with people that (for various reasons) will only accept, or desire documents in a standard form (such as PDF, or Microsoft Office).
