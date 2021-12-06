@@ -17,9 +17,9 @@ Therefore,
 
 **Explicitly create components that model the interaction with the user.  An Interaction Model captures a particular form of user interaction on a particular channel or technology stack.** 
 
-The primary reason for the Interaction Model is to separate the domain logic from the user interface logic.  That also separates the channel-specific libraries such as those for mobile applications on iOS, or browser-based applications in React from the rest of the application as well.  Thus, the Interaction Model will interface with both these libraries and the back end microservices model (either through a Backend for Frontend, or directly). It may also respond to business events emitted from an Event Backbone if those events are relevant to the user. This interaction is shown below. 
+The primary reason for the Interaction Model is to separate the domain logic from the user interface logic.  That also separates the channel-specific libraries such as those for mobile applications on iOS, or browser-based applications in React from the rest of the application as well.  Thus, the Interaction Model will interface with both these libraries and the back end microservices model (either through a [Backend for Frontend](../Microservices/Backend-For-Frontend.md), or directly). It may also respond to business events emitted from an [Event Backbone](../EventDrivenSystems/Event-Backbone.md) if those events are relevant to the user. This interaction is shown below. 
 
-Figure 4: Interaction Model Architecture
+![Interaction Model Architecture](Interaction-Model.png)
 
 Interaction Models are related to specific business processes.  The same boundaries that apply to Domain Models (for instance, those found in the Event Storming process) also apply to the Interaction Model, since the Interaction Model captures the interactions with the users that lead to the actions and events in the Event model.  Likewise, Interaction Models are also often specific to a particular User Persona as a single business process usually has transition points where the focus shifts between different personas; each individual section between the intersection of business process and persona would be its own Interaction Model.
 
