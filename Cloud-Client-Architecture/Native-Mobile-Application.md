@@ -7,7 +7,7 @@ Native Mobile Application
 
 You are building applications that need to be easy to use for a wide range of users and situations. Many of your customers are going to use a mobile device as their preferred means of accessing your application.
 
-How do you provide the most optimized user experience on a mobile device and take advantage of the features that make mobile computing unique?
+**How do you provide the most optimized user experience on a mobile device and take advantage of the features that make mobile computing unique?**
 
 A user interface that is a [Single Page Application](Single-Page-Application.md) that runs well in the browser on a desktop or laptop computer might seem sufficient for a mobile device too. After all, mobile devices also have browsers, and this way the SPA can be reused on multiple devices. Yet an SPA that works well dynamically updating in a laptop browser that has a mouse, keyboard, and a large screen may be difficult to use on a mobile device.
 
