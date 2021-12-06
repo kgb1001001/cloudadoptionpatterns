@@ -1,3 +1,7 @@
+---
+title: Command Line Interface
+parent: Cloud Client Architecture
+---
 # Command Line Interface
 
 You are building an application following a Multimodal Architecture, and your application may need to be used in a repeated or automated way – e.g. you may want to repeat an operation on a schedule, or repeat an operation many times, such as over a set of inputs.  
