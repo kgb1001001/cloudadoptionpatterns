@@ -34,7 +34,7 @@ However, a design choice that many teams building *Native Mobile Applications* o
 
 An example of this kind of overall architectural approach is shown below:
  
-![Native Mobile Application (Hybrid)](../assets/NativeMobileApplication.png) 
+![Native Mobile Application (Hybrid)](../assets/NativeMobileApp.png) 
 
 * * *
 
