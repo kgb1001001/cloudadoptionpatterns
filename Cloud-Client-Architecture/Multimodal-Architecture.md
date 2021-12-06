@@ -29,7 +29,7 @@ Therefore,
 
 An example of this type of architecture (drawn from the airline example) is shown in below.
 
-![Modern Web Architecture](../assets/ModernWebArchitecture.png)
+![Airline Example](../assets/AirlineExample.png)
 
 In this particular example, we were replacing three existing monolithic systems (one for each channel, e.g. web, kiosk, and mobile) by refactoring the code into two new *Single Page Applications* that both shared common code and that used a common *Backend for Frontend*.  We likewise refactored the existing mobile application to share the new common *Domain Microservices* and [Adapter Microservices](../Microservices/Adapter-Microservice.md) through a new *Backend for Frontend*.
 
