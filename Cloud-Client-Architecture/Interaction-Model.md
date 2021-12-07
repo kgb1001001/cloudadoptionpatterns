@@ -1,6 +1,5 @@
 ---
 title: Interaction Model
- 	(aka Application Model)
 parent: Cloud Client Architecture
 ---
 # Interaction Model (aka Application Model)
