@@ -4,7 +4,7 @@ parent: Cloud Client Architecture
 ---
 # Interaction Model (aka Application Model)
   
-You are building an application (or application suite) in a Multimodal Architecture that needs to interact with the user on multiple technology platforms, such as a Mobile application, a Web Site, or through a Social Media platform. 
+You are building an application (or application suite) in a [Multimodal Architecture](Multimodal-Architecture.md) that needs to interact with the user on multiple technology platforms, such as a Mobile application, a Web Site, or through a Social Media platform. 
 
 **How do you avoid mixing business and UI logic and duplicating effort and code when you are building a Multimodal Architecture?**
 
