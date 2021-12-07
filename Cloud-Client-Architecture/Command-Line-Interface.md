@@ -4,7 +4,7 @@ parent: Cloud Client Architecture
 ---
 # Command Line Interface
 
-You are building an application following a Multimodal Architecture, and your application may need to be used in a repeated or automated way – e.g. you may want to repeat an operation on a schedule, or repeat an operation many times, such as over a set of inputs.  
+You are building an application following a [Multimodal Architecture](Multimodal-Architecture.md), and your application may need to be used in a repeated or automated way – e.g. you may want to repeat an operation on a schedule, or repeat an operation many times, such as over a set of inputs.  
 
 **How do you plan for automation of the services in your system?  How can you make it easy to automate activities like bulk loads, bulk changes, or scheduled execution of activities?**
 
@@ -12,7 +12,7 @@ Let’s face it, when most of us think about the user interface of a system, the
 
 However, there are times in which a WIMP approach, be it on the Web, or in a mobile or desktop application has its limitations.  The simplest case of this is when a procedure needs to be automated.  Let’s says that you have a simple Web page that shows you how many people are registered for an event, such as a Meetup or a book club.  If no one registers for a particular event, you will still be charged for the event venue, even if no one shows up.  It would be great if you could look at the event signup just prior to the cutoff time, see if anyone is registered, and if not, cancel the event. 
 
-If you have only a Native Mobile Application or Web Application, then unless the developer adds this functionality to the application, you are out of luck.  You might be lucky and the developer may have provided you with an API to the application, but that is not guaranteed, since Web Facing API’s present their own challenges to the application developer, nor is it necessarily something that would make it easy for you to write your simple check and cancel action. 
+If you have only a [Native Mobile Application](Native-Mobile-Application.md) or [Web Application](Web-Application.md), then unless the developer adds this functionality to the application, you are out of luck.  You might be lucky and the developer may have provided you with an API to the application, but that is not guaranteed, since Web Facing API’s present their own challenges to the application developer, nor is it necessarily something that would make it easy for you to write your simple check and cancel action. 
 
 What we need is something that facilitates these simple types of automation tasks, yet at the same time, doesn’t require the complexity of programming to an API. 
 
@@ -26,7 +26,7 @@ A key element of a good *Command Line Interface* is composition.  This is a grea
  
 ![CLI Command Architecture](../assets/CLI.png)
 
-Perhaps the simplest implementation of a CLI (perhaps a degenerate case) would be to implement an API on to your server-side application, and then use CURL (or another equivalent tool) to invoke the REST endpoints in place of a more specifically implemented CLI.  However, that’s not a great solution to the problem in that the parameters required to run CURL in this way would be quite complex – CURL just moves the parameters of the HTTP request into the command line, so while you make it possible to script or automate different combinations, it does not make it easy to do so.
+Perhaps the simplest implementation of a CLI (perhaps a degenerate case) would be to implement an API on to your server-side application, and then use [CURL](https://curl.se/) (or another equivalent tool) to invoke the REST endpoints in place of a more specifically implemented CLI.  However, that’s not a great solution to the problem in that the parameters required to run CURL in this way would be quite complex – CURL just moves the parameters of the HTTP request into the command line, so while you make it possible to script or automate different combinations, it does not make it easy to do so.
 
 Going back to our simple hypothetical Meetup example, we can easily imagine that there could be two commands, one equivalent to “Get Event Registration Details” and another one equivalent to “Cancel Event”.  They could be tied together with a simple shell script in Linux which could then be scheduled to run every night by using a tool like CRON.  However, this is not the only program that could be easily written using a CLI.  With a little bit of an extension of the CLI (to include creating events) you could imagine an application to look for open dates and times for events at the venue, and then to schedule events at those times.  The possibilities become quite expansive when you think about the compositional options. 
 
