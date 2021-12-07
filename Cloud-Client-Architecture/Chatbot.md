@@ -18,7 +18,7 @@ Therefore,
 
 *Chatbots* are not a new form of technology - in a sense they can be traced back all the way to the Eliza program written by Joseph Weizenbaum in 1966. However, recent improvements in Natural Language Processing have made it easier and more efficient to build them than before.  Most chatbots share a common set of architectural features that allow them to be built easily from existing open-source libraries or commercial web-based API’s.  Therefore, they can be implemented as microservices that can be called from within mobile apps, web apps, chat applications (such as Slack or Discord) and social media platforms.  An example of how a *Chatbot* would be invoked (or embedded within) one or more other types of [Interaction Models](Interaction-Model.md), along with the relationship between the *Chatbot* and other patterns is shown below:
  
-![Chatbot Architecture](../assets/Chatbot.png)
+![Chatbot Relationships](../assets/ChatbotRelationships.png)
 
 An important aspect of a *Chatbot* that is different than many of the other *Interaction Models* we have seen is that a chatbot can help the user navigate amongst through a decision tree of choices.  Rather than a window with fields for name, address, and phone, the chatbot can ask questions of the user interactively: What is your name? What is your Address? What is your phone number?  If the information has already been provided, it can simply skip the question, or ask the questions in different orders. 
 
