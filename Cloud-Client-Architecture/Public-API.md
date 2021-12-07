@@ -28,6 +28,6 @@ Something that is important to understand is that a Public API is NOT the same t
 
 However, having said this, the API Gateway is an often-useful addition to the Public API pattern in that you can use these products to secure, manage and track your Public API usage. An example of an architecture that combines both can be seen below in Figure 16: Public API:
  
-[Public API](../assets/PublicAPI.png)
+![Public API](../assets/PublicAPI.png)
 
 
