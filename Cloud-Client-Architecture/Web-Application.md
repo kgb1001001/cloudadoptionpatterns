@@ -32,7 +32,7 @@ We mentioned in the introduction to this chapter that one of the key principles 
 
 Instead, a better way to do this is to formally separate the two by introducing a separate Domain Microservice layer.  This version of the Web Application architecture is shown in below:
 
-![Interaction with Domain Microservice](../assets/WebApplicationMicroservices.md)
+![Interaction with Domain Microservice](../assets/WebApplicationMicroservices.png)
 
 In this way, the three parts of a “Model View Controller” or “Model View Presenter” pattern are introduced .  The Request Processor handles the issues of control flow, the [Domain Microservice](../Microservices/Business-Microservice.md) handles domain logic, while the Template Engine handles building the HTML View. Building applications in this way can be a very fast path to a minimum viable product; as fast or even faster than building a [Single Page Application](Single-Page-Application.md) depending upon the complexity of the screen flow.  What’s more, building this kind of application is something that many developers already have skills in; Java programmers often learn Servlets and JSP’s first before learning frameworks for building REST services, and PHP skills are common in the industry as well.  The tools, frameworks, and runtimes for building this kind of application are very mature and stable, available as open source, and run both on premises and in every available container technology and cloud provider – meaning that developers will not be running on the bleeding edge of a new technology or locked into a particular vendor.  
 
