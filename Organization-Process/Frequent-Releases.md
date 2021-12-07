@@ -4,7 +4,7 @@ title: Frequent Releases
 ---
 # Frequent Releases
 
-You are building a complex application for the cloud, probably following a [Microservices Architecture](), but possibly [Implementing Monolith First]().  You have a team that is working on several features at once.  
+You are building a complex application for the cloud, probably following a [Microservices Architecture](../Microservices/Microservice-Architecture.md), but possibly [Implementing Monolith First]().  You have a team that is working on several features at once.  
 
 **How do you ensure that your team does not become mired in the complexity of testing many changes at once, with the accompanying difficulty in merging changes from several different streams?**
 
