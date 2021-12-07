@@ -1,6 +1,5 @@
 ---
 title: Multimodal Architecture
- 	(aka Multichannel Architecture)
 parent: Cloud Client Architecture
 ---
 # Multimodal Architecture (aka Multichannel Architecture)
