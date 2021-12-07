@@ -16,9 +16,9 @@ Therefore,
 
 **Build a Document Generator that constructs the document on the fly, using similar approaches to the template construction approaches used by Web Applications.**
 
-A Document Generator will often work with a Document Transmission API that sends the document to the user.  This could be an Email API, an API to a file sharing system such as Microsoft SharePoint, or even something as simple as SFTP.  Likewise, a Document Generator will require a set of libraries and services that perform the Document Building function.  An example of this kind of architecture is shown below in Figure 15: Document Generator Architecture:
+A Document Generator will often work with a Document Transmission API that sends the document to the user.  This could be an Email API, an API to a file sharing system such as Microsoft SharePoint, or even something as simple as SFTP.  Likewise, a Document Generator will require a set of libraries and services that perform the Document Building function.  An example of this kind of architecture is shown below:
  
-Figure 15: Document Generator Architecture
+![Document Generator Architecture](../assets/DocumentGenerator.png)
 
 There are many libraries, both commercial and open source, that enable document building.  One particularly good example for building documents that follow the Microsoft Office formats (for Word, Excel, etc.) is the venerable Apache POI project.  This project (which is built by open-source developers sharing a particularly biting sense of humor) allows you to create documents using the HWPF (Horrible Word Processor Format) or HSSF (Horrible SpreadSheet Format) and even to embed within them drawings created using the DDF (Dreadful Drawing Format).  (It should be noted that these are the names for the older .doc and .xls formats – the names for the newer XML based formats are less derogatory).  Likewise, it is possible to start with template Word files, Powerpoint and Excel files and fill in missing bits using the POI libraries.
 
@@ -26,4 +26,4 @@ Another example for building documents in the Adobe PDF format is the open sourc
 
 * * *
 
-Document Generators are often combined with other digital-native user interaction formats.  For instance, a Web Application or Single Page Application may allow the user to save a nicely formatted Word or PDF document that meets unique presentation requirements.
+Document Generators are often combined with other digital-native user interaction formats.  For instance, a [Web Application](Web-Application.md) or [Single Page Application](Single-Page-Application.md) may allow the user to save a nicely formatted Word or PDF document that meets unique presentation requirements.
