@@ -13,9 +13,6 @@ In this section of our pattern language, we address the major development and op
 + [Red-Black Deploy](Red-Black-Deploy.md) is the standard approach for doing services deployment in a distributed system (e.g. one hosted across more than one data center or with multiple hosts in a single datacenter) that allows you to deploy without service disruption.
 + [Canary Testing](Canary-Testing.md) allows you to roll out possibly disruptive changes in a controlled way to a small group of users.
 + [Feature Toggle](Feature-Toggle.md) provides you with a way in your code (although controlled by configuration) to dynamically roll new features into a production environment in a limited way.
-+ [Query Engine](Query-Engine.md) is the way in which you observe the output of the distributed services in your solution.
-+ [Log Aggregator](Log-Aggregator.md) is a basic concept required for debugging problems caused in large-scale distributed systems such as those built using a Microservices Architecture.
-+ [Correlation ID](Correlation-ID.md) is an approach for tying together the log records of multiple calls that make up a single business transaction spread across multiple microservices processes.
 + [Autoscaling](Autoscale.md) is a way of taking advantage of cloud-provider or cloud-platform mechanisms to allow your application operations teams to keep from worrying about detailed issues of ongoing capacity management.
 
 The relationships between this set of patterns are shown in the diagram below.
