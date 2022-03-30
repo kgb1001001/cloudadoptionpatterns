@@ -1,4 +1,3 @@
-<!--
 ---
 title: Basic DevOps
 nav_order: 9
@@ -6,6 +5,8 @@ has_children: true
 ---
 # Basic DevOps Introduction
 Continuous Integration and Delivery has become the de-facto standard for most Agile and Lean processes. Many of these development processes help teams respond to unpredictability through incremental, iterative work cadences and through empirical feedback. Regular delivery of reliable working software that has the highest value to those using or benefiting from the software is becoming more important for the success of many companies. Actually, the first principle behind the Agile manifesto is: "our highest priority is to satisfy the customer through early and continuous delivery of valuable software.” That has led to the acceptance of DevOps, which advocates automation and monitoring at all steps of software construction, from integration, testing, releasing to deployment. 
+
+<!--
 
 FIGURE TO BE UPDATED SOON
 Figure 1: DevOps
