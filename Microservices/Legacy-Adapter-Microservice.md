@@ -24,6 +24,6 @@ However, there are cases where this mapping falls down that must also be handled
 
 So in this case you would build a new REST interface whose URL represents the Transfer type, with a POST operation corresponding to performing a transfer, a GET operation that could return information about a transfer, and a DELETE operation that is a (hopefully well-controlled) undo.
 
-Legacy Adapter Microservices are a special type of microservice in that they are often transient solutions, which only last until the underlying existing services can be replaced by a natively implemented microservice.  The [Command Query Responsibility Separation](CQRS.md) pattern is often a part of this transformation in that a Legacy Adapter Microservice may only represent one side (usually the write side) of the process.
+Legacy Adapter Microservices are a special type of microservice in that they are often transient solutions, which only last until the underlying existing services can be replaced by a natively implemented microservice.  The [Command Query Responsibility Separation](../Coexistence-Patterns/Command-Query-Responsibility-Separation.md) pattern is often a part of this transformation in that a Legacy Adapter Microservice may only represent one side (usually the write side) of the process.
 
 Due to their special nature of converting one interface to another, *Legacy Adapter Microservices* often use [Results Caches](../Cloud-Native-Architecture/Results-Cache.md) in order to reduce the number of times they have to invoke the underlying SOA service that they convert.
