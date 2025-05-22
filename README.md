@@ -5,9 +5,11 @@ permalink: /
 ---
 # Patterns for Developers and Architects building for the cloud
 
-This is a work in progress.  We hope you will find it useful even in its infancy as we continue to build out this site.
+This project was the beginning work that led to our book released May 20th, 2025 titled **Cloud Application Architecture Patterns—Desigining, Building, and Modernizing for the Cloud**. The patterns here are early drafts of many of the patterns that ended up in our book. The organiation and devops patterns were not included in the final book.
 
-[Our book is now available on Amazon](https://www.amazon.com/Cloud-Application-Architecture-Patterns-Modernizing/dp/1098116909)
+![alt Cloud Application Architecture Patterns]([http://url/to/img.png](https://learning.oreilly.com/covers/urn:orm:book:9781098116897/400w/))
+
+Our book is available on [Amazon](https://www.amazon.com/Cloud-Application-Architecture-Patterns-Modernizing/dp/1098116909) and the [O'Reilly platform](https://learning.oreilly.com/library/view/cloud-application-architecture/9781098116897/).
 
 This project began as a series of (loosely) related papers submitted to the PLoP conference in 2016 - one by [Kyle Brown](Kyle-Brown-bio.md) and [Bobby Woolf](Bobby-Woolf-bio.md) and another by [Cees De Groot](Cees-De-Groot-bio.md) - at the conference we decided to explore the idea of joining the two papers into a common pattern language.  Container DevOps Patterns from a PLoP 2018 paper by Kyle Brown and [Chris Hay](Chris-Hay-bio.md) were added to the growing language, and likewise Kyle also added a set of Event-based systems patterns from a 2006 paper Kyle co-wrote for an internal IBM conference. [Joseph Yoder](Joseph-Yoder-bio.md) also joined the collaboration, adding Quality Delivery Pipeline patterns from SugarLoafPLoP 2018, Deployment Patterns for Confidence from AsianPLoP 2019, and a set of Strangler Patterns extracted from a PLoP 2020 paper.
 
