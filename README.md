@@ -5,7 +5,7 @@ permalink: /
 ---
 # Patterns for Developers and Architects building for the cloud
 
-This project was the beginning work that led to our book released May 20th, 2025 titled **Cloud Application Architecture Patterns—Desigining, Building, and Modernizing for the Cloud**. The patterns here are early drafts of many of the patterns that ended up in our book. The organiation. secirotu. and devops patterns were not included in the book.
+This project was the beginning work that led to our book released May 20th, 2025 titled [**Cloud Application Architecture Patterns—Desigining, Building, and Modernizing for the Cloud**](https://www.amazon.com/Cloud-Application-Architecture-Patterns-Modernizing/dp/1098116909) . The patterns here are early drafts of many of the patterns that ended up in our book. The organiation. secirotu. and devops patterns were not included in the book.
 
 ![Cloud Application Architecture Patterns](https://learning.oreilly.com/covers/urn:orm:book:9781098116897/400w/)
 
